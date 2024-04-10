@@ -1,6 +1,6 @@
-import { StoreSnapshot } from '@tldraw/store'
-import { TLRecord } from '@tldraw/tlschema'
-import { areObjectsShallowEqual } from '@tldraw/utils'
+import { StoreSnapshot } from '@cmpd/store'
+import { TLRecord } from '@cmpd/tlschema'
+import { areObjectsShallowEqual } from '@cmpd/utils'
 import { useState } from 'react'
 import { TLStoreOptions, createTLStore } from '../config/createTLStore'
 

@@ -1,4 +1,4 @@
-import { Box2dModel, TLDefaultHorizontalAlignStyle } from '@tldraw/tlschema'
+import { Box2dModel, TLDefaultHorizontalAlignStyle } from '@cmpd/tlschema'
 import { uniqueId } from '../../utils/uniqueId'
 import { Editor } from '../Editor'
 

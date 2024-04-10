@@ -1,6 +1,6 @@
-import { atom, computed, EMPTY_ARRAY } from '@tldraw/state'
-import { TLGroupShape, TLParentId, TLShape, TLShapeId, Vec2dModel } from '@tldraw/tlschema'
-import { dedupe, deepCopy, warnDeprecatedGetter } from '@tldraw/utils'
+import { atom, computed, EMPTY_ARRAY } from '@cmpd/state'
+import { TLGroupShape, TLParentId, TLShape, TLShapeId, Vec2dModel } from '@cmpd/tlschema'
+import { dedupe, deepCopy, warnDeprecatedGetter } from '@cmpd/utils'
 import {
 	Box2d,
 	flipSelectionHandleX,

@@ -1,4 +1,4 @@
-import { structuredClone } from '@tldraw/utils'
+import { structuredClone } from '@cmpd/utils'
 import { nanoid } from 'nanoid'
 import { IdOf, OmitMeta, UnknownRecord } from './BaseRecord'
 import { StoreValidator } from './Store'

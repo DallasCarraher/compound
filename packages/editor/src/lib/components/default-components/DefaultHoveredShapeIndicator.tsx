@@ -1,4 +1,4 @@
-import { TLShapeId } from '@tldraw/tlschema'
+import { TLShapeId } from '@cmpd/tlschema'
 import { ComponentType } from 'react'
 import { ShapeIndicator } from '../ShapeIndicator'
 

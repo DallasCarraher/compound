@@ -1,14 +1,6 @@
-import { computed, isUninitialized, RESET_VALUE, withDiff } from '@tldraw/state'
-import { IncrementalSetConstructor } from '@tldraw/store'
-import {
-	isPageId,
-	isShape,
-	isShapeId,
-	TLPageId,
-	TLShape,
-	TLShapeId,
-	TLStore,
-} from '@tldraw/tlschema'
+import { computed, isUninitialized, RESET_VALUE, withDiff } from '@cmpd/state'
+import { IncrementalSetConstructor } from '@cmpd/store'
+import { isPageId, isShape, isShapeId, TLPageId, TLShape, TLShapeId, TLStore } from '@cmpd/tlschema'
 
 /**
  * Get whether a shape is in the current page.

@@ -161,20 +161,20 @@
     }
   },
   "kind": "Package",
-  "canonicalReference": "@tldraw/store!",
+  "canonicalReference": "@cmpd/store!",
   "docComment": "",
-  "name": "@tldraw/store",
+  "name": "@cmpd/store",
   "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "@tldraw/store!",
+      "canonicalReference": "@cmpd/store!",
       "name": "",
       "preserveMemberOrder": false,
       "members": [
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!AllRecords:type",
+          "canonicalReference": "@cmpd/store!AllRecords:type",
           "docComment": "/**\n * Get the type of all records in a record store.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -184,7 +184,7 @@
             {
               "kind": "Reference",
               "text": "Store",
-              "canonicalReference": "@tldraw/store!Store:class"
+              "canonicalReference": "@cmpd/store!Store:class"
             },
             {
               "kind": "Content",
@@ -197,7 +197,7 @@
             {
               "kind": "Reference",
               "text": "ExtractR",
-              "canonicalReference": "@tldraw/store!~ExtractR:type"
+              "canonicalReference": "@cmpd/store!~ExtractR:type"
             },
             {
               "kind": "Content",
@@ -206,7 +206,7 @@
             {
               "kind": "Reference",
               "text": "ExtractRecordType",
-              "canonicalReference": "@tldraw/store!~ExtractRecordType:type"
+              "canonicalReference": "@cmpd/store!~ExtractRecordType:type"
             },
             {
               "kind": "Content",
@@ -240,7 +240,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!assertIdType:function(1)",
+          "canonicalReference": "@cmpd/store!assertIdType:function(1)",
           "docComment": "/**\n * Assert whether an id correspond to a record type.\n *\n * @param id - The id to check.\n *\n * @param type - The type of the record.\n *\n * @example\n * ```ts\n * assertIdType(myId, \"shape\")\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -250,7 +250,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -267,7 +267,7 @@
             {
               "kind": "Reference",
               "text": "RecordType",
-              "canonicalReference": "@tldraw/store!RecordType:class"
+              "canonicalReference": "@cmpd/store!RecordType:class"
             },
             {
               "kind": "Content",
@@ -284,7 +284,7 @@
             {
               "kind": "Reference",
               "text": "id",
-              "canonicalReference": "@tldraw/store!~id"
+              "canonicalReference": "@cmpd/store!~id"
             },
             {
               "kind": "Content",
@@ -293,7 +293,7 @@
             {
               "kind": "Reference",
               "text": "IdOf",
-              "canonicalReference": "@tldraw/store!IdOf:type"
+              "canonicalReference": "@cmpd/store!IdOf:type"
             },
             {
               "kind": "Content",
@@ -346,7 +346,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/store!BaseRecord:interface",
+          "canonicalReference": "@cmpd/store!BaseRecord:interface",
           "docComment": "/**\n * The base record that all records must extend.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -364,7 +364,7 @@
             {
               "kind": "Reference",
               "text": "RecordId",
-              "canonicalReference": "@tldraw/store!RecordId:type"
+              "canonicalReference": "@cmpd/store!RecordId:type"
             },
             {
               "kind": "Content",
@@ -373,7 +373,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -415,7 +415,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/store!BaseRecord#id:member",
+              "canonicalReference": "@cmpd/store!BaseRecord#id:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -442,7 +442,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/store!BaseRecord#typeName:member",
+              "canonicalReference": "@cmpd/store!BaseRecord#typeName:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -472,7 +472,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!CollectionDiff:type",
+          "canonicalReference": "@cmpd/store!CollectionDiff:type",
           "docComment": "/**\n * A diff describing the changes to a collection.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -529,7 +529,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!compareRecordVersions:function(1)",
+          "canonicalReference": "@cmpd/store!compareRecordVersions:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -539,7 +539,7 @@
             {
               "kind": "Reference",
               "text": "RecordVersion",
-              "canonicalReference": "@tldraw/store!RecordVersion:type"
+              "canonicalReference": "@cmpd/store!RecordVersion:type"
             },
             {
               "kind": "Content",
@@ -548,7 +548,7 @@
             {
               "kind": "Reference",
               "text": "RecordVersion",
-              "canonicalReference": "@tldraw/store!RecordVersion:type"
+              "canonicalReference": "@cmpd/store!RecordVersion:type"
             },
             {
               "kind": "Content",
@@ -592,7 +592,7 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@tldraw/store!compareSchemas:var",
+          "canonicalReference": "@cmpd/store!compareSchemas:var",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -606,7 +606,7 @@
             {
               "kind": "Reference",
               "text": "SerializedSchema",
-              "canonicalReference": "@tldraw/store!SerializedSchema:interface"
+              "canonicalReference": "@cmpd/store!SerializedSchema:interface"
             },
             {
               "kind": "Content",
@@ -615,7 +615,7 @@
             {
               "kind": "Reference",
               "text": "SerializedSchema",
-              "canonicalReference": "@tldraw/store!SerializedSchema:interface"
+              "canonicalReference": "@cmpd/store!SerializedSchema:interface"
             },
             {
               "kind": "Content",
@@ -633,7 +633,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!ComputedCache:type",
+          "canonicalReference": "@cmpd/store!ComputedCache:type",
           "docComment": "/**\n * A record store is a collection of records of different types.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -643,7 +643,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -656,7 +656,7 @@
             {
               "kind": "Reference",
               "text": "IdOf",
-              "canonicalReference": "@tldraw/store!IdOf:type"
+              "canonicalReference": "@cmpd/store!IdOf:type"
             },
             {
               "kind": "Content",
@@ -701,7 +701,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!createRecordType:function(1)",
+          "canonicalReference": "@cmpd/store!createRecordType:function(1)",
           "docComment": "/**\n * Create a record type.\n *\n * @param typeName - The name of the type to create.\n *\n * @example\n * ```ts\n * const Book = createRecordType<Book>('book')\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -711,7 +711,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -732,7 +732,7 @@
             {
               "kind": "Reference",
               "text": "Migrations",
-              "canonicalReference": "@tldraw/store!Migrations:interface"
+              "canonicalReference": "@cmpd/store!Migrations:interface"
             },
             {
               "kind": "Content",
@@ -741,7 +741,7 @@
             {
               "kind": "Reference",
               "text": "StoreValidator",
-              "canonicalReference": "@tldraw/store!StoreValidator:type"
+              "canonicalReference": "@cmpd/store!StoreValidator:type"
             },
             {
               "kind": "Content",
@@ -750,7 +750,7 @@
             {
               "kind": "Reference",
               "text": "RecordScope",
-              "canonicalReference": "@tldraw/store!~RecordScope:type"
+              "canonicalReference": "@cmpd/store!~RecordScope:type"
             },
             {
               "kind": "Content",
@@ -763,7 +763,7 @@
             {
               "kind": "Reference",
               "text": "RecordType",
-              "canonicalReference": "@tldraw/store!RecordType:class"
+              "canonicalReference": "@cmpd/store!RecordType:class"
             },
             {
               "kind": "Content",
@@ -825,7 +825,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!defineMigrations:function(1)",
+          "canonicalReference": "@cmpd/store!defineMigrations:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -835,7 +835,7 @@
             {
               "kind": "Reference",
               "text": "EMPTY_SYMBOL",
-              "canonicalReference": "@tldraw/store!~EMPTY_SYMBOL:type"
+              "canonicalReference": "@cmpd/store!~EMPTY_SYMBOL:type"
             },
             {
               "kind": "Content",
@@ -848,7 +848,7 @@
             {
               "kind": "Reference",
               "text": "EMPTY_SYMBOL",
-              "canonicalReference": "@tldraw/store!~EMPTY_SYMBOL:type"
+              "canonicalReference": "@cmpd/store!~EMPTY_SYMBOL:type"
             },
             {
               "kind": "Content",
@@ -857,7 +857,7 @@
             {
               "kind": "Reference",
               "text": "EMPTY_SYMBOL",
-              "canonicalReference": "@tldraw/store!~EMPTY_SYMBOL:type"
+              "canonicalReference": "@cmpd/store!~EMPTY_SYMBOL:type"
             },
             {
               "kind": "Content",
@@ -879,7 +879,7 @@
             {
               "kind": "Reference",
               "text": "EMPTY_SYMBOL",
-              "canonicalReference": "@tldraw/store!~EMPTY_SYMBOL:type"
+              "canonicalReference": "@cmpd/store!~EMPTY_SYMBOL:type"
             },
             {
               "kind": "Content",
@@ -901,7 +901,7 @@
             {
               "kind": "Reference",
               "text": "Range",
-              "canonicalReference": "@tldraw/store!~Range_2:type"
+              "canonicalReference": "@cmpd/store!~Range_2:type"
             },
             {
               "kind": "Content",
@@ -910,7 +910,7 @@
             {
               "kind": "Reference",
               "text": "Migration",
-              "canonicalReference": "@tldraw/store!Migration:type"
+              "canonicalReference": "@cmpd/store!Migration:type"
             },
             {
               "kind": "Content",
@@ -928,7 +928,7 @@
             {
               "kind": "Reference",
               "text": "Range",
-              "canonicalReference": "@tldraw/store!~Range_2:type"
+              "canonicalReference": "@cmpd/store!~Range_2:type"
             },
             {
               "kind": "Content",
@@ -937,7 +937,7 @@
             {
               "kind": "Reference",
               "text": "Migration",
-              "canonicalReference": "@tldraw/store!Migration:type"
+              "canonicalReference": "@cmpd/store!Migration:type"
             },
             {
               "kind": "Content",
@@ -955,7 +955,7 @@
             {
               "kind": "Reference",
               "text": "Range",
-              "canonicalReference": "@tldraw/store!~Range_2:type"
+              "canonicalReference": "@cmpd/store!~Range_2:type"
             },
             {
               "kind": "Content",
@@ -964,7 +964,7 @@
             {
               "kind": "Reference",
               "text": "Migration",
-              "canonicalReference": "@tldraw/store!Migration:type"
+              "canonicalReference": "@cmpd/store!Migration:type"
             },
             {
               "kind": "Content",
@@ -982,7 +982,7 @@
             {
               "kind": "Reference",
               "text": "BaseMigrationsInfo",
-              "canonicalReference": "@tldraw/store!~BaseMigrationsInfo:interface"
+              "canonicalReference": "@cmpd/store!~BaseMigrationsInfo:interface"
             },
             {
               "kind": "Content",
@@ -995,7 +995,7 @@
             {
               "kind": "Reference",
               "text": "Migrations",
-              "canonicalReference": "@tldraw/store!Migrations:interface"
+              "canonicalReference": "@cmpd/store!Migrations:interface"
             },
             {
               "kind": "Content",
@@ -1047,7 +1047,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!devFreeze:function(1)",
+          "canonicalReference": "@cmpd/store!devFreeze:function(1)",
           "docComment": "/**\n * Freeze an object when in development mode. Copied from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze\n *\n * @param object - The object to freeze.\n *\n * @returns The frozen object when in development mode, or else the object when in other modes.\n *\n * @example\n * ```ts\n * const frozen = devFreeze({ a: 1 })\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1105,7 +1105,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!getRecordVersion:function(1)",
+          "canonicalReference": "@cmpd/store!getRecordVersion:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1115,7 +1115,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -1124,7 +1124,7 @@
             {
               "kind": "Reference",
               "text": "SerializedSchema",
-              "canonicalReference": "@tldraw/store!SerializedSchema:interface"
+              "canonicalReference": "@cmpd/store!SerializedSchema:interface"
             },
             {
               "kind": "Content",
@@ -1133,7 +1133,7 @@
             {
               "kind": "Reference",
               "text": "RecordVersion",
-              "canonicalReference": "@tldraw/store!RecordVersion:type"
+              "canonicalReference": "@cmpd/store!RecordVersion:type"
             },
             {
               "kind": "Content",
@@ -1169,7 +1169,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!HistoryEntry:type",
+          "canonicalReference": "@cmpd/store!HistoryEntry:type",
           "docComment": "/**\n * An entry containing changes that originated either by user actions or remote changes.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1179,7 +1179,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -1188,7 +1188,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -1201,7 +1201,7 @@
             {
               "kind": "Reference",
               "text": "RecordsDiff",
-              "canonicalReference": "@tldraw/store!RecordsDiff:type"
+              "canonicalReference": "@cmpd/store!RecordsDiff:type"
             },
             {
               "kind": "Content",
@@ -1210,7 +1210,7 @@
             {
               "kind": "Reference",
               "text": "ChangeSource",
-              "canonicalReference": "@tldraw/store!~ChangeSource:type"
+              "canonicalReference": "@cmpd/store!~ChangeSource:type"
             },
             {
               "kind": "Content",
@@ -1244,7 +1244,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!IdOf:type",
+          "canonicalReference": "@cmpd/store!IdOf:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1254,7 +1254,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -1292,7 +1292,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!migrate:function(1)",
+          "canonicalReference": "@cmpd/store!migrate:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1306,7 +1306,7 @@
             {
               "kind": "Reference",
               "text": "Migrations",
-              "canonicalReference": "@tldraw/store!Migrations:interface"
+              "canonicalReference": "@cmpd/store!Migrations:interface"
             },
             {
               "kind": "Content",
@@ -1319,7 +1319,7 @@
             {
               "kind": "Reference",
               "text": "MigrationResult",
-              "canonicalReference": "@tldraw/store!MigrationResult:type"
+              "canonicalReference": "@cmpd/store!MigrationResult:type"
             },
             {
               "kind": "Content",
@@ -1364,7 +1364,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!migrateRecord:function(1)",
+          "canonicalReference": "@cmpd/store!migrateRecord:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1374,7 +1374,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -1387,7 +1387,7 @@
             {
               "kind": "Reference",
               "text": "Migrations",
-              "canonicalReference": "@tldraw/store!Migrations:interface"
+              "canonicalReference": "@cmpd/store!Migrations:interface"
             },
             {
               "kind": "Content",
@@ -1400,7 +1400,7 @@
             {
               "kind": "Reference",
               "text": "MigrationResult",
-              "canonicalReference": "@tldraw/store!MigrationResult:type"
+              "canonicalReference": "@cmpd/store!MigrationResult:type"
             },
             {
               "kind": "Content",
@@ -1445,7 +1445,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!Migration:type",
+          "canonicalReference": "@cmpd/store!Migration:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1511,7 +1511,7 @@
         },
         {
           "kind": "Enum",
-          "canonicalReference": "@tldraw/store!MigrationFailureReason:enum",
+          "canonicalReference": "@cmpd/store!MigrationFailureReason:enum",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1526,7 +1526,7 @@
           "members": [
             {
               "kind": "EnumMember",
-              "canonicalReference": "@tldraw/store!MigrationFailureReason.IncompatibleSubtype:member",
+              "canonicalReference": "@cmpd/store!MigrationFailureReason.IncompatibleSubtype:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1547,7 +1547,7 @@
             },
             {
               "kind": "EnumMember",
-              "canonicalReference": "@tldraw/store!MigrationFailureReason.MigrationError:member",
+              "canonicalReference": "@cmpd/store!MigrationFailureReason.MigrationError:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1568,7 +1568,7 @@
             },
             {
               "kind": "EnumMember",
-              "canonicalReference": "@tldraw/store!MigrationFailureReason.TargetVersionTooNew:member",
+              "canonicalReference": "@cmpd/store!MigrationFailureReason.TargetVersionTooNew:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1589,7 +1589,7 @@
             },
             {
               "kind": "EnumMember",
-              "canonicalReference": "@tldraw/store!MigrationFailureReason.TargetVersionTooOld:member",
+              "canonicalReference": "@cmpd/store!MigrationFailureReason.TargetVersionTooOld:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1610,7 +1610,7 @@
             },
             {
               "kind": "EnumMember",
-              "canonicalReference": "@tldraw/store!MigrationFailureReason.UnknownType:member",
+              "canonicalReference": "@cmpd/store!MigrationFailureReason.UnknownType:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1631,7 +1631,7 @@
             },
             {
               "kind": "EnumMember",
-              "canonicalReference": "@tldraw/store!MigrationFailureReason.UnrecognizedSubtype:member",
+              "canonicalReference": "@cmpd/store!MigrationFailureReason.UnrecognizedSubtype:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1654,7 +1654,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!MigrationResult:type",
+          "canonicalReference": "@cmpd/store!MigrationResult:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1668,7 +1668,7 @@
             {
               "kind": "Reference",
               "text": "MigrationFailureReason",
-              "canonicalReference": "@tldraw/store!MigrationFailureReason:enum"
+              "canonicalReference": "@cmpd/store!MigrationFailureReason:enum"
             },
             {
               "kind": "Content",
@@ -1702,7 +1702,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/store!Migrations:interface",
+          "canonicalReference": "@cmpd/store!Migrations:interface",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1712,7 +1712,7 @@
             {
               "kind": "Reference",
               "text": "BaseMigrationsInfo",
-              "canonicalReference": "@tldraw/store!~BaseMigrationsInfo:interface"
+              "canonicalReference": "@cmpd/store!~BaseMigrationsInfo:interface"
             },
             {
               "kind": "Content",
@@ -1726,7 +1726,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/store!Migrations#subTypeKey:member",
+              "canonicalReference": "@cmpd/store!Migrations#subTypeKey:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1753,7 +1753,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/store!Migrations#subTypeMigrations:member",
+              "canonicalReference": "@cmpd/store!Migrations#subTypeMigrations:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1772,7 +1772,7 @@
                 {
                   "kind": "Reference",
                   "text": "BaseMigrationsInfo",
-                  "canonicalReference": "@tldraw/store!~BaseMigrationsInfo:interface"
+                  "canonicalReference": "@cmpd/store!~BaseMigrationsInfo:interface"
                 },
                 {
                   "kind": "Content",
@@ -1802,7 +1802,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!RecordId:type",
+          "canonicalReference": "@cmpd/store!RecordId:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1812,7 +1812,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -1850,7 +1850,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!RecordsDiff:type",
+          "canonicalReference": "@cmpd/store!RecordsDiff:type",
           "docComment": "/**\n * A diff describing the changes to a record.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1860,7 +1860,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -1882,7 +1882,7 @@
             {
               "kind": "Reference",
               "text": "IdOf",
-              "canonicalReference": "@tldraw/store!IdOf:type"
+              "canonicalReference": "@cmpd/store!IdOf:type"
             },
             {
               "kind": "Content",
@@ -1900,7 +1900,7 @@
             {
               "kind": "Reference",
               "text": "IdOf",
-              "canonicalReference": "@tldraw/store!IdOf:type"
+              "canonicalReference": "@cmpd/store!IdOf:type"
             },
             {
               "kind": "Content",
@@ -1918,7 +1918,7 @@
             {
               "kind": "Reference",
               "text": "IdOf",
-              "canonicalReference": "@tldraw/store!IdOf:type"
+              "canonicalReference": "@cmpd/store!IdOf:type"
             },
             {
               "kind": "Content",
@@ -1952,7 +1952,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/store!RecordType:class",
+          "canonicalReference": "@cmpd/store!RecordType:class",
           "docComment": "/**\n * A record type is a type that can be stored in a record store. It is created with `createRecordType`.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1962,7 +1962,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -2018,7 +2018,7 @@
           "members": [
             {
               "kind": "Constructor",
-              "canonicalReference": "@tldraw/store!RecordType:constructor(1)",
+              "canonicalReference": "@cmpd/store!RecordType:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `RecordType` class\n */\n",
               "excerptTokens": [
                 {
@@ -2049,7 +2049,7 @@
                 {
                   "kind": "Reference",
                   "text": "OmitMeta",
-                  "canonicalReference": "@tldraw/store!~OmitMeta:type"
+                  "canonicalReference": "@cmpd/store!~OmitMeta:type"
                 },
                 {
                   "kind": "Content",
@@ -2058,7 +2058,7 @@
                 {
                   "kind": "Reference",
                   "text": "Migrations",
-                  "canonicalReference": "@tldraw/store!Migrations:interface"
+                  "canonicalReference": "@cmpd/store!Migrations:interface"
                 },
                 {
                   "kind": "Content",
@@ -2067,7 +2067,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreValidator",
-                  "canonicalReference": "@tldraw/store!StoreValidator:type"
+                  "canonicalReference": "@cmpd/store!StoreValidator:type"
                 },
                 {
                   "kind": "Content",
@@ -2076,7 +2076,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordScope",
-                  "canonicalReference": "@tldraw/store!~RecordScope:type"
+                  "canonicalReference": "@cmpd/store!~RecordScope:type"
                 },
                 {
                   "kind": "Content",
@@ -2111,7 +2111,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!RecordType#clone:member(1)",
+              "canonicalReference": "@cmpd/store!RecordType#clone:member(1)",
               "docComment": "/**\n * Clone a record of this type.\n *\n * @param record - The record to clone.\n *\n * @returns The cloned record.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2159,7 +2159,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!RecordType#create:member(1)",
+              "canonicalReference": "@cmpd/store!RecordType#create:member(1)",
               "docComment": "/**\n * Create a new record of this type.\n *\n * @param properties - The properties of the record.\n *\n * @returns The new record.\n */\n",
               "excerptTokens": [
                 {
@@ -2230,7 +2230,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!RecordType#createCustomId:member(1)",
+              "canonicalReference": "@cmpd/store!RecordType#createCustomId:member(1)",
               "docComment": "/**\n * Create a new ID for this record type based on the given ID.\n *\n * @deprecated\n *\n * - Use `createId` instead.\n *\n * @param id - The ID to base the new ID on.\n *\n * @returns The new ID.\n *\n * @example\n * ```ts\n * const id = recordType.createCustomId('myId')\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
@@ -2248,7 +2248,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -2283,7 +2283,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!RecordType#createDefaultProperties:member",
+              "canonicalReference": "@cmpd/store!RecordType#createDefaultProperties:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -2306,7 +2306,7 @@
                 {
                   "kind": "Reference",
                   "text": "OmitMeta",
-                  "canonicalReference": "@tldraw/store!~OmitMeta:type"
+                  "canonicalReference": "@cmpd/store!~OmitMeta:type"
                 },
                 {
                   "kind": "Content",
@@ -2331,7 +2331,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!RecordType#createId:member(1)",
+              "canonicalReference": "@cmpd/store!RecordType#createId:member(1)",
               "docComment": "/**\n * Create a new ID for this record type.\n *\n * @returns The new ID.\n *\n * @example\n * ```ts\n * const id = recordType.createId()\n * ```\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2349,7 +2349,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -2384,7 +2384,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!RecordType#isId:member(1)",
+              "canonicalReference": "@cmpd/store!RecordType#isId:member(1)",
               "docComment": "/**\n * Check whether an id is an id of this type.\n *\n * @param id - The id to check.\n *\n * @returns Whether the id is an id of this type.\n *\n * @example\n * ```ts\n * const result = recordType.isIn('someId')\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
@@ -2402,7 +2402,7 @@
                 {
                   "kind": "Reference",
                   "text": "id",
-                  "canonicalReference": "@tldraw/store!~id"
+                  "canonicalReference": "@cmpd/store!~id"
                 },
                 {
                   "kind": "Content",
@@ -2411,7 +2411,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -2446,7 +2446,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!RecordType#isInstance:member",
+              "canonicalReference": "@cmpd/store!RecordType#isInstance:member",
               "docComment": "/**\n * Check whether a record is an instance of this record type.\n *\n * @param record - The record to check.\n *\n * @returns Whether the record is an instance of this record type.\n *\n * @example\n * ```ts\n * const result = recordType.isInstance(someRecord)\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
@@ -2460,7 +2460,7 @@
                 {
                   "kind": "Reference",
                   "text": "UnknownRecord",
-                  "canonicalReference": "@tldraw/store!UnknownRecord:type"
+                  "canonicalReference": "@cmpd/store!UnknownRecord:type"
                 },
                 {
                   "kind": "Content",
@@ -2469,7 +2469,7 @@
                 {
                   "kind": "Reference",
                   "text": "record",
-                  "canonicalReference": "@tldraw/store!~record"
+                  "canonicalReference": "@cmpd/store!~record"
                 },
                 {
                   "kind": "Content",
@@ -2494,7 +2494,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!RecordType#migrations:member",
+              "canonicalReference": "@cmpd/store!RecordType#migrations:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -2504,7 +2504,7 @@
                 {
                   "kind": "Reference",
                   "text": "Migrations",
-                  "canonicalReference": "@tldraw/store!Migrations:interface"
+                  "canonicalReference": "@cmpd/store!Migrations:interface"
                 },
                 {
                   "kind": "Content",
@@ -2525,7 +2525,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!RecordType#parseId:member(1)",
+              "canonicalReference": "@cmpd/store!RecordType#parseId:member(1)",
               "docComment": "/**\n * Takes an id like `user:123` and returns the part after the colon `123`\n *\n * @param id - The id\n *\n * @returns \n */\n",
               "excerptTokens": [
                 {
@@ -2535,7 +2535,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -2578,7 +2578,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!RecordType#scope:member",
+              "canonicalReference": "@cmpd/store!RecordType#scope:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -2588,7 +2588,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordScope",
-                  "canonicalReference": "@tldraw/store!~RecordScope:type"
+                  "canonicalReference": "@cmpd/store!~RecordScope:type"
                 },
                 {
                   "kind": "Content",
@@ -2609,7 +2609,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!RecordType#typeName:member",
+              "canonicalReference": "@cmpd/store!RecordType#typeName:member",
               "docComment": "/**\n * The unique type associated with this record.\n *\n * @public @readonly\n */\n",
               "excerptTokens": [
                 {
@@ -2639,7 +2639,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!RecordType#validate:member(1)",
+              "canonicalReference": "@cmpd/store!RecordType#validate:member(1)",
               "docComment": "/**\n * Check that the passed in record passes the validations for this type. Returns its input correctly typed if it does, but throws an error otherwise.\n */\n",
               "excerptTokens": [
                 {
@@ -2687,7 +2687,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!RecordType#validator:member",
+              "canonicalReference": "@cmpd/store!RecordType#validator:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -2701,7 +2701,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreValidator",
-                  "canonicalReference": "@tldraw/store!StoreValidator:type"
+                  "canonicalReference": "@cmpd/store!StoreValidator:type"
                 },
                 {
                   "kind": "Content",
@@ -2726,7 +2726,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!RecordType#withDefaultProperties:member(1)",
+              "canonicalReference": "@cmpd/store!RecordType#withDefaultProperties:member(1)",
               "docComment": "/**\n * Create a new RecordType that has the same type name as this RecordType and includes the given default properties.\n *\n * @param fn - A function that returns the default properties of the new RecordType.\n *\n * @returns The new RecordType.\n *\n * @example\n * ```ts\n * const authorType = createRecordType('author', () => ({ living: true }))\n * const deadAuthorType = authorType.withDefaultProperties({ living: false })\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
@@ -2766,7 +2766,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordType",
-                  "canonicalReference": "@tldraw/store!RecordType:class"
+                  "canonicalReference": "@cmpd/store!RecordType:class"
                 },
                 {
                   "kind": "Content",
@@ -2826,7 +2826,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!RecordVersion:type",
+          "canonicalReference": "@cmpd/store!RecordVersion:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2852,7 +2852,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!reverseRecordsDiff:function(1)",
+          "canonicalReference": "@cmpd/store!reverseRecordsDiff:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2862,7 +2862,7 @@
             {
               "kind": "Reference",
               "text": "RecordsDiff",
-              "canonicalReference": "@tldraw/store!RecordsDiff:type"
+              "canonicalReference": "@cmpd/store!RecordsDiff:type"
             },
             {
               "kind": "Content",
@@ -2875,7 +2875,7 @@
             {
               "kind": "Reference",
               "text": "RecordsDiff",
-              "canonicalReference": "@tldraw/store!RecordsDiff:type"
+              "canonicalReference": "@cmpd/store!RecordsDiff:type"
             },
             {
               "kind": "Content",
@@ -2907,7 +2907,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/store!SerializedSchema:interface",
+          "canonicalReference": "@cmpd/store!SerializedSchema:interface",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2922,7 +2922,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/store!SerializedSchema#recordVersions:member",
+              "canonicalReference": "@cmpd/store!SerializedSchema#recordVersions:member",
               "docComment": "/**\n * Record versions are the versions for each record type. e.g. adding a new field to a record\n */\n",
               "excerptTokens": [
                 {
@@ -2963,7 +2963,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/store!SerializedSchema#schemaVersion:member",
+              "canonicalReference": "@cmpd/store!SerializedSchema#schemaVersion:member",
               "docComment": "/**\n * Schema version is the version for this type you're looking at right now\n */\n",
               "excerptTokens": [
                 {
@@ -2990,7 +2990,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/store!SerializedSchema#storeVersion:member",
+              "canonicalReference": "@cmpd/store!SerializedSchema#storeVersion:member",
               "docComment": "/**\n * Store version is the version for the structure of the store. e.g. higher level structure like removing or renaming a record type.\n */\n",
               "excerptTokens": [
                 {
@@ -3020,7 +3020,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!SerializedStore:type",
+          "canonicalReference": "@cmpd/store!SerializedStore:type",
           "docComment": "/**\n * A serialized snapshot of the record store's values.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3030,7 +3030,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -3048,7 +3048,7 @@
             {
               "kind": "Reference",
               "text": "IdOf",
-              "canonicalReference": "@tldraw/store!IdOf:type"
+              "canonicalReference": "@cmpd/store!IdOf:type"
             },
             {
               "kind": "Content",
@@ -3082,7 +3082,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/store!squashRecordDiffs:function(1)",
+          "canonicalReference": "@cmpd/store!squashRecordDiffs:function(1)",
           "docComment": "/**\n * Squash a collection of diffs into a single diff.\n *\n * @param diffs - An array of diffs to squash.\n *\n * @returns A single diff that represents the squashed diffs.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3092,7 +3092,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -3101,7 +3101,7 @@
             {
               "kind": "Reference",
               "text": "RecordsDiff",
-              "canonicalReference": "@tldraw/store!RecordsDiff:type"
+              "canonicalReference": "@cmpd/store!RecordsDiff:type"
             },
             {
               "kind": "Content",
@@ -3114,7 +3114,7 @@
             {
               "kind": "Reference",
               "text": "RecordsDiff",
-              "canonicalReference": "@tldraw/store!RecordsDiff:type"
+              "canonicalReference": "@cmpd/store!RecordsDiff:type"
             },
             {
               "kind": "Content",
@@ -3159,7 +3159,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/store!Store:class",
+          "canonicalReference": "@cmpd/store!Store:class",
           "docComment": "/**\n * A store of records.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3169,7 +3169,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -3178,7 +3178,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -3225,7 +3225,7 @@
           "members": [
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!Store#_flushHistory:member(1)",
+              "canonicalReference": "@cmpd/store!Store#_flushHistory:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -3256,7 +3256,7 @@
             },
             {
               "kind": "Constructor",
-              "canonicalReference": "@tldraw/store!Store:constructor(1)",
+              "canonicalReference": "@cmpd/store!Store:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `Store` class\n */\n",
               "excerptTokens": [
                 {
@@ -3270,7 +3270,7 @@
                 {
                   "kind": "Reference",
                   "text": "SerializedStore",
-                  "canonicalReference": "@tldraw/store!SerializedStore:type"
+                  "canonicalReference": "@cmpd/store!SerializedStore:type"
                 },
                 {
                   "kind": "Content",
@@ -3279,7 +3279,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSchema",
-                  "canonicalReference": "@tldraw/store!StoreSchema:class"
+                  "canonicalReference": "@cmpd/store!StoreSchema:class"
                 },
                 {
                   "kind": "Content",
@@ -3306,7 +3306,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#allRecords:member",
+              "canonicalReference": "@cmpd/store!Store#allRecords:member",
               "docComment": "/**\n * Get an array of all values in the store.\n *\n * @returns An array of all values in the store.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3336,7 +3336,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!Store#applyDiff:member(1)",
+              "canonicalReference": "@cmpd/store!Store#applyDiff:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -3346,7 +3346,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordsDiff",
-                  "canonicalReference": "@tldraw/store!RecordsDiff:type"
+                  "canonicalReference": "@cmpd/store!RecordsDiff:type"
                 },
                 {
                   "kind": "Content",
@@ -3405,7 +3405,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#clear:member",
+              "canonicalReference": "@cmpd/store!Store#clear:member",
               "docComment": "/**\n * Removes all records from the store.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3435,7 +3435,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#createComputedCache:member",
+              "canonicalReference": "@cmpd/store!Store#createComputedCache:member",
               "docComment": "/**\n * Create a computed cache.\n *\n * @param name - The name of the derivation cache.\n *\n * @param derive - A function used to derive the value of the cache.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3449,7 +3449,7 @@
                 {
                   "kind": "Reference",
                   "text": "ComputedCache",
-                  "canonicalReference": "@tldraw/store!ComputedCache:type"
+                  "canonicalReference": "@cmpd/store!ComputedCache:type"
                 },
                 {
                   "kind": "Content",
@@ -3474,7 +3474,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#createSelectedComputedCache:member",
+              "canonicalReference": "@cmpd/store!Store#createSelectedComputedCache:member",
               "docComment": "/**\n * Create a computed cache from a selector\n *\n * @param name - The name of the derivation cache.\n *\n * @param selector - A function that returns a subset of the original shape\n *\n * @param derive - A function used to derive the value of the cache.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3488,7 +3488,7 @@
                 {
                   "kind": "Reference",
                   "text": "ComputedCache",
-                  "canonicalReference": "@tldraw/store!ComputedCache:type"
+                  "canonicalReference": "@cmpd/store!ComputedCache:type"
                 },
                 {
                   "kind": "Content",
@@ -3513,7 +3513,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!Store#extractingChanges:member(1)",
+              "canonicalReference": "@cmpd/store!Store#extractingChanges:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -3531,7 +3531,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordsDiff",
-                  "canonicalReference": "@tldraw/store!RecordsDiff:type"
+                  "canonicalReference": "@cmpd/store!RecordsDiff:type"
                 },
                 {
                   "kind": "Content",
@@ -3566,7 +3566,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!Store#filterChangesByScope:member(1)",
+              "canonicalReference": "@cmpd/store!Store#filterChangesByScope:member(1)",
               "docComment": "/**\n * Filters out non-document changes from a diff. Returns null if there are no changes left.\n *\n * @param change - the records diff\n *\n * @returns \n */\n",
               "excerptTokens": [
                 {
@@ -3576,7 +3576,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordsDiff",
-                  "canonicalReference": "@tldraw/store!RecordsDiff:type"
+                  "canonicalReference": "@cmpd/store!RecordsDiff:type"
                 },
                 {
                   "kind": "Content",
@@ -3589,7 +3589,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordScope",
-                  "canonicalReference": "@tldraw/store!~RecordScope:type"
+                  "canonicalReference": "@cmpd/store!~RecordScope:type"
                 },
                 {
                   "kind": "Content",
@@ -3602,7 +3602,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -3611,7 +3611,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -3620,7 +3620,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -3663,7 +3663,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#get:member",
+              "canonicalReference": "@cmpd/store!Store#get:member",
               "docComment": "/**\n * Get the value of a store record by its id.\n *\n * @param id - The id of the record to get.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3677,7 +3677,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -3686,7 +3686,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecFromId",
-                  "canonicalReference": "@tldraw/store!~RecFromId:type"
+                  "canonicalReference": "@cmpd/store!~RecFromId:type"
                 },
                 {
                   "kind": "Content",
@@ -3711,7 +3711,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#getRecordType:member",
+              "canonicalReference": "@cmpd/store!Store#getRecordType:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -3741,7 +3741,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!Store#getSnapshot:member(1)",
+              "canonicalReference": "@cmpd/store!Store#getSnapshot:member(1)",
               "docComment": "/**\n * Get a serialized snapshot of the store and its schema.\n * ```ts\n * const snapshot = store.getSnapshot()\n * store.loadSnapshot(snapshot)\n * ```\n *\n * @param scope - The scope of records to serialize. Defaults to 'document'.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3755,7 +3755,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordScope",
-                  "canonicalReference": "@tldraw/store!~RecordScope:type"
+                  "canonicalReference": "@cmpd/store!~RecordScope:type"
                 },
                 {
                   "kind": "Content",
@@ -3764,7 +3764,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSnapshot",
-                  "canonicalReference": "@tldraw/store!StoreSnapshot:type"
+                  "canonicalReference": "@cmpd/store!StoreSnapshot:type"
                 },
                 {
                   "kind": "Content",
@@ -3799,7 +3799,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#has:member",
+              "canonicalReference": "@cmpd/store!Store#has:member",
               "docComment": "/**\n * Get whether the record store has a id.\n *\n * @param id - The id of the record to check.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3813,7 +3813,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -3838,7 +3838,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#history:member",
+              "canonicalReference": "@cmpd/store!Store#history:member",
               "docComment": "/**\n * An atom containing the store's history.\n *\n * @public @readonly\n */\n",
               "excerptTokens": [
                 {
@@ -3848,7 +3848,7 @@
                 {
                   "kind": "Reference",
                   "text": "Atom",
-                  "canonicalReference": "@tldraw/state!Atom:interface"
+                  "canonicalReference": "@cmpd/state!Atom:interface"
                 },
                 {
                   "kind": "Content",
@@ -3857,7 +3857,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordsDiff",
-                  "canonicalReference": "@tldraw/store!RecordsDiff:type"
+                  "canonicalReference": "@cmpd/store!RecordsDiff:type"
                 },
                 {
                   "kind": "Content",
@@ -3882,7 +3882,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#id:member",
+              "canonicalReference": "@cmpd/store!Store#id:member",
               "docComment": "/**\n * The random id of the store.\n */\n",
               "excerptTokens": [
                 {
@@ -3912,7 +3912,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#listen:member",
+              "canonicalReference": "@cmpd/store!Store#listen:member",
               "docComment": "/**\n * Add a new listener to the store.\n *\n * @param onHistory - The listener to call when the store updates.\n *\n * @param filters - Filters to apply to the listener.\n *\n * @returns A function to remove the listener.\n */\n",
               "excerptTokens": [
                 {
@@ -3926,7 +3926,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreListener",
-                  "canonicalReference": "@tldraw/store!StoreListener:type"
+                  "canonicalReference": "@cmpd/store!StoreListener:type"
                 },
                 {
                   "kind": "Content",
@@ -3944,7 +3944,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreListenerFilters",
-                  "canonicalReference": "@tldraw/store!~StoreListenerFilters:type"
+                  "canonicalReference": "@cmpd/store!~StoreListenerFilters:type"
                 },
                 {
                   "kind": "Content",
@@ -3969,7 +3969,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!Store#loadSnapshot:member(1)",
+              "canonicalReference": "@cmpd/store!Store#loadSnapshot:member(1)",
               "docComment": "/**\n * Load a serialized snapshot.\n * ```ts\n * const snapshot = store.getSnapshot()\n * store.loadSnapshot(snapshot)\n * ```\n *\n * @param snapshot - The snapshot to load.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3979,7 +3979,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSnapshot",
-                  "canonicalReference": "@tldraw/store!StoreSnapshot:type"
+                  "canonicalReference": "@cmpd/store!StoreSnapshot:type"
                 },
                 {
                   "kind": "Content",
@@ -4022,7 +4022,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#mergeRemoteChanges:member",
+              "canonicalReference": "@cmpd/store!Store#mergeRemoteChanges:member",
               "docComment": "/**\n * Merge changes from a remote source without triggering listeners.\n *\n * @param fn - A function that merges the external changes.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -4052,7 +4052,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!Store#migrateSnapshot:member(1)",
+              "canonicalReference": "@cmpd/store!Store#migrateSnapshot:member(1)",
               "docComment": "/**\n * Migrate a serialized snapshot of the store and its schema.\n * ```ts\n * const snapshot = store.getSnapshot()\n * store.migrateSnapshot(snapshot)\n * ```\n *\n * @param snapshot - The snapshot to load.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -4062,7 +4062,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSnapshot",
-                  "canonicalReference": "@tldraw/store!StoreSnapshot:type"
+                  "canonicalReference": "@cmpd/store!StoreSnapshot:type"
                 },
                 {
                   "kind": "Content",
@@ -4075,7 +4075,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSnapshot",
-                  "canonicalReference": "@tldraw/store!StoreSnapshot:type"
+                  "canonicalReference": "@cmpd/store!StoreSnapshot:type"
                 },
                 {
                   "kind": "Content",
@@ -4110,7 +4110,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#onAfterChange:member",
+              "canonicalReference": "@cmpd/store!Store#onAfterChange:member",
               "docComment": "/**\n * A callback fired after each record's change.\n *\n * @param prev - The previous value, if any.\n *\n * @param next - The next value.\n */\n",
               "excerptTokens": [
                 {
@@ -4140,7 +4140,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#onAfterCreate:member",
+              "canonicalReference": "@cmpd/store!Store#onAfterCreate:member",
               "docComment": "/**\n * A callback fired after a record is created. Use this to perform related updates to other records in the store.\n *\n * @param record - The record to be created\n */\n",
               "excerptTokens": [
                 {
@@ -4170,7 +4170,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#onAfterDelete:member",
+              "canonicalReference": "@cmpd/store!Store#onAfterDelete:member",
               "docComment": "/**\n * A callback fired after a record is deleted.\n *\n * @param prev - The record that will be deleted.\n */\n",
               "excerptTokens": [
                 {
@@ -4200,7 +4200,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#onBeforeChange:member",
+              "canonicalReference": "@cmpd/store!Store#onBeforeChange:member",
               "docComment": "/**\n * A callback before after each record's change.\n *\n * @param prev - The previous value, if any.\n *\n * @param next - The next value.\n */\n",
               "excerptTokens": [
                 {
@@ -4230,7 +4230,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#onBeforeCreate:member",
+              "canonicalReference": "@cmpd/store!Store#onBeforeCreate:member",
               "docComment": "/**\n * A callback fired after each record's change.\n *\n * @param prev - The previous value, if any.\n *\n * @param next - The next value.\n */\n",
               "excerptTokens": [
                 {
@@ -4260,7 +4260,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#onBeforeDelete:member",
+              "canonicalReference": "@cmpd/store!Store#onBeforeDelete:member",
               "docComment": "/**\n * A callback fired before a record is deleted.\n *\n * @param prev - The record that will be deleted.\n */\n",
               "excerptTokens": [
                 {
@@ -4290,7 +4290,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#props:member",
+              "canonicalReference": "@cmpd/store!Store#props:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -4320,7 +4320,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#put:member",
+              "canonicalReference": "@cmpd/store!Store#put:member",
               "docComment": "/**\n * Add some records to the store. It's an error if they already exist.\n *\n * @param records - The records to add.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -4350,7 +4350,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#query:member",
+              "canonicalReference": "@cmpd/store!Store#query:member",
               "docComment": "/**\n * A StoreQueries instance for this store.\n *\n * @public @readonly\n */\n",
               "excerptTokens": [
                 {
@@ -4360,7 +4360,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreQueries",
-                  "canonicalReference": "@tldraw/store!~StoreQueries:class"
+                  "canonicalReference": "@cmpd/store!~StoreQueries:class"
                 },
                 {
                   "kind": "Content",
@@ -4385,7 +4385,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#remove:member",
+              "canonicalReference": "@cmpd/store!Store#remove:member",
               "docComment": "/**\n * Remove some records from the store via their ids.\n *\n * @param ids - The ids of the records to remove.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -4399,7 +4399,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -4424,7 +4424,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#schema:member",
+              "canonicalReference": "@cmpd/store!Store#schema:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -4434,7 +4434,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSchema",
-                  "canonicalReference": "@tldraw/store!StoreSchema:class"
+                  "canonicalReference": "@cmpd/store!StoreSchema:class"
                 },
                 {
                   "kind": "Content",
@@ -4459,7 +4459,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#scopedTypes:member",
+              "canonicalReference": "@cmpd/store!Store#scopedTypes:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -4473,7 +4473,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordScope",
-                  "canonicalReference": "@tldraw/store!~RecordScope:type"
+                  "canonicalReference": "@cmpd/store!~RecordScope:type"
                 },
                 {
                   "kind": "Content",
@@ -4507,7 +4507,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#serialize:member",
+              "canonicalReference": "@cmpd/store!Store#serialize:member",
               "docComment": "/**\n * Creates a JSON payload from the record store.\n *\n * @param scope - The scope of records to serialize. Defaults to 'document'.\n *\n * @returns The record store snapshot as a JSON payload.\n */\n",
               "excerptTokens": [
                 {
@@ -4521,7 +4521,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordScope",
-                  "canonicalReference": "@tldraw/store!~RecordScope:type"
+                  "canonicalReference": "@cmpd/store!~RecordScope:type"
                 },
                 {
                   "kind": "Content",
@@ -4530,7 +4530,7 @@
                 {
                   "kind": "Reference",
                   "text": "SerializedStore",
-                  "canonicalReference": "@tldraw/store!SerializedStore:type"
+                  "canonicalReference": "@cmpd/store!SerializedStore:type"
                 },
                 {
                   "kind": "Content",
@@ -4555,7 +4555,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#unsafeGetWithoutCapture:member",
+              "canonicalReference": "@cmpd/store!Store#unsafeGetWithoutCapture:member",
               "docComment": "/**\n * Get the value of a store record by its id without updating its epoch.\n *\n * @param id - The id of the record to get.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -4569,7 +4569,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -4578,7 +4578,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecFromId",
-                  "canonicalReference": "@tldraw/store!~RecFromId:type"
+                  "canonicalReference": "@cmpd/store!~RecFromId:type"
                 },
                 {
                   "kind": "Content",
@@ -4603,7 +4603,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!Store#update:member",
+              "canonicalReference": "@cmpd/store!Store#update:member",
               "docComment": "/**\n * Update a record. To update multiple records at once, use the `update` method of the `TypedStore` class.\n *\n * @param id - The id of the record to update.\n *\n * @param updater - A function that updates the record.\n */\n",
               "excerptTokens": [
                 {
@@ -4617,7 +4617,7 @@
                 {
                   "kind": "Reference",
                   "text": "IdOf",
-                  "canonicalReference": "@tldraw/store!IdOf:type"
+                  "canonicalReference": "@cmpd/store!IdOf:type"
                 },
                 {
                   "kind": "Content",
@@ -4626,7 +4626,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecFromId",
-                  "canonicalReference": "@tldraw/store!~RecFromId:type"
+                  "canonicalReference": "@cmpd/store!~RecFromId:type"
                 },
                 {
                   "kind": "Content",
@@ -4635,7 +4635,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecFromId",
-                  "canonicalReference": "@tldraw/store!~RecFromId:type"
+                  "canonicalReference": "@cmpd/store!~RecFromId:type"
                 },
                 {
                   "kind": "Content",
@@ -4660,7 +4660,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!Store#validate:member(1)",
+              "canonicalReference": "@cmpd/store!Store#validate:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -4711,7 +4711,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!StoreError:type",
+          "canonicalReference": "@cmpd/store!StoreError:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -4746,7 +4746,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!StoreListener:type",
+          "canonicalReference": "@cmpd/store!StoreListener:type",
           "docComment": "/**\n * A function that will be called when the history changes.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -4756,7 +4756,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -4769,7 +4769,7 @@
             {
               "kind": "Reference",
               "text": "HistoryEntry",
-              "canonicalReference": "@tldraw/store!HistoryEntry:type"
+              "canonicalReference": "@cmpd/store!HistoryEntry:type"
             },
             {
               "kind": "Content",
@@ -4803,7 +4803,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/store!StoreSchema:class",
+          "canonicalReference": "@cmpd/store!StoreSchema:class",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -4813,7 +4813,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -4860,7 +4860,7 @@
           "members": [
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!StoreSchema.create:member(1)",
+              "canonicalReference": "@cmpd/store!StoreSchema.create:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -4870,7 +4870,7 @@
                 {
                   "kind": "Reference",
                   "text": "UnknownRecord",
-                  "canonicalReference": "@tldraw/store!UnknownRecord:type"
+                  "canonicalReference": "@cmpd/store!UnknownRecord:type"
                 },
                 {
                   "kind": "Content",
@@ -4895,7 +4895,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSchemaOptions",
-                  "canonicalReference": "@tldraw/store!StoreSchemaOptions:type"
+                  "canonicalReference": "@cmpd/store!StoreSchemaOptions:type"
                 },
                 {
                   "kind": "Content",
@@ -4908,7 +4908,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSchema",
-                  "canonicalReference": "@tldraw/store!StoreSchema:class"
+                  "canonicalReference": "@cmpd/store!StoreSchema:class"
                 },
                 {
                   "kind": "Content",
@@ -4975,7 +4975,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!StoreSchema#currentStoreVersion:member",
+              "canonicalReference": "@cmpd/store!StoreSchema#currentStoreVersion:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -5005,7 +5005,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!StoreSchema#migratePersistedRecord:member(1)",
+              "canonicalReference": "@cmpd/store!StoreSchema#migratePersistedRecord:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -5023,7 +5023,7 @@
                 {
                   "kind": "Reference",
                   "text": "SerializedSchema",
-                  "canonicalReference": "@tldraw/store!SerializedSchema:interface"
+                  "canonicalReference": "@cmpd/store!SerializedSchema:interface"
                 },
                 {
                   "kind": "Content",
@@ -5040,7 +5040,7 @@
                 {
                   "kind": "Reference",
                   "text": "MigrationResult",
-                  "canonicalReference": "@tldraw/store!MigrationResult:type"
+                  "canonicalReference": "@cmpd/store!MigrationResult:type"
                 },
                 {
                   "kind": "Content",
@@ -5091,7 +5091,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!StoreSchema#migrateStoreSnapshot:member(1)",
+              "canonicalReference": "@cmpd/store!StoreSchema#migrateStoreSnapshot:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -5101,7 +5101,7 @@
                 {
                   "kind": "Reference",
                   "text": "StoreSnapshot",
-                  "canonicalReference": "@tldraw/store!StoreSnapshot:type"
+                  "canonicalReference": "@cmpd/store!StoreSnapshot:type"
                 },
                 {
                   "kind": "Content",
@@ -5114,7 +5114,7 @@
                 {
                   "kind": "Reference",
                   "text": "MigrationResult",
-                  "canonicalReference": "@tldraw/store!MigrationResult:type"
+                  "canonicalReference": "@cmpd/store!MigrationResult:type"
                 },
                 {
                   "kind": "Content",
@@ -5123,7 +5123,7 @@
                 {
                   "kind": "Reference",
                   "text": "SerializedStore",
-                  "canonicalReference": "@tldraw/store!SerializedStore:type"
+                  "canonicalReference": "@cmpd/store!SerializedStore:type"
                 },
                 {
                   "kind": "Content",
@@ -5158,7 +5158,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!StoreSchema#serialize:member(1)",
+              "canonicalReference": "@cmpd/store!StoreSchema#serialize:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -5168,7 +5168,7 @@
                 {
                   "kind": "Reference",
                   "text": "SerializedSchema",
-                  "canonicalReference": "@tldraw/store!SerializedSchema:interface"
+                  "canonicalReference": "@cmpd/store!SerializedSchema:interface"
                 },
                 {
                   "kind": "Content",
@@ -5190,7 +5190,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!StoreSchema#serializeEarliestVersion:member(1)",
+              "canonicalReference": "@cmpd/store!StoreSchema#serializeEarliestVersion:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -5200,7 +5200,7 @@
                 {
                   "kind": "Reference",
                   "text": "SerializedSchema",
-                  "canonicalReference": "@tldraw/store!SerializedSchema:interface"
+                  "canonicalReference": "@cmpd/store!SerializedSchema:interface"
                 },
                 {
                   "kind": "Content",
@@ -5222,7 +5222,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/store!StoreSchema#types:member",
+              "canonicalReference": "@cmpd/store!StoreSchema#types:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -5236,7 +5236,7 @@
                 {
                   "kind": "Reference",
                   "text": "RecordType",
-                  "canonicalReference": "@tldraw/store!RecordType:class"
+                  "canonicalReference": "@cmpd/store!RecordType:class"
                 },
                 {
                   "kind": "Content",
@@ -5261,7 +5261,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/store!StoreSchema#validateRecord:member(1)",
+              "canonicalReference": "@cmpd/store!StoreSchema#validateRecord:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -5271,7 +5271,7 @@
                 {
                   "kind": "Reference",
                   "text": "Store",
-                  "canonicalReference": "@tldraw/store!Store:class"
+                  "canonicalReference": "@cmpd/store!Store:class"
                 },
                 {
                   "kind": "Content",
@@ -5365,7 +5365,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!StoreSchemaOptions:type",
+          "canonicalReference": "@cmpd/store!StoreSchemaOptions:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -5375,7 +5375,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -5388,7 +5388,7 @@
             {
               "kind": "Reference",
               "text": "Migrations",
-              "canonicalReference": "@tldraw/store!Migrations:interface"
+              "canonicalReference": "@cmpd/store!Migrations:interface"
             },
             {
               "kind": "Content",
@@ -5397,7 +5397,7 @@
             {
               "kind": "Reference",
               "text": "Store",
-              "canonicalReference": "@tldraw/store!Store:class"
+              "canonicalReference": "@cmpd/store!Store:class"
             },
             {
               "kind": "Content",
@@ -5406,7 +5406,7 @@
             {
               "kind": "Reference",
               "text": "Store",
-              "canonicalReference": "@tldraw/store!Store:class"
+              "canonicalReference": "@cmpd/store!Store:class"
             },
             {
               "kind": "Content",
@@ -5451,7 +5451,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!StoreSnapshot:type",
+          "canonicalReference": "@cmpd/store!StoreSnapshot:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -5461,7 +5461,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -5474,7 +5474,7 @@
             {
               "kind": "Reference",
               "text": "SerializedStore",
-              "canonicalReference": "@tldraw/store!SerializedStore:type"
+              "canonicalReference": "@cmpd/store!SerializedStore:type"
             },
             {
               "kind": "Content",
@@ -5483,7 +5483,7 @@
             {
               "kind": "Reference",
               "text": "SerializedSchema",
-              "canonicalReference": "@tldraw/store!SerializedSchema:interface"
+              "canonicalReference": "@cmpd/store!SerializedSchema:interface"
             },
             {
               "kind": "Content",
@@ -5517,7 +5517,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!StoreValidator:type",
+          "canonicalReference": "@cmpd/store!StoreValidator:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -5527,7 +5527,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -5565,7 +5565,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!StoreValidators:type",
+          "canonicalReference": "@cmpd/store!StoreValidators:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -5575,7 +5575,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",
@@ -5588,7 +5588,7 @@
             {
               "kind": "Reference",
               "text": "StoreValidator",
-              "canonicalReference": "@tldraw/store!StoreValidator:type"
+              "canonicalReference": "@cmpd/store!StoreValidator:type"
             },
             {
               "kind": "Content",
@@ -5631,7 +5631,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/store!UnknownRecord:type",
+          "canonicalReference": "@cmpd/store!UnknownRecord:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -5641,7 +5641,7 @@
             {
               "kind": "Reference",
               "text": "BaseRecord",
-              "canonicalReference": "@tldraw/store!BaseRecord:interface"
+              "canonicalReference": "@cmpd/store!BaseRecord:interface"
             },
             {
               "kind": "Content",
@@ -5650,7 +5650,7 @@
             {
               "kind": "Reference",
               "text": "RecordId",
-              "canonicalReference": "@tldraw/store!RecordId:type"
+              "canonicalReference": "@cmpd/store!RecordId:type"
             },
             {
               "kind": "Content",
@@ -5659,7 +5659,7 @@
             {
               "kind": "Reference",
               "text": "UnknownRecord",
-              "canonicalReference": "@tldraw/store!UnknownRecord:type"
+              "canonicalReference": "@cmpd/store!UnknownRecord:type"
             },
             {
               "kind": "Content",

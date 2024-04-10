@@ -1,5 +1,5 @@
-import { Tldraw, useActions } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw, useActions } from '@cmpd/compound'
+import '@cmpd/compound/tldraw.css'
 import { useEffect } from 'react'
 ;(window as any).__tldraw_ui_event = { id: 'NOTHING_YET' }
 ;(window as any).__tldraw_editor_events = []

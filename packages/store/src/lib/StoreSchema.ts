@@ -1,4 +1,4 @@
-import { getOwnProperty, objectMapValues } from '@tldraw/utils'
+import { getOwnProperty, objectMapValues } from '@cmpd/utils'
 import { IdOf, UnknownRecord } from './BaseRecord'
 import { RecordType } from './RecordType'
 import { SerializedStore, Store, StoreSnapshot } from './Store'

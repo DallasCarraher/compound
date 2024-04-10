@@ -1,16 +1,15 @@
-import { getAssetUrlsByMetaUrl } from '@tldraw/assets/urls'
+import { getAssetUrlsByMetaUrl } from '@cmpd/assets/urls'
 import {
 	DefaultErrorFallback,
 	ErrorBoundary,
 	setDefaultEditorAssetUrls,
 	setDefaultUiAssetUrls,
-} from '@tldraw/tldraw'
+} from '@cmpd/compound'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Link, RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-import ExamplesTldrawLogo from './components/ExamplesTldrawLogo'
-import { ListLink } from './components/ListLink'
+import compound from './icons/compound.svg'
 
 import BasicExample from './BasicExample'
 import APIExample from './examples/APIExample'
@@ -210,14 +209,28 @@ export const allExamples: Example[] = [
 	},
 ]
 
+interface ListLinkProps {
+	title: string
+	route: string
+}
+
+function ListLink({ title, route }: ListLinkProps) {
+	return (
+		<li className="examples__list__item">
+			<Link to={route}>{title}</Link>
+		</li>
+	)
+}
+
 function App() {
 	return (
 		<div className="examples">
 			<div className="examples__header">
-				<ExamplesTldrawLogo />
-				<p>
-					See docs at <a href="https://tldraw.dev">tldraw.dev</a>
-				</p>
+				<h1>compound</h1>
+				<img src={compound} alt="logo" />
+				{/* <p>
+					See docs at <a href="https://compound.dev">compound.dev</a>
+				</p> */}
 			</div>
 			<ul className="examples__list">
 				{allExamples

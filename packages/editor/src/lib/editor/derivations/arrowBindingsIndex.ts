@@ -1,5 +1,5 @@
-import { Computed, RESET_VALUE, computed, isUninitialized } from '@tldraw/state'
-import { TLArrowShape, TLShape, TLShapeId } from '@tldraw/tlschema'
+import { Computed, RESET_VALUE, computed, isUninitialized } from '@cmpd/state'
+import { TLArrowShape, TLShape, TLShapeId } from '@cmpd/tlschema'
 import { Editor } from '../Editor'
 
 export type TLArrowBindingsIndex = Record<

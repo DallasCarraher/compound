@@ -1,5 +1,5 @@
-import type { RecordId, UnknownRecord } from '@tldraw/store'
-import { T } from '@tldraw/validate'
+import type { RecordId, UnknownRecord } from '@cmpd/store'
+import { T } from '@cmpd/validate'
 
 /** @internal */
 export function idValidator<Id extends RecordId<UnknownRecord>>(

@@ -1,5 +1,5 @@
-import { Tldraw, Vec2d, useContainer, useEditor } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw, Vec2d, useContainer, useEditor } from '@cmpd/compound'
+import '@cmpd/compound/tldraw.css'
 import { useEffect } from 'react'
 
 export default function FloatyExample() {

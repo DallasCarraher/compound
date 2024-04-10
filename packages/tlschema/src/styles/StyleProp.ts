@@ -1,4 +1,4 @@
-import { T } from '@tldraw/validate'
+import { T } from '@cmpd/validate'
 
 /**
  * A `StyleProp` is a property of a shape that follows some special rules.
@@ -34,8 +34,8 @@ export class StyleProp<Type> implements T.Validatable<Type> {
 	 *
 	 * @example
 	 * ```ts
-	 * import {T} from '@tldraw/validate'
-	 * import {StyleProp} from '@tldraw/tlschema'
+	 * import {T} from '@cmpd/validate'
+	 * import {StyleProp} from '@cmpd/tlschema'
 	 *
 	 * const MyLineWidthProp = StyleProp.define('myApp:lineWidth', {
 	 *   defaultValue: 1,
@@ -64,7 +64,7 @@ export class StyleProp<Type> implements T.Validatable<Type> {
 	 *
 	 * @example
 	 * ```ts
-	 * import {StyleProp} from '@tldraw/tlschema'
+	 * import {StyleProp} from '@cmpd/tlschema'
 	 *
 	 * const MySizeProp = StyleProp.defineEnum('myApp:size', {
 	 *   defaultValue: 'medium',

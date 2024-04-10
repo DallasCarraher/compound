@@ -1,4 +1,4 @@
-import { HistoryEntry, SerializedStore, Store, StoreSchema } from '@tldraw/store'
+import { HistoryEntry, SerializedStore, Store, StoreSchema } from '@cmpd/store'
 import {
 	SchemaShapeInfo,
 	TLRecord,
@@ -6,7 +6,7 @@ import {
 	TLStoreProps,
 	TLUnknownShape,
 	createTLSchema,
-} from '@tldraw/tlschema'
+} from '@cmpd/tlschema'
 import { TLShapeUtilConstructor } from '../editor/shapes/ShapeUtil'
 import { TLAnyShapeUtilConstructor, checkShapesAndAddCore } from './defaultShapes'
 

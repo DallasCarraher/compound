@@ -1,23 +1,19 @@
 {
-	"name": "@tldraw/tlschema",
-	"description": "A tiny little drawing app (schema).",
+	"name": "@cmpd/tlschema",
+	"description": "tbd",
 	"version": "2.0.0-alpha.19",
 	"packageManager": "yarn@3.5.0",
-	"author": {
-		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
-	},
-	"homepage": "https://tldraw.dev",
+	"homepage": "https://cmpd.space",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/DallasCarraher/compound"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/DallasCarraher/compound/issues"
 	},
 	"keywords": [
-		"tldraw",
+		"cmpd",
 		"drawing",
 		"app",
 		"development",
@@ -56,10 +52,10 @@
 		]
 	},
 	"dependencies": {
-		"@tldraw/state": "workspace:*",
-		"@tldraw/store": "workspace:*",
-		"@tldraw/utils": "workspace:*",
-		"@tldraw/validate": "workspace:*",
+		"@cmpd/state": "workspace:*",
+		"@cmpd/store": "workspace:*",
+		"@cmpd/utils": "workspace:*",
+		"@cmpd/validate": "workspace:*",
 		"nanoid": "4.0.2"
 	}
 }

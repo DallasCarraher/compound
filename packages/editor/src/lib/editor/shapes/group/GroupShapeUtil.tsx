@@ -1,4 +1,4 @@
-import { TLGroupShape, groupShapeMigrations, groupShapeProps } from '@tldraw/tlschema'
+import { TLGroupShape, groupShapeMigrations, groupShapeProps } from '@cmpd/tlschema'
 import { SVGContainer } from '../../../components/SVGContainer'
 import { Geometry2d } from '../../../primitives/geometry/Geometry2d'
 import { Group2d } from '../../../primitives/geometry/Group2d'

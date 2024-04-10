@@ -1,4 +1,4 @@
-import { Vec2dModel } from '@tldraw/tlschema'
+import { Vec2dModel } from '@cmpd/tlschema'
 import { Box2d } from '../../../primitives/Box2d'
 import { Vec2d } from '../../../primitives/Vec2d'
 import { TLResizeHandle } from '../../types/selection-types'

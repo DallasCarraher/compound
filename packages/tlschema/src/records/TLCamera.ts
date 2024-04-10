@@ -1,6 +1,6 @@
-import { BaseRecord, createRecordType, defineMigrations, RecordId } from '@tldraw/store'
-import { JsonObject } from '@tldraw/utils'
-import { T } from '@tldraw/validate'
+import { BaseRecord, createRecordType, defineMigrations, RecordId } from '@cmpd/store'
+import { JsonObject } from '@cmpd/utils'
+import { T } from '@cmpd/validate'
 import { idValidator } from '../misc/id-validator'
 
 /**

@@ -1,5 +1,5 @@
+import { Box2dModel, Editor } from '@cmpd/compound'
 import test, { Page, expect } from '@playwright/test'
-import { Box2dModel, Editor } from '@tldraw/tldraw'
 import { setupPage } from '../shared-e2e'
 
 export function sleep(ms: number) {

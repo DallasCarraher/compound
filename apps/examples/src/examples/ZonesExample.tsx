@@ -1,5 +1,5 @@
-import { OfflineIndicator, Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { OfflineIndicator, Tldraw } from '@cmpd/compound'
+import '@cmpd/compound/tldraw.css'
 
 export default function Example() {
 	return (

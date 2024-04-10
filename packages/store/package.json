@@ -1,20 +1,16 @@
 {
-	"name": "@tldraw/store",
-	"description": "A tiny little drawing app (store).",
+	"name": "@cmpd/store",
+	"description": "tbd",
 	"version": "2.0.0-alpha.19",
 	"packageManager": "yarn@3.5.0",
-	"author": {
-		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
-	},
-	"homepage": "https://tldraw.dev",
+	"homepage": "https://cmpd.space",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/DallasCarraher/compound"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/DallasCarraher/compound/issues"
 	},
 	"keywords": [
 		"tldraw",
@@ -41,8 +37,8 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@tldraw/state": "workspace:*",
-		"@tldraw/utils": "workspace:*",
+		"@cmpd/state": "workspace:*",
+		"@cmpd/utils": "workspace:*",
 		"lodash.isequal": "^4.5.0",
 		"nanoid": "4.0.2"
 	},

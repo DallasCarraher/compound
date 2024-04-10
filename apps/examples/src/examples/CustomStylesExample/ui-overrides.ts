@@ -1,4 +1,4 @@
-import { TLUiMenuGroup, TLUiOverrides, menuItem, toolbarItem } from '@tldraw/tldraw'
+import { TLUiMenuGroup, TLUiOverrides, menuItem, toolbarItem } from '@cmpd/compound'
 
 export const uiOverrides: TLUiOverrides = {
 	tools(editor, tools) {

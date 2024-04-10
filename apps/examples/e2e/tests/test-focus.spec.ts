@@ -1,5 +1,5 @@
+import { Editor } from '@cmpd/compound'
 import test, { expect } from '@playwright/test'
-import { Editor } from '@tldraw/tldraw'
 
 declare const EDITOR_A: Editor
 declare const EDITOR_B: Editor

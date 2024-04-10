@@ -1,5 +1,5 @@
-import { Tldraw, createTLStore, defaultShapeUtils, throttle } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw, createTLStore, defaultShapeUtils, throttle } from '@cmpd/compound'
+import '@cmpd/compound/tldraw.css'
 import { useLayoutEffect, useState } from 'react'
 
 const PERSISTENCE_KEY = 'example-3'

@@ -1,4 +1,4 @@
-import { TLArrowShape, TLArrowShapeTerminal, TLShape, TLShapeId } from '@tldraw/tlschema'
+import { TLArrowShape, TLArrowShapeTerminal, TLShape, TLShapeId } from '@cmpd/tlschema'
 import { Matrix2d } from '../../../../primitives/Matrix2d'
 import { Vec2d } from '../../../../primitives/Vec2d'
 import { Group2d } from '../../../../primitives/geometry/Group2d'

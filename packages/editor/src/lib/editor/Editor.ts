@@ -1,5 +1,5 @@
-import { EMPTY_ARRAY, atom, computed, transact } from '@tldraw/state'
-import { ComputedCache, RecordType } from '@tldraw/store'
+import { EMPTY_ARRAY, atom, computed, transact } from '@cmpd/state'
+import { ComputedCache, RecordType } from '@cmpd/store'
 import {
 	CameraRecordType,
 	InstancePageStateRecordType,
@@ -37,7 +37,7 @@ import {
 	isPageId,
 	isShape,
 	isShapeId,
-} from '@tldraw/tlschema'
+} from '@cmpd/tlschema'
 import {
 	JsonObject,
 	annotateError,
@@ -50,7 +50,7 @@ import {
 	sortById,
 	structuredClone,
 	warnDeprecatedGetter,
-} from '@tldraw/utils'
+} from '@cmpd/utils'
 import { EventEmitter } from 'eventemitter3'
 import { TLUser, createTLUser } from '../config/createTLUser'
 import { checkShapesAndAddCore } from '../config/defaultShapes'

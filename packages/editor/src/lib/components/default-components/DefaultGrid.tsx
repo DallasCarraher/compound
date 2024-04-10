@@ -1,4 +1,4 @@
-import { modulate } from '@tldraw/utils'
+import { modulate } from '@cmpd/utils'
 import { ComponentType } from 'react'
 import { GRID_STEPS } from '../../constants'
 

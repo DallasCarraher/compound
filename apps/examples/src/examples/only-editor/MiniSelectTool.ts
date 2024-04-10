@@ -4,7 +4,7 @@ import {
 	TLGroupShape,
 	TLUnknownShape,
 	createShapeId,
-} from '@tldraw/tldraw'
+} from '@cmpd/compound'
 
 /*
 This is a bigger example of a state node that implements a "select" tool.

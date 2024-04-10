@@ -1,5 +1,5 @@
+import { Editor } from '@cmpd/compound'
 import { PlaywrightTestArgs, PlaywrightWorkerArgs } from '@playwright/test'
-import { Editor } from '@tldraw/tldraw'
 
 export function sleep(ms: number) {
 	return new Promise((resolve) => setTimeout(resolve, ms))

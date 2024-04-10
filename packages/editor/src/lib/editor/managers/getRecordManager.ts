@@ -1,4 +1,4 @@
-import { Atom, computed } from '@tldraw/state'
+import { Atom, computed } from '@cmpd/state'
 
 export function getAtomManager<T extends { [key: string]: any }>(
 	atom: Atom<T>,

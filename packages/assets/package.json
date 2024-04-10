@@ -1,28 +1,23 @@
 {
-	"name": "@tldraw/assets",
-	"description": "A tiny little drawing app (assets).",
+	"name": "@cmpd/assets",
+	"description": "Assets for Compound.",
 	"version": "2.0.0-alpha.19",
-	"author": {
-		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
-	},
-	"homepage": "https://tldraw.dev",
+	"homepage": "https://cmpd.space",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/DallasCarraher/compound"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/DallasCarraher/compound/issues"
 	},
 	"keywords": [
-		"tldraw",
+		"cmpd",
 		"drawing",
 		"app",
 		"development",
 		"whiteboard",
-		"canvas",
-		"infinite"
+		"canvas"
 	],
 	"files": [
 		"embed-icons",
@@ -44,7 +39,7 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@tldraw/utils": "workspace:*"
+		"@cmpd/utils": "workspace:*"
 	},
 	"devDependencies": {
 		"lazyrepo": "0.0.0-alpha.27",

@@ -69,7 +69,7 @@ module.exports = {
 			files: ['*.ts', '*.tsx'],
 			rules: {
 				'@typescript-eslint/explicit-module-boundary-types': [0],
-				'no-console': ['error', { allow: ['warn', 'error'] }],
+				'no-console': ['warn', { allow: ['warn', 'error'] }],
 			},
 		},
 		{
@@ -91,7 +91,7 @@ module.exports = {
 			},
 		},
 		// {
-		// 	files: ['packages/tldraw/src/test/**/*'],
+		// 	files: ['packages/compound/src/test/**/*'],
 		// 	rules: {
 		// 		'import/no-internal-modules': 'off',
 		// 	},

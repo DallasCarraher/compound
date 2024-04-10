@@ -1,5 +1,5 @@
-import { computed } from '@tldraw/state'
-import { warnDeprecatedGetter } from '@tldraw/utils'
+import { computed } from '@cmpd/state'
+import { warnDeprecatedGetter } from '@cmpd/utils'
 import {
 	TLUserPreferences,
 	defaultUserPreferences,

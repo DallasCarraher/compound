@@ -1,6 +1,6 @@
-import { SerializedStore, Store, StoreSnapshot } from '@tldraw/store'
-import { TLRecord, TLStore } from '@tldraw/tlschema'
-import { Required, annotateError } from '@tldraw/utils'
+import { SerializedStore, Store, StoreSnapshot } from '@cmpd/store'
+import { TLRecord, TLStore } from '@cmpd/tlschema'
+import { Required, annotateError } from '@cmpd/utils'
 import React, {
 	memo,
 	useCallback,

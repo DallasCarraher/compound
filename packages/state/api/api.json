@@ -161,20 +161,20 @@
     }
   },
   "kind": "Package",
-  "canonicalReference": "@tldraw/state!",
+  "canonicalReference": "@cmpd/state!",
   "docComment": "",
-  "name": "@tldraw/state",
+  "name": "@cmpd/state",
   "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "@tldraw/state!",
+      "canonicalReference": "@cmpd/state!",
       "name": "",
       "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!atom:function(1)",
+          "canonicalReference": "@cmpd/state!atom:function(1)",
           "docComment": "/**\n * Creates a new [[Atom]].\n *\n * An Atom is a signal that can be updated directly by calling [[Atom.set]] or [[Atom.update]].\n *\n * @example\n * ```ts\n * const name = atom('name', 'John')\n *\n * name.get() // 'John'\n *\n * name.set('Jane')\n *\n * name.get() // 'Jane'\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -208,7 +208,7 @@
             {
               "kind": "Reference",
               "text": "AtomOptions",
-              "canonicalReference": "@tldraw/state!AtomOptions:interface"
+              "canonicalReference": "@cmpd/state!AtomOptions:interface"
             },
             {
               "kind": "Content",
@@ -221,7 +221,7 @@
             {
               "kind": "Reference",
               "text": "Atom",
-              "canonicalReference": "@tldraw/state!Atom:interface"
+              "canonicalReference": "@cmpd/state!Atom:interface"
             },
             {
               "kind": "Content",
@@ -293,7 +293,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/state!Atom:interface",
+          "canonicalReference": "@cmpd/state!Atom:interface",
           "docComment": "/**\n * An Atom is a signal that can be updated directly by calling [[Atom.set]] or [[Atom.update]].\n *\n * Atoms are created using the [[atom]] function.\n *\n * @example\n * ```ts\n * const name = atom('name', 'John')\n *\n * print(name.get()) // 'John'\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -311,7 +311,7 @@
             {
               "kind": "Reference",
               "text": "Signal",
-              "canonicalReference": "@tldraw/state!Signal:interface"
+              "canonicalReference": "@cmpd/state!Signal:interface"
             },
             {
               "kind": "Content",
@@ -353,7 +353,7 @@
           "members": [
             {
               "kind": "MethodSignature",
-              "canonicalReference": "@tldraw/state!Atom#set:member(1)",
+              "canonicalReference": "@cmpd/state!Atom#set:member(1)",
               "docComment": "/**\n * Sets the value of this atom to the given value. If the value is the same as the current value, this is a no-op.\n *\n * @param value - The new value to set.\n *\n * @param diff - The diff to use for the update. If not provided, the diff will be computed using [[AtomOptions.computeDiff]].\n */\n",
               "excerptTokens": [
                 {
@@ -414,7 +414,7 @@
             },
             {
               "kind": "MethodSignature",
-              "canonicalReference": "@tldraw/state!Atom#update:member(1)",
+              "canonicalReference": "@cmpd/state!Atom#update:member(1)",
               "docComment": "/**\n * Updates the value of this atom using the given updater function. If the returned value is the same as the current value, this is a no-op.\n *\n * @param updater - A function that takes the current value and returns the new value.\n */\n",
               "excerptTokens": [
                 {
@@ -467,7 +467,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/state!AtomOptions:interface",
+          "canonicalReference": "@cmpd/state!AtomOptions:interface",
           "docComment": "/**\n * The options to configure an atom, passed into the [[atom]] function.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -506,7 +506,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!AtomOptions#computeDiff:member",
+              "canonicalReference": "@cmpd/state!AtomOptions#computeDiff:member",
               "docComment": "/**\n * A method used to compute a diff between the atom's old and new values. If provided, it will not be used unless you also specify [[AtomOptions.historyLength]].\n */\n",
               "excerptTokens": [
                 {
@@ -516,7 +516,7 @@
                 {
                   "kind": "Reference",
                   "text": "ComputeDiff",
-                  "canonicalReference": "@tldraw/state!~ComputeDiff:type"
+                  "canonicalReference": "@cmpd/state!~ComputeDiff:type"
                 },
                 {
                   "kind": "Content",
@@ -538,7 +538,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!AtomOptions#historyLength:member",
+              "canonicalReference": "@cmpd/state!AtomOptions#historyLength:member",
               "docComment": "/**\n * The maximum number of diffs to keep in the history buffer.\n *\n * If you don't need to compute diffs, or if you will supply diffs manually via [[Atom.set]], you can leave this as `undefined` and no history buffer will be created.\n *\n * If you expect the value to be part of an active effect subscription all the time, and to not change multiple times inside of a single transaction, you can set this to a relatively low number (e.g. 10).\n *\n * Otherwise, set this to a higher number based on your usage pattern and memory constraints.\n */\n",
               "excerptTokens": [
                 {
@@ -565,7 +565,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!AtomOptions#isEqual:member",
+              "canonicalReference": "@cmpd/state!AtomOptions#isEqual:member",
               "docComment": "/**\n * If provided, this will be used to compare the old and new values of the atom to determine if the value has changed. By default, values are compared using first using strict equality (`===`), then `Object.is`, and finally any `.equals` method present in the object's prototype chain.\n *\n * @param a - The old value\n *\n * @param b - The new value\n *\n * @returns \n */\n",
               "excerptTokens": [
                 {
@@ -595,7 +595,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!computed:function(1)",
+          "canonicalReference": "@cmpd/state!computed:function(1)",
           "docComment": "/**\n * Creates a computed signal.\n *\n * @param name - The name of the signal.\n *\n * @param compute - The function that computes the value of the signal.\n *\n * @param options - Options for the signal.\n *\n * @example\n * ```ts\n * const name = atom('name', 'John')\n * const greeting = computed('greeting', () => `Hello ${name.get()}!`)\n * console.log(greeting.get()) // 'Hello John!'\n * ```\n *\n * `computed` may also be used as a decorator for creating computed getter methods.\n *\n * @example\n * ```ts\n * class Counter {\n *   max = 100\n *   count = atom<number>(0)\n *\n *   @computed getRemaining() {\n *     return this.max - this.count.get()\n *   }\n * }\n * ```\n *\n * You may optionally pass in a [[ComputedOptions]] when used as a decorator:\n *\n * @example\n * ```ts\n * class Counter {\n *   max = 100\n *   count = atom<number>(0)\n *\n *   @computed({isEqual: (a, b) => a === b})\n *   getRemaining() {\n *     return this.max - this.count.get()\n *   }\n * }\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -625,7 +625,7 @@
             {
               "kind": "Reference",
               "text": "UNINITIALIZED",
-              "canonicalReference": "@tldraw/state!~UNINITIALIZED:var"
+              "canonicalReference": "@cmpd/state!~UNINITIALIZED:var"
             },
             {
               "kind": "Content",
@@ -634,7 +634,7 @@
             {
               "kind": "Reference",
               "text": "WithDiff",
-              "canonicalReference": "@tldraw/state!~WithDiff:class"
+              "canonicalReference": "@cmpd/state!~WithDiff:class"
             },
             {
               "kind": "Content",
@@ -647,7 +647,7 @@
             {
               "kind": "Reference",
               "text": "ComputedOptions",
-              "canonicalReference": "@tldraw/state!ComputedOptions:interface"
+              "canonicalReference": "@cmpd/state!ComputedOptions:interface"
             },
             {
               "kind": "Content",
@@ -660,7 +660,7 @@
             {
               "kind": "Reference",
               "text": "Computed",
-              "canonicalReference": "@tldraw/state!Computed:interface"
+              "canonicalReference": "@cmpd/state!Computed:interface"
             },
             {
               "kind": "Content",
@@ -732,7 +732,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!computed:function(2)",
+          "canonicalReference": "@cmpd/state!computed:function(2)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -811,7 +811,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!computed:function(3)",
+          "canonicalReference": "@cmpd/state!computed:function(3)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -829,7 +829,7 @@
             {
               "kind": "Reference",
               "text": "ComputedOptions",
-              "canonicalReference": "@tldraw/state!ComputedOptions:interface"
+              "canonicalReference": "@cmpd/state!ComputedOptions:interface"
             },
             {
               "kind": "Content",
@@ -907,7 +907,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/state!Computed:interface",
+          "canonicalReference": "@cmpd/state!Computed:interface",
           "docComment": "/**\n * A computed signal created via [[computed]].\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -925,7 +925,7 @@
             {
               "kind": "Reference",
               "text": "Signal",
-              "canonicalReference": "@tldraw/state!Signal:interface"
+              "canonicalReference": "@cmpd/state!Signal:interface"
             },
             {
               "kind": "Content",
@@ -967,7 +967,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!Computed#isActivelyListening:member",
+              "canonicalReference": "@cmpd/state!Computed#isActivelyListening:member",
               "docComment": "/**\n * Whether this computed child is involved in an actively-running effect graph.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1002,7 +1002,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/state!ComputedOptions:interface",
+          "canonicalReference": "@cmpd/state!ComputedOptions:interface",
           "docComment": "/**\n * Options for creating computed signals. Used when calling [[computed]].\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1041,7 +1041,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!ComputedOptions#computeDiff:member",
+              "canonicalReference": "@cmpd/state!ComputedOptions#computeDiff:member",
               "docComment": "/**\n * A method used to compute a diff between the atom's old and new values. If provided, it will not be used unless you also specify [[AtomOptions.historyLength]].\n */\n",
               "excerptTokens": [
                 {
@@ -1051,7 +1051,7 @@
                 {
                   "kind": "Reference",
                   "text": "ComputeDiff",
-                  "canonicalReference": "@tldraw/state!~ComputeDiff:type"
+                  "canonicalReference": "@cmpd/state!~ComputeDiff:type"
                 },
                 {
                   "kind": "Content",
@@ -1073,7 +1073,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!ComputedOptions#historyLength:member",
+              "canonicalReference": "@cmpd/state!ComputedOptions#historyLength:member",
               "docComment": "/**\n * The maximum number of diffs to keep in the history buffer.\n *\n * If you don't need to compute diffs, or if you will supply diffs manually via [[Atom.set]], you can leave this as `undefined` and no history buffer will be created.\n *\n * If you expect the value to be part of an active effect subscription all the time, and to not change multiple times inside of a single transaction, you can set this to a relatively low number (e.g. 10).\n *\n * Otherwise, set this to a higher number based on your usage pattern and memory constraints.\n */\n",
               "excerptTokens": [
                 {
@@ -1100,7 +1100,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!ComputedOptions#isEqual:member",
+              "canonicalReference": "@cmpd/state!ComputedOptions#isEqual:member",
               "docComment": "/**\n * If provided, this will be used to compare the old and new values of the atom to determine if the value has changed. By default, values are compared using first using strict equality (`===`), then `Object.is`, and finally any `.equals` method present in the object's prototype chain.\n *\n * @param a - The old value\n *\n * @param b - The new value\n *\n * @returns \n */\n",
               "excerptTokens": [
                 {
@@ -1130,7 +1130,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/state!EffectScheduler:class",
+          "canonicalReference": "@cmpd/state!EffectScheduler:class",
           "docComment": "/**\n * An EffectScheduler is responsible for executing side effects in response to changes in state.\n *\n * You probably don't need to use this directly unless you're integrating this library with a framework of some kind.\n *\n * Instead, use the [[react]] and [[reactor]] functions.\n *\n * @example\n * ```ts\n * const render = new EffectScheduler('render', drawToCanvas)\n *\n * render.attach()\n * render.execute()\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1159,7 +1159,7 @@
           "members": [
             {
               "kind": "Constructor",
-              "canonicalReference": "@tldraw/state!EffectScheduler:constructor(1)",
+              "canonicalReference": "@cmpd/state!EffectScheduler:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `EffectScheduler` class\n */\n",
               "excerptTokens": [
                 {
@@ -1185,7 +1185,7 @@
                 {
                   "kind": "Reference",
                   "text": "EffectSchedulerOptions",
-                  "canonicalReference": "@tldraw/state!~EffectSchedulerOptions:interface"
+                  "canonicalReference": "@cmpd/state!~EffectSchedulerOptions:interface"
                 },
                 {
                   "kind": "Content",
@@ -1224,7 +1224,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/state!EffectScheduler#attach:member(1)",
+              "canonicalReference": "@cmpd/state!EffectScheduler#attach:member(1)",
               "docComment": "/**\n * Makes this scheduler become 'actively listening' to its parents. If it has been executed before it will immediately become eligible to receive 'maybeScheduleEffect' calls. If it has not executed before it will need to be manually executed once to become eligible for scheduling, i.e. by calling [[EffectScheduler.execute]].\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1255,7 +1255,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/state!EffectScheduler#detach:member(1)",
+              "canonicalReference": "@cmpd/state!EffectScheduler#detach:member(1)",
               "docComment": "/**\n * Makes this scheduler stop 'actively listening' to its parents. It will no longer be eligible to receive 'maybeScheduleEffect' calls until [[EffectScheduler.attach]] is called again.\n */\n",
               "excerptTokens": [
                 {
@@ -1286,7 +1286,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/state!EffectScheduler#execute:member(1)",
+              "canonicalReference": "@cmpd/state!EffectScheduler#execute:member(1)",
               "docComment": "/**\n * Executes the effect immediately and returns the result.\n *\n * @returns The result of the effect.\n */\n",
               "excerptTokens": [
                 {
@@ -1317,7 +1317,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/state!EffectScheduler#isActivelyListening:member",
+              "canonicalReference": "@cmpd/state!EffectScheduler#isActivelyListening:member",
               "docComment": "/**\n * Whether this scheduler is attached and actively listening to its parents.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1347,7 +1347,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/state!EffectScheduler#name:member",
+              "canonicalReference": "@cmpd/state!EffectScheduler#name:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1377,7 +1377,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/state!EffectScheduler#scheduleCount:member",
+              "canonicalReference": "@cmpd/state!EffectScheduler#scheduleCount:member",
               "docComment": "/**\n * The number of times this effect has been scheduled.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1410,7 +1410,7 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@tldraw/state!EMPTY_ARRAY:var",
+          "canonicalReference": "@cmpd/state!EMPTY_ARRAY:var",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1433,7 +1433,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!getComputedInstance:function(1)",
+          "canonicalReference": "@cmpd/state!getComputedInstance:function(1)",
           "docComment": "/**\n * Retrieves the underlying computed instance for a given property created with the [[computed]] decorator.\n *\n * @param obj - The object\n *\n * @param propertyName - The property name\n *\n * @example\n * ```ts\n * class Counter {\n *   max = 100\n *   count = atom(0)\n *\n *   @computed getRemaining() {\n *     return this.max - this.count.get()\n *   }\n * }\n *\n * const c = new Counter()\n * const remaining = getComputedInstance(c, 'getRemaining')\n * remaining.get() === 100 // true\n * c.count.set(13)\n * remaining.get() === 87 // true\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1475,7 +1475,7 @@
             {
               "kind": "Reference",
               "text": "Computed",
-              "canonicalReference": "@tldraw/state!Computed:interface"
+              "canonicalReference": "@cmpd/state!Computed:interface"
             },
             {
               "kind": "Content",
@@ -1539,7 +1539,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!isAtom:function(1)",
+          "canonicalReference": "@cmpd/state!isAtom:function(1)",
           "docComment": "/**\n * Returns true if the given value is an [[Atom]].\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1557,7 +1557,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/state!~value"
+              "canonicalReference": "@cmpd/state!~value"
             },
             {
               "kind": "Content",
@@ -1566,7 +1566,7 @@
             {
               "kind": "Reference",
               "text": "Atom",
-              "canonicalReference": "@tldraw/state!Atom:interface"
+              "canonicalReference": "@cmpd/state!Atom:interface"
             },
             {
               "kind": "Content",
@@ -1598,7 +1598,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!isSignal:function(1)",
+          "canonicalReference": "@cmpd/state!isSignal:function(1)",
           "docComment": "/**\n * Returns true if the given value is a signal (either an Atom or a Computed).\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1616,7 +1616,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/state!~value"
+              "canonicalReference": "@cmpd/state!~value"
             },
             {
               "kind": "Content",
@@ -1625,7 +1625,7 @@
             {
               "kind": "Reference",
               "text": "Signal",
-              "canonicalReference": "@tldraw/state!Signal:interface"
+              "canonicalReference": "@cmpd/state!Signal:interface"
             },
             {
               "kind": "Content",
@@ -1657,7 +1657,7 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@tldraw/state!isUninitialized:var",
+          "canonicalReference": "@cmpd/state!isUninitialized:var",
           "docComment": "/**\n * Call this inside a computed signal function to determine whether it is the first time the function is being called.\n *\n * Mainly useful for incremental signal computation.\n *\n * @param value - The value to check.\n *\n * @example\n * ```ts\n * const count = atom('count', 0)\n * const double = computed('double', (prevValue) => {\n *   if (isUninitialized(prevValue)) {\n *     print('First time!')\n *   }\n *   return count.get() * 2\n * })\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1671,7 +1671,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/state!~value"
+              "canonicalReference": "@cmpd/state!~value"
             },
             {
               "kind": "Content",
@@ -1680,7 +1680,7 @@
             {
               "kind": "Reference",
               "text": "UNINITIALIZED",
-              "canonicalReference": "@tldraw/state!~UNINITIALIZED:var"
+              "canonicalReference": "@cmpd/state!~UNINITIALIZED:var"
             }
           ],
           "fileUrlPath": "packages/state/src/lib/core/Computed.ts",
@@ -1694,7 +1694,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!react:function(1)",
+          "canonicalReference": "@cmpd/state!react:function(1)",
           "docComment": "/**\n * Starts a new effect scheduler, scheduling the effect immediately.\n *\n * Returns a function that can be called to stop the scheduler.\n *\n * @example\n * ```ts\n * const color = atom('color', 'red')\n * const stop = react('set style', () => {\n *   divElem.style.color = color.get()\n * })\n * color.set('blue')\n * // divElem.style.color === 'blue'\n * stop()\n * color.set('green')\n * // divElem.style.color === 'blue'\n * ```\n *\n * Also useful in React applications for running effects outside of the render cycle.\n *\n * @example\n * ```ts\n * useEffect(() => react('set style', () => {\n *   divRef.current.style.color = color.get()\n * }), [])\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1720,7 +1720,7 @@
             {
               "kind": "Reference",
               "text": "EffectSchedulerOptions",
-              "canonicalReference": "@tldraw/state!~EffectSchedulerOptions:interface"
+              "canonicalReference": "@cmpd/state!~EffectSchedulerOptions:interface"
             },
             {
               "kind": "Content",
@@ -1772,7 +1772,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!reactor:function(1)",
+          "canonicalReference": "@cmpd/state!reactor:function(1)",
           "docComment": "/**\n * Creates a [[Reactor]], which is a thin wrapper around an [[EffectScheduler]].\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1798,7 +1798,7 @@
             {
               "kind": "Reference",
               "text": "EffectSchedulerOptions",
-              "canonicalReference": "@tldraw/state!~EffectSchedulerOptions:interface"
+              "canonicalReference": "@cmpd/state!~EffectSchedulerOptions:interface"
             },
             {
               "kind": "Content",
@@ -1807,7 +1807,7 @@
             {
               "kind": "Reference",
               "text": "Reactor",
-              "canonicalReference": "@tldraw/state!Reactor:interface"
+              "canonicalReference": "@cmpd/state!Reactor:interface"
             },
             {
               "kind": "Content",
@@ -1868,7 +1868,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/state!Reactor:interface",
+          "canonicalReference": "@cmpd/state!Reactor:interface",
           "docComment": "/**\n * The reactor is a user-friendly interface for starting and stopping an [[EffectScheduler]].\n *\n * Calling .start() will attach the scheduler and execute the effect immediately the first time it is called.\n *\n * If the reactor is stopped, calling `.start()` will re-attach the scheduler but will only execute the effect if any of its parents have changed since it was stopped.\n *\n * You can create a reactor with [[reactor]].\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1904,7 +1904,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!Reactor#scheduler:member",
+              "canonicalReference": "@cmpd/state!Reactor#scheduler:member",
               "docComment": "/**\n * The underlying effect scheduler.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1914,7 +1914,7 @@
                 {
                   "kind": "Reference",
                   "text": "EffectScheduler",
-                  "canonicalReference": "@tldraw/state!EffectScheduler:class"
+                  "canonicalReference": "@cmpd/state!EffectScheduler:class"
                 },
                 {
                   "kind": "Content",
@@ -1936,7 +1936,7 @@
             },
             {
               "kind": "MethodSignature",
-              "canonicalReference": "@tldraw/state!Reactor#start:member(1)",
+              "canonicalReference": "@cmpd/state!Reactor#start:member(1)",
               "docComment": "/**\n * Start the scheduler. The first time this is called the effect will be scheduled immediately.\n *\n * If the reactor is stopped, calling this will start the scheduler again but will only execute the effect if any of its parents have changed since it was stopped.\n *\n * If you need to force re-execution of the effect, pass `{ force: true }`.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1981,7 +1981,7 @@
             },
             {
               "kind": "MethodSignature",
-              "canonicalReference": "@tldraw/state!Reactor#stop:member(1)",
+              "canonicalReference": "@cmpd/state!Reactor#stop:member(1)",
               "docComment": "/**\n * Stop the scheduler.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2012,7 +2012,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/state!RESET_VALUE:type",
+          "canonicalReference": "@cmpd/state!RESET_VALUE:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2026,7 +2026,7 @@
             {
               "kind": "Reference",
               "text": "RESET_VALUE",
-              "canonicalReference": "@tldraw/state!RESET_VALUE:var"
+              "canonicalReference": "@cmpd/state!RESET_VALUE:var"
             },
             {
               "kind": "Content",
@@ -2043,7 +2043,7 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@tldraw/state!RESET_VALUE:var",
+          "canonicalReference": "@cmpd/state!RESET_VALUE:var",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2066,7 +2066,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@tldraw/state!Signal:interface",
+          "canonicalReference": "@cmpd/state!Signal:interface",
           "docComment": "/**\n * A Signal is a reactive value container. The value may change over time, and it may keep track of the diffs between sequential values.\n *\n * There are two types of signal:\n *\n * - Atomic signals, created using [[atom]]. These are mutable references to values that can be changed using [[Atom.set]]. - Computed signals, created using [[computed]]. These are values that are computed from other signals. They are recomputed lazily if their dependencies change.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2113,7 +2113,7 @@
           "members": [
             {
               "kind": "MethodSignature",
-              "canonicalReference": "@tldraw/state!Signal#__unsafe__getWithoutCapture:member(1)",
+              "canonicalReference": "@cmpd/state!Signal#__unsafe__getWithoutCapture:member(1)",
               "docComment": "/**\n * Returns the current value of the signal without capturing it as a dependency. Use this if you need to retrieve the signal's value in a hot loop where the performance overhead of dependency tracking is too high.\n */\n",
               "excerptTokens": [
                 {
@@ -2141,7 +2141,7 @@
             },
             {
               "kind": "MethodSignature",
-              "canonicalReference": "@tldraw/state!Signal#get:member(1)",
+              "canonicalReference": "@cmpd/state!Signal#get:member(1)",
               "docComment": "/**\n * The current value of the signal. This is a reactive value, and will update when the signal changes. Any computed signal that depends on this signal will be lazily recomputed if this signal changes. Any effect that depends on this signal will be rescheduled if this signal changes.\n */\n",
               "excerptTokens": [
                 {
@@ -2169,7 +2169,7 @@
             },
             {
               "kind": "MethodSignature",
-              "canonicalReference": "@tldraw/state!Signal#getDiffSince:member(1)",
+              "canonicalReference": "@cmpd/state!Signal#getDiffSince:member(1)",
               "docComment": "/**\n * Returns the sequence of diffs between the the value at the given epoch and the current value. Returns the [[RESET_VALUE]] constant if there is not enough information to compute the diff sequence.\n *\n * @param epoch - The epoch to get diffs since.\n */\n",
               "excerptTokens": [
                 {
@@ -2191,7 +2191,7 @@
                 {
                   "kind": "Reference",
                   "text": "RESET_VALUE",
-                  "canonicalReference": "@tldraw/state!RESET_VALUE:type"
+                  "canonicalReference": "@cmpd/state!RESET_VALUE:type"
                 },
                 {
                   "kind": "Content",
@@ -2219,7 +2219,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!Signal#lastChangedEpoch:member",
+              "canonicalReference": "@cmpd/state!Signal#lastChangedEpoch:member",
               "docComment": "/**\n * The epoch when this signal's value last changed. Note tha this is not the same as when the value was last computed. A signal may recopmute it's value without changing it.\n */\n",
               "excerptTokens": [
                 {
@@ -2246,7 +2246,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!Signal#name:member",
+              "canonicalReference": "@cmpd/state!Signal#name:member",
               "docComment": "/**\n * The name of the signal. This is used at runtime for debugging and perf profiling only. It does not need to be globally unique.\n */\n",
               "excerptTokens": [
                 {
@@ -2273,7 +2273,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@tldraw/state!Signal#value:member",
+              "canonicalReference": "@cmpd/state!Signal#value:member",
               "docComment": "/**\n * @deprecated\n *\n * Use [[Signal.get]] instead.\n */\n",
               "excerptTokens": [
                 {
@@ -2303,7 +2303,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!track:function(1)",
+          "canonicalReference": "@cmpd/state!track:function(1)",
           "docComment": "/**\n * Returns a tracked version of the given component. Any signals whose values are read while the component renders will be tracked. If any of the tracked signals change later it will cause the component to re-render.\n *\n * This also wraps the component in a React.memo() call, so it will only re-render if the props change.\n *\n * @param baseComponent - The base component to track.\n *\n * @example\n * ```ts\n * const Counter = track(function Counter(props: CounterProps) {\n *   const count = useAtom('count', 0)\n *   const increment = useCallback(() => count.set(count.get() + 1), [count])\n *   return <button onClick={increment}>{count.get()}</button>\n * })\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2392,7 +2392,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!transact:function(1)",
+          "canonicalReference": "@cmpd/state!transact:function(1)",
           "docComment": "/**\n * Like [transaction](#transaction), but does not create a new transaction if there is already one in progress.\n *\n * @param fn - The function to run in a transaction.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2450,7 +2450,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!transaction:function(1)",
+          "canonicalReference": "@cmpd/state!transaction:function(1)",
           "docComment": "/**\n * Batches state updates, deferring side effects until after the transaction completes.\n *\n * @param fn - The function to run in a transaction, called with a function to roll back the change.\n *\n * @example\n * ```ts\n * const firstName = atom('John')\n * const lastName = atom('Doe')\n *\n * react('greet', () => {\n *   print(`Hello, ${firstName.get()} ${lastName.get()}!`)\n * })\n *\n * // Logs \"Hello, John Doe!\"\n *\n * transaction(() => {\n *  firstName.set('Jane')\n *  lastName.set('Smith')\n * })\n *\n * // Logs \"Hello, Jane Smith!\"\n * ```\n *\n * If the function throws, the transaction is aborted and any signals that were updated during the transaction revert to their state before the transaction began.\n *\n * @example\n * ```ts\n * const firstName = atom('John')\n * const lastName = atom('Doe')\n *\n * react('greet', () => {\n *   print(`Hello, ${firstName.get()} ${lastName.get()}!`)\n * })\n *\n * // Logs \"Hello, John Doe!\"\n *\n * transaction(() => {\n *  firstName.set('Jane')\n *  throw new Error('oops')\n * })\n *\n * // Does not log\n * // firstName.get() === 'John'\n * ```\n *\n * A `rollback` callback is passed into the function. Calling this will prevent the transaction from committing and will revert any signals that were updated during the transaction to their state before the transaction began.\n *\n * *\n *\n * @example\n * ```ts\n * const firstName = atom('John')\n * const lastName = atom('Doe')\n *\n * react('greet', () => {\n *   print(`Hello, ${firstName.get()} ${lastName.get()}!`)\n * })\n *\n * // Logs \"Hello, John Doe!\"\n *\n * transaction((rollback) => {\n *  firstName.set('Jane')\n *  lastName.set('Smith')\n *  rollback()\n * })\n *\n * // Does not log\n * // firstName.get() === 'John'\n * // lastName.get() === 'Doe'\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2508,7 +2508,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!unsafe__withoutCapture:function(1)",
+          "canonicalReference": "@cmpd/state!unsafe__withoutCapture:function(1)",
           "docComment": "/**\n * Executes the given function without capturing any parents in the current capture context.\n *\n * This is mainly useful if you want to run an effect only when certain signals change while also dereferencing other signals which should not cause the effect to rerun on their own.\n *\n * @example\n * ```ts\n * const name = atom('name', 'Sam')\n * const time = atom('time', () => new Date().getTime())\n *\n * setInterval(() => {\n *   time.set(new Date().getTime())\n * })\n *\n * react('log name changes', () => {\n * \t print(name.get(), 'was changed at', unsafe__withoutCapture(() => time.get()))\n * })\n *\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2566,7 +2566,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!useAtom:function(1)",
+          "canonicalReference": "@cmpd/state!useAtom:function(1)",
           "docComment": "/**\n * Creates a new atom and returns it. The atom will be created only once.\n *\n * See [[atom]]\n *\n * @example\n * ```ts\n * const Counter = track(function Counter () {\n *   const count = useAtom('count', 0)\n *   const increment = useCallback(() => count.set(count.get() + 1), [count])\n *   return <button onClick={increment}>{count.get()}</button>\n * })\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2600,7 +2600,7 @@
             {
               "kind": "Reference",
               "text": "AtomOptions",
-              "canonicalReference": "@tldraw/state!AtomOptions:interface"
+              "canonicalReference": "@cmpd/state!AtomOptions:interface"
             },
             {
               "kind": "Content",
@@ -2613,7 +2613,7 @@
             {
               "kind": "Reference",
               "text": "Atom",
-              "canonicalReference": "@tldraw/state!Atom:interface"
+              "canonicalReference": "@cmpd/state!Atom:interface"
             },
             {
               "kind": "Content",
@@ -2685,7 +2685,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!useComputed:function(1)",
+          "canonicalReference": "@cmpd/state!useComputed:function(1)",
           "docComment": "/**\n * Creates a new computed signal and returns it. The computed signal will be created only once.\n *\n * See [[computed]]\n *\n * @example\n * ```ts\n * type GreeterProps = {\n *   firstName: Signal<string>\n *   lastName: Signal<string>\n * }\n *\n * const Greeter = track(function Greeter ({firstName, lastName}: GreeterProps) {\n *   const fullName = useComputed('fullName', () => `${firstName.get()} ${lastName.get()}`)\n *   return <div>Hello {fullName.get()}!</div>\n * })\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2719,7 +2719,7 @@
             {
               "kind": "Reference",
               "text": "Computed",
-              "canonicalReference": "@tldraw/state!Computed:interface"
+              "canonicalReference": "@cmpd/state!Computed:interface"
             },
             {
               "kind": "Content",
@@ -2780,7 +2780,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!useComputed:function(2)",
+          "canonicalReference": "@cmpd/state!useComputed:function(2)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2814,7 +2814,7 @@
             {
               "kind": "Reference",
               "text": "ComputedOptions",
-              "canonicalReference": "@tldraw/state!ComputedOptions:interface"
+              "canonicalReference": "@cmpd/state!ComputedOptions:interface"
             },
             {
               "kind": "Content",
@@ -2835,7 +2835,7 @@
             {
               "kind": "Reference",
               "text": "Computed",
-              "canonicalReference": "@tldraw/state!Computed:interface"
+              "canonicalReference": "@cmpd/state!Computed:interface"
             },
             {
               "kind": "Content",
@@ -2915,7 +2915,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!useQuickReactor:function(1)",
+          "canonicalReference": "@cmpd/state!useQuickReactor:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2992,7 +2992,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!useReactor:function(1)",
+          "canonicalReference": "@cmpd/state!useReactor:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3069,7 +3069,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!useValue:function(1)",
+          "canonicalReference": "@cmpd/state!useValue:function(1)",
           "docComment": "/**\n * Extracts the value from a signal and subscribes to it.\n *\n * Note that you do not need to use this hook if you are wrapping the component with [[track]]\n *\n * @example\n * ```ts\n * const Counter: React.FC = () => {\n *   const $count = useAtom('count', 0)\n *   const increment = useCallback(() => $count.set($count.get() + 1), [count])\n *   const currentCount = useValue($count)\n *   return <button onClick={increment}>{currentCount}</button>\n * }\n * ```\n *\n * You can also pass a function to compute the value and it will be memoized as in [[useComputed]]:\n *\n * @example\n * ```ts\n * type GreeterProps = {\n *   firstName: Signal<string>\n *   lastName: Signal<string>\n * }\n *\n * const Greeter = track(function Greeter({ firstName, lastName }: GreeterProps) {\n *   const fullName = useValue('fullName', () => `${firstName.get()} ${lastName.get()}`, [\n *     firstName,\n *     lastName,\n *   ])\n *   return <div>Hello {fullName}!</div>\n * })\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3079,7 +3079,7 @@
             {
               "kind": "Reference",
               "text": "Signal",
-              "canonicalReference": "@tldraw/state!Signal:interface"
+              "canonicalReference": "@cmpd/state!Signal:interface"
             },
             {
               "kind": "Content",
@@ -3132,7 +3132,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!useValue:function(2)",
+          "canonicalReference": "@cmpd/state!useValue:function(2)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3222,7 +3222,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!whyAmIRunning:function(1)",
+          "canonicalReference": "@cmpd/state!whyAmIRunning:function(1)",
           "docComment": "/**\n * A debugging tool that tells you why a computed signal or effect is running. Call in the body of a computed signal or effect function.\n *\n * @example\n * ```ts\n * const name = atom('name', 'Bob')\n * react('greeting', () => {\n * \twhyAmIRunning()\n * \tprint('Hello', name.get())\n * })\n *\n * name.set('Alice')\n *\n * // 'greeting' is running because:\n * //     'name' changed => 'Alice'\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3250,7 +3250,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/state!withDiff:function(1)",
+          "canonicalReference": "@cmpd/state!withDiff:function(1)",
           "docComment": "/**\n * When writing incrementally-computed signals it is convenient (and usually more performant) to incrementally compute the diff too.\n *\n * You can use this function to wrap the return value of a computed signal function to indicate that the diff should be used instead of calculating a new one with [[AtomOptions.computeDiff]].\n *\n * @param value - The value.\n *\n * @param diff - The diff.\n *\n * @example\n * ```ts\n * const count = atom('count', 0)\n * const double = computed('double', (prevValue) => {\n *   const nextValue = count.get() * 2\n *   if (isUninitialized(prevValue)) {\n *     return nextValue\n *   }\n *   return withDiff(nextValue, nextValue - prevValue)\n * }, { historyLength: 10 })\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3276,7 +3276,7 @@
             {
               "kind": "Reference",
               "text": "WithDiff",
-              "canonicalReference": "@tldraw/state!~WithDiff:class"
+              "canonicalReference": "@cmpd/state!~WithDiff:class"
             },
             {
               "kind": "Content",

@@ -1,4 +1,4 @@
-import { areArraysShallowEqual, areObjectsShallowEqual } from '@tldraw/utils'
+import { areArraysShallowEqual, areObjectsShallowEqual } from '@cmpd/utils'
 import { useRef } from 'react'
 
 function useIdentity<T>(value: T, isEqual: (a: T, b: T) => boolean): T {

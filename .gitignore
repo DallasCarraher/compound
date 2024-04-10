@@ -50,7 +50,7 @@ tsconfig.build.json
 api-json
 api-md
 
-packages/tldraw/tldraw.css
+packages/compound/tldraw.css
 
 packages/assets/embed-icons
 packages/assets/fonts

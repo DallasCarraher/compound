@@ -1,5 +1,5 @@
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw } from '@cmpd/compound'
+import '@cmpd/compound/tldraw.css'
 import { createContext, useCallback, useContext, useState } from 'react'
 
 const focusedEditorContext = createContext(

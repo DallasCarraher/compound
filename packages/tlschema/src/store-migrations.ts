@@ -1,4 +1,4 @@
-import { defineMigrations, SerializedStore } from '@tldraw/store'
+import { defineMigrations, SerializedStore } from '@cmpd/store'
 import { TLRecord } from './records/TLRecord'
 
 const Versions = {

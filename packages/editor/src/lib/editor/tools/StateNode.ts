@@ -1,5 +1,5 @@
-import { Atom, Computed, atom, computed } from '@tldraw/state'
-import { warnDeprecatedGetter } from '@tldraw/utils'
+import { Atom, Computed, atom, computed } from '@cmpd/state'
+import { warnDeprecatedGetter } from '@cmpd/utils'
 import type { Editor } from '../Editor'
 import {
 	EVENT_NAME_MAP,

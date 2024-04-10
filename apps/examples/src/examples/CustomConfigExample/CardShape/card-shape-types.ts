@@ -1,4 +1,4 @@
-import { TLBaseShape, TLDefaultColorStyle } from '@tldraw/tldraw'
+import { TLBaseShape, TLDefaultColorStyle } from '@cmpd/compound'
 
 // We'll have a custom style called weight
 export type IWeightStyle = 'regular' | 'bold'

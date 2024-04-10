@@ -1,5 +1,5 @@
-import { Tldraw, TLEditorComponents } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw, TLEditorComponents } from '@cmpd/compound'
+import '@cmpd/compound/tldraw.css'
 
 const components: TLEditorComponents = {
 	Brush: function MyBrush({ brush }) {

@@ -16,15 +16,15 @@ export {
 	whyAmIRunning,
 	type Atom,
 	type Signal,
-} from '@tldraw/state'
+} from '@cmpd/state'
 // eslint-disable-next-line local/no-export-star
-export * from '@tldraw/store'
+export * from '@cmpd/store'
 // eslint-disable-next-line local/no-export-star
-export * from '@tldraw/tlschema'
+export * from '@cmpd/tlschema'
 // eslint-disable-next-line local/no-export-star
-export * from '@tldraw/utils'
+export * from '@cmpd/utils'
 // eslint-disable-next-line local/no-export-star
-export * from '@tldraw/validate'
+export * from '@cmpd/validate'
 export {
 	ErrorScreen,
 	LoadingScreen,

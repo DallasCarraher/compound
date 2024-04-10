@@ -1,11 +1,5 @@
-import {
-	SerializedStore,
-	Store,
-	StoreSchema,
-	StoreSchemaOptions,
-	StoreSnapshot,
-} from '@tldraw/store'
-import { annotateError, structuredClone } from '@tldraw/utils'
+import { SerializedStore, Store, StoreSchema, StoreSchemaOptions, StoreSnapshot } from '@cmpd/store'
+import { annotateError, structuredClone } from '@cmpd/utils'
 import { CameraRecordType, TLCameraId } from './records/TLCamera'
 import { DocumentRecordType, TLDOCUMENT_ID } from './records/TLDocument'
 import { TLINSTANCE_ID } from './records/TLInstance'

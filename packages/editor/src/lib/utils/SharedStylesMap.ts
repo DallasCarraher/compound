@@ -1,5 +1,5 @@
-import { StyleProp } from '@tldraw/tlschema'
-import { exhaustiveSwitchError } from '@tldraw/utils'
+import { StyleProp } from '@cmpd/tlschema'
+import { exhaustiveSwitchError } from '@cmpd/utils'
 
 /**
  * The value of a particular {@link @tldraw/tlschema#StyleProp}.

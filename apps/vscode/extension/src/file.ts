@@ -1,4 +1,4 @@
-import { TldrawFile, createTLStore, defaultShapeUtils } from '@tldraw/tldraw'
+import { TldrawFile, createTLStore, defaultShapeUtils } from '@cmpd/compound'
 import * as vscode from 'vscode'
 import { nicelog } from './utils'
 

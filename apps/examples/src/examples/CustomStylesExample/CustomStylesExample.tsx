@@ -1,5 +1,5 @@
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw } from '@cmpd/compound'
+import '@cmpd/compound/tldraw.css'
 import { CardShapeTool, CardShapeUtil } from './CardShape'
 import { FilterStyleUi } from './FilterStyleUi'
 import { uiOverrides } from './ui-overrides'

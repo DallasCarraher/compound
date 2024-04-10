@@ -12,10 +12,10 @@
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/DallasCarraher/compound"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/DallasCarraher/compound/issues"
 	},
 	"keywords": [
 		"tldraw",
@@ -130,8 +130,8 @@
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf editor && rm -rf temp & yarn"
 	},
 	"devDependencies": {
-		"@tldraw/editor": "workspace:*",
-		"@tldraw/tldraw": "workspace:*",
+		"@cmpd/compound": "workspace:*",
+		"@cmpd/editor": "workspace:*",
 		"@types/fs-extra": "^11.0.1",
 		"@types/node-fetch": "^2.6.2",
 		"@types/vscode": "^1.75.1",

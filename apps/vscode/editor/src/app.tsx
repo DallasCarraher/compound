@@ -1,9 +1,9 @@
 import { linksUiOverrides } from './utils/links'
 // eslint-disable-next-line import/no-internal-modules
-import '@tldraw/tldraw/tldraw.css'
+import '@cmpd/compound/tldraw.css'
 // eslint-disable-next-line import/no-internal-modules
-import { getAssetUrlsByImport } from '@tldraw/assets/imports'
-import { Editor, ErrorBoundary, TLUiMenuSchema, Tldraw, setRuntimeOverrides } from '@tldraw/tldraw'
+import { getAssetUrlsByImport } from '@cmpd/assets/imports'
+import { Editor, ErrorBoundary, TLUiMenuSchema, Tldraw, setRuntimeOverrides } from '@cmpd/compound'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { VscodeMessage } from '../../messages'
 import '../public/index.css'
