@@ -1,5 +1,5 @@
-import { Tldraw } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import jsonSnapshot from './snapshot.json'
 // ^^^
 // This snapshot was previously created with `editor.store.getSnapshot()`
@@ -15,7 +15,7 @@ export default function SnapshotExample() {
 		// If you want to use the snapshot as the store's initial data, you can do so like this:
 		return (
 			<div className="tldraw__editor">
-				<Tldraw snapshot={jsonSnapshot} />
+				<Compound snapshot={jsonSnapshot} />
 			</div>
 		)
 	}
@@ -25,7 +25,7 @@ export default function SnapshotExample() {
 	// history, so you should only ever use this on mount.
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				onMount={(editor) => {
 					editor.store.loadSnapshot(jsonSnapshot)
 				}}

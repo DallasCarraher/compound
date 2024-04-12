@@ -1,15 +1,15 @@
 import {
 	AssetRecordType,
+	Compound,
 	Editor,
 	MediaHelpers,
 	TLAsset,
 	TLAssetId,
-	Tldraw,
 	getHashForString,
 	isGifAnimated,
 	uniqueId,
 } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import '@cmpd/compound/compound.css'
 import { useCallback } from 'react'
 
 const UPLOAD_URL = '/SOME_ENDPOINT'
@@ -67,7 +67,7 @@ export default function AssetPropsExample() {
 
 	return (
 		<div className="tldraw__editor">
-			<Tldraw onMount={handleMount} />
+			<Compound onMount={handleMount} />
 		</div>
 	)
 }

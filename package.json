@@ -3,7 +3,7 @@
 	"description": "Monorepo for compound",
 	"version": "0.0.0",
 	"private": true,
-	"homepage": "https://compound.dev",
+	"homepage": "https://cmpd.space",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/DallasCarraher/compound"

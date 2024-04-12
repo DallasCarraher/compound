@@ -1,1 +1,1 @@
-# @tldraw/example
+# @cmpd/examples

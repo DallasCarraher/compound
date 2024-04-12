@@ -35,8 +35,8 @@ Object.defineProperty(global.URL, 'createObjectURL', {
 })
 
 window.fetch = async (input, init) => {
-	if (input === 'https://unpkg.com/@tldraw/assets@2.0.0-alpha.12/translations/en.json') {
-		const json = await import('@tldraw/assets/translations/main.json')
+	if (input === 'https://unpkg.com/@cmpd/assets@2.0.0-alpha.12/translations/en.json') {
+		const json = await import('@cmpd/assets/translations/main.json')
 		return {
 			ok: true,
 			json: async () => json.default,

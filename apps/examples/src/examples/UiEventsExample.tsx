@@ -1,5 +1,5 @@
-import { TLUiEventHandler, Tldraw } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound, TLUiEventHandler } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useCallback, useState } from 'react'
 
 export default function UiEventsExample() {
@@ -12,7 +12,7 @@ export default function UiEventsExample() {
 	return (
 		<div style={{ display: 'flex' }}>
 			<div style={{ width: '60vw', height: '100vh' }}>
-				<Tldraw onUiEvent={handleUiEvent} />
+				<Compound onUiEvent={handleUiEvent} />
 			</div>
 			<div>
 				<div

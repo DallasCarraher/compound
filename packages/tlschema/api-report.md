@@ -225,41 +225,6 @@ export const EMBED_DEFINITIONS: readonly [{
     readonly isAspectRatioLocked: true;
     readonly toEmbedUrl: (url: string) => string | undefined;
     readonly fromEmbedUrl: (url: string) => string | undefined;
-}, {
-    readonly type: "spotify";
-    readonly title: "Spotify";
-    readonly hostnames: readonly ["open.spotify.com"];
-    readonly width: 720;
-    readonly height: 500;
-    readonly minHeight: 500;
-    readonly overrideOutlineRadius: 12;
-    readonly doesResize: true;
-    readonly canUnmount: false;
-    readonly toEmbedUrl: (url: string) => string | undefined;
-    readonly fromEmbedUrl: (url: string) => string | undefined;
-}, {
-    readonly type: "vimeo";
-    readonly title: "Vimeo";
-    readonly hostnames: readonly ["vimeo.com", "player.vimeo.com"];
-    readonly width: 640;
-    readonly height: 360;
-    readonly doesResize: true;
-    readonly canUnmount: false;
-    readonly isAspectRatioLocked: true;
-    readonly toEmbedUrl: (url: string) => string | undefined;
-    readonly fromEmbedUrl: (url: string) => string | undefined;
-}, {
-    readonly type: "observable";
-    readonly title: "Observable";
-    readonly hostnames: readonly ["observablehq.com"];
-    readonly width: 720;
-    readonly height: 500;
-    readonly doesResize: true;
-    readonly canUnmount: false;
-    readonly isAspectRatioLocked: false;
-    readonly backgroundColor: "#fff";
-    readonly toEmbedUrl: (url: string) => string | undefined;
-    readonly fromEmbedUrl: (url: string) => string | undefined;
 }];
 
 // @public (undocumented)

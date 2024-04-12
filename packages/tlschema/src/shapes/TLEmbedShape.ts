@@ -263,62 +263,62 @@ export const EMBED_DEFINITIONS = [
 			return
 		},
 	},
-	{
-		type: 'spotify',
-		title: 'Spotify',
-		hostnames: ['open.spotify.com'],
-		width: 720,
-		height: 500,
-		minHeight: 500,
-		overrideOutlineRadius: 12,
-		doesResize: true,
-		canUnmount: false,
-		toEmbedUrl: (url) => {
-			const urlObj = safeParseUrl(url)
-			if (urlObj && urlObj.pathname.match(/^\/(artist|album)\//)) {
-				return urlObj.origin + '/embed' + urlObj.pathname
-			}
-			return
-		},
-		fromEmbedUrl: (url) => {
-			const urlObj = safeParseUrl(url)
-			if (urlObj && urlObj.pathname.match(/^\/embed\/(artist|album)\//)) {
-				return urlObj.origin + urlObj.pathname.replace(/^\/embed/, '')
-			}
-			return
-		},
-	},
-	{
-		type: 'vimeo',
-		title: 'Vimeo',
-		hostnames: ['vimeo.com', 'player.vimeo.com'],
-		width: 640,
-		height: 360,
-		doesResize: true,
-		canUnmount: false,
-		isAspectRatioLocked: true,
-		toEmbedUrl: (url) => {
-			const urlObj = safeParseUrl(url)
-			if (urlObj && urlObj.hostname === 'vimeo.com') {
-				if (urlObj.pathname.match(/^\/[0-9]+/)) {
-					return (
-						'https://player.vimeo.com/video/' + urlObj.pathname.split('/')[1] + '?title=0&byline=0'
-					)
-				}
-			}
-			return
-		},
-		fromEmbedUrl: (url) => {
-			const urlObj = safeParseUrl(url)
-			if (urlObj && urlObj.hostname === 'player.vimeo.com') {
-				const matches = urlObj.pathname.match(/^\/video\/([^/]+)\/?$/)
-				if (matches) {
-					return 'https://vimeo.com/' + matches[1]
-				}
-			}
-			return
-		},
-	},
+	// {
+	// 	type: 'spotify',
+	// 	title: 'Spotify',
+	// 	hostnames: ['open.spotify.com'],
+	// 	width: 720,
+	// 	height: 500,
+	// 	minHeight: 500,
+	// 	overrideOutlineRadius: 12,
+	// 	doesResize: true,
+	// 	canUnmount: false,
+	// 	toEmbedUrl: (url) => {
+	// 		const urlObj = safeParseUrl(url)
+	// 		if (urlObj && urlObj.pathname.match(/^\/(artist|album)\//)) {
+	// 			return urlObj.origin + '/embed' + urlObj.pathname
+	// 		}
+	// 		return
+	// 	},
+	// 	fromEmbedUrl: (url) => {
+	// 		const urlObj = safeParseUrl(url)
+	// 		if (urlObj && urlObj.pathname.match(/^\/embed\/(artist|album)\//)) {
+	// 			return urlObj.origin + urlObj.pathname.replace(/^\/embed/, '')
+	// 		}
+	// 		return
+	// 	},
+	// },
+	// {
+	// 	type: 'vimeo',
+	// 	title: 'Vimeo',
+	// 	hostnames: ['vimeo.com', 'player.vimeo.com'],
+	// 	width: 640,
+	// 	height: 360,
+	// 	doesResize: true,
+	// 	canUnmount: false,
+	// 	isAspectRatioLocked: true,
+	// 	toEmbedUrl: (url) => {
+	// 		const urlObj = safeParseUrl(url)
+	// 		if (urlObj && urlObj.hostname === 'vimeo.com') {
+	// 			if (urlObj.pathname.match(/^\/[0-9]+/)) {
+	// 				return (
+	// 					'https://player.vimeo.com/video/' + urlObj.pathname.split('/')[1] + '?title=0&byline=0'
+	// 				)
+	// 			}
+	// 		}
+	// 		return
+	// 	},
+	// 	fromEmbedUrl: (url) => {
+	// 		const urlObj = safeParseUrl(url)
+	// 		if (urlObj && urlObj.hostname === 'player.vimeo.com') {
+	// 			const matches = urlObj.pathname.match(/^\/video\/([^/]+)\/?$/)
+	// 			if (matches) {
+	// 				return 'https://vimeo.com/' + matches[1]
+	// 			}
+	// 		}
+	// 		return
+	// 	},
+	// },
 	// {
 	// 	type: 'excalidraw',
 	// 	title: 'Excalidraw',
@@ -343,40 +343,40 @@ export const EMBED_DEFINITIONS = [
 	// 		return
 	// 	},
 	// },
-	{
-		type: 'observable',
-		title: 'Observable',
-		hostnames: ['observablehq.com'],
-		width: 720,
-		height: 500,
-		doesResize: true,
-		canUnmount: false,
-		isAspectRatioLocked: false,
-		backgroundColor: '#fff',
-		toEmbedUrl: (url) => {
-			const urlObj = safeParseUrl(url)
-			if (urlObj && urlObj.pathname.match(/^\/@([^/]+)\/([^/]+)\/?$/)) {
-				return `${urlObj.origin}/embed${urlObj.pathname}?cell=*`
-			}
-			if (urlObj && urlObj.pathname.match(/^\/d\/([^/]+)\/?$/)) {
-				const pathName = urlObj.pathname.replace(/^\/d/, '')
-				return `${urlObj.origin}/embed${pathName}?cell=*`
-			}
+	// {
+	// 	type: 'observable',
+	// 	title: 'Observable',
+	// 	hostnames: ['observablehq.com'],
+	// 	width: 720,
+	// 	height: 500,
+	// 	doesResize: true,
+	// 	canUnmount: false,
+	// 	isAspectRatioLocked: false,
+	// 	backgroundColor: '#fff',
+	// 	toEmbedUrl: (url) => {
+	// 		const urlObj = safeParseUrl(url)
+	// 		if (urlObj && urlObj.pathname.match(/^\/@([^/]+)\/([^/]+)\/?$/)) {
+	// 			return `${urlObj.origin}/embed${urlObj.pathname}?cell=*`
+	// 		}
+	// 		if (urlObj && urlObj.pathname.match(/^\/d\/([^/]+)\/?$/)) {
+	// 			const pathName = urlObj.pathname.replace(/^\/d/, '')
+	// 			return `${urlObj.origin}/embed${pathName}?cell=*`
+	// 		}
 
-			return
-		},
-		fromEmbedUrl: (url) => {
-			const urlObj = safeParseUrl(url)
-			if (urlObj && urlObj.pathname.match(/^\/embed\/@([^/]+)\/([^/]+)\/?$/)) {
-				return `${urlObj.origin}${urlObj.pathname.replace('/embed', '')}#cell-*`
-			}
-			if (urlObj && urlObj.pathname.match(/^\/embed\/([^/]+)\/?$/)) {
-				return `${urlObj.origin}${urlObj.pathname.replace('/embed', '/d')}#cell-*`
-			}
+	// 		return
+	// 	},
+	// 	fromEmbedUrl: (url) => {
+	// 		const urlObj = safeParseUrl(url)
+	// 		if (urlObj && urlObj.pathname.match(/^\/embed\/@([^/]+)\/([^/]+)\/?$/)) {
+	// 			return `${urlObj.origin}${urlObj.pathname.replace('/embed', '')}#cell-*`
+	// 		}
+	// 		if (urlObj && urlObj.pathname.match(/^\/embed\/([^/]+)\/?$/)) {
+	// 			return `${urlObj.origin}${urlObj.pathname.replace('/embed', '/d')}#cell-*`
+	// 		}
 
-			return
-		},
-	},
+	// 		return
+	// 	},
+	// },
 ] as const satisfies readonly EmbedDefinition[]
 
 /**

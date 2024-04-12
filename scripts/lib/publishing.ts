@@ -1,5 +1,6 @@
 import { execSync } from 'child_process'
 import { fetch } from 'cross-fetch'
+import 'dotenv/config'
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'fs'
 import path, { join } from 'path'
 import { compare, parse } from 'semver'
@@ -153,11 +154,13 @@ export async function publish() {
 
 	// Get all package details
 	const packages = getAllPackageDetails()
-	console.log('packages', packages)
 
 	// Sort the packages in topological order
 	const publishOrder = topologicalSortPackages(packages)
-	console.log('publishOrder', publishOrder)
+
+	// for debugging
+	// const tempOrder = publishOrder.filter((p) => p.name === '@cmpd/compound')
+	// console.log('publishOrder', tempOrder)
 
 	// Loop through each package in the sorted order
 	for (const packageDetails of publishOrder) {
@@ -165,7 +168,7 @@ export async function publish() {
 		const prereleaseTag = parse(packageDetails.version)?.prerelease[0] ?? 'latest'
 		// Log the package name, version, and tag
 		nicelog(
-			`Publishing ${packageDetails.name} with version ${packageDetails.version} under tag @${prereleaseTag}`
+			`\n\n\n Publishing ${packageDetails.name} with version ${packageDetails.version} under tag @${prereleaseTag}`
 		)
 
 		// Try to publish the package, retrying up to 5 times with a delay of 10 seconds between each attempt

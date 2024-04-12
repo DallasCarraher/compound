@@ -1,7 +1,7 @@
 import { BaseBoxShapeUtil, Editor } from '@cmpd/editor'
 import { act, render, screen } from '@testing-library/react'
 import { useState } from 'react'
-import { Compound } from './Tldraw'
+import { Compound } from './Compound'
 
 describe('<Tldraw />', () => {
 	it('Renders without crashing', async () => {

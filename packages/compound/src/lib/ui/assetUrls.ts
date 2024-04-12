@@ -17,19 +17,19 @@ export let defaultUiAssetUrls: TLUiAssetUrls = {
 	icons: Object.fromEntries(
 		iconTypes.map((name) => [
 			name,
-			`https://unpkg.com/@tldraw/assets@${version}/icons/icon/${name}.svg`,
+			`https://unpkg.com/@cmpd/assets@${version}/icons/icon/${name}.svg`,
 		])
 	) as Record<TLUiIconType, string>,
 	translations: Object.fromEntries(
 		LANGUAGES.map((lang) => [
 			lang.locale,
-			`https://unpkg.com/@tldraw/assets@${version}/translations/${lang.locale}.json`,
+			`https://unpkg.com/@cmpd/assets@${version}/translations/${lang.locale}.json`,
 		])
 	) as Record<(typeof LANGUAGES)[number]['locale'], string>,
 	embedIcons: Object.fromEntries(
 		EMBED_DEFINITIONS.map((def) => [
 			def.type,
-			`https://unpkg.com/@tldraw/assets@${version}/embed-icons/${def.type}.png`,
+			`https://unpkg.com/@cmpd/assets@${version}/embed-icons/${def.type}.png`,
 		])
 	) as Record<(typeof EMBED_DEFINITIONS)[number]['type'], string>,
 }

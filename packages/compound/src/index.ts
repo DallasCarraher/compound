@@ -2,7 +2,7 @@
 
 // eslint-disable-next-line local/no-export-star
 export * from '@cmpd/editor'
-export { Compound as Tldraw, type CompoundProps as TldrawProps } from './lib/Tldraw'
+export { Compound, type CompoundProps } from './lib/Compound'
 export { TldrawCropHandles, type TldrawCropHandlesProps } from './lib/canvas/TldrawCropHandles'
 export { TldrawHandles } from './lib/canvas/TldrawHandles'
 export { TldrawHoveredShapeIndicator } from './lib/canvas/TldrawHoveredShapeIndicator'

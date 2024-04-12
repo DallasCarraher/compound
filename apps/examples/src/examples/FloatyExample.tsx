@@ -1,13 +1,13 @@
-import { Tldraw, Vec2d, useContainer, useEditor } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound, Vec2d, useContainer, useEditor } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useEffect } from 'react'
 
 export default function FloatyExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw persistenceKey="tldraw_floaty_example">
+			<Compound persistenceKey="tldraw_floaty_example">
 				<SneakyFloatyHook />
-			</Tldraw>
+			</Compound>
 		</div>
 	)
 }

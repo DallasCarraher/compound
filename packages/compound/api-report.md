@@ -272,6 +272,20 @@ function CloseButton(): JSX.Element;
 // @public (undocumented)
 export function compactMenuItems<T>(arr: T[]): Exclude<T, false | null | undefined>[];
 
+// @public (undocumented)
+export function Compound(props: CompoundProps): JSX.Element;
+
+// @public (undocumented)
+export type CompoundProps = TldrawEditorBaseProps & ({
+    store: TLStore | TLStoreWithStatus;
+} | {
+    store?: undefined;
+    persistenceKey?: string;
+    sessionId?: string;
+    defaultName?: string;
+    snapshot?: StoreSnapshot<TLRecord>;
+}) & TldrawUiProps & Partial<TLExternalContentProps>;
+
 // @public
 export function containBoxSize(originalSize: BoxWidthHeight, containBoxSize: BoxWidthHeight): BoxWidthHeight;
 
@@ -1239,9 +1253,6 @@ function Title({ className, children }: {
 }): JSX.Element;
 
 // @public (undocumented)
-export function Tldraw(props: TldrawProps): JSX.Element;
-
-// @public (undocumented)
 export const TLDRAW_FILE_EXTENSION: ".tldr";
 
 // @public (undocumented)
@@ -1274,17 +1285,6 @@ export const TldrawHandles: TLHandlesComponent;
 
 // @public (undocumented)
 export const TldrawHoveredShapeIndicator: TLHoveredShapeIndicatorComponent;
-
-// @public (undocumented)
-export type TldrawProps = TldrawEditorBaseProps & ({
-    store: TLStore | TLStoreWithStatus;
-} | {
-    store?: undefined;
-    persistenceKey?: string;
-    sessionId?: string;
-    defaultName?: string;
-    snapshot?: StoreSnapshot<TLRecord>;
-}) & TldrawUiProps & Partial<TLExternalContentProps>;
 
 // @public (undocumented)
 export const TldrawScribble: TLScribbleComponent;

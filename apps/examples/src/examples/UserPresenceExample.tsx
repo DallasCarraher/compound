@@ -1,6 +1,6 @@
 /* eslint-disable no-inner-declarations */
-import { InstancePresenceRecordType, Tldraw } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound, InstancePresenceRecordType } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useRef } from 'react'
 
 const USER_NAME = 'huppy da arrow'
@@ -18,7 +18,7 @@ export default function UserPresenceExample() {
 	const rRaf = useRef<any>(-1)
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				persistenceKey="user-presence-example"
 				onMount={(editor) => {
 					// For every connected peer you should put a TLInstancePresence record in the

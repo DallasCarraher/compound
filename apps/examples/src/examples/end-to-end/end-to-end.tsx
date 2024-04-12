@@ -1,5 +1,5 @@
-import { Tldraw, useActions } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound, useActions } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useEffect } from 'react'
 ;(window as any).__tldraw_ui_event = { id: 'NOTHING_YET' }
 ;(window as any).__tldraw_editor_events = []
@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 export default function EndToEnd() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				onMount={(editor) => {
 					editor.on('event', (info) => {
 						;(window as any).__tldraw_editor_events.push(info)
@@ -18,7 +18,7 @@ export default function EndToEnd() {
 				}}
 			>
 				<SneakyExportButton />
-			</Tldraw>
+			</Compound>
 		</div>
 	)
 }

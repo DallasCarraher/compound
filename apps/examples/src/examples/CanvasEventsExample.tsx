@@ -1,5 +1,5 @@
-import { TLEventInfo, Tldraw } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound, TLEventInfo } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useCallback, useState } from 'react'
 
 export default function CanvasEventsExample() {
@@ -12,7 +12,7 @@ export default function CanvasEventsExample() {
 	return (
 		<div style={{ display: 'flex' }}>
 			<div style={{ width: '50vw', height: '100vh' }}>
-				<Tldraw
+				<Compound
 					onMount={(editor) => {
 						editor.on('event', (event) => handleEvent(event))
 					}}

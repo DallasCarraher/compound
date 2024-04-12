@@ -14,13 +14,12 @@
 		"url": "https://github.com/DallasCarraher/compound/issues"
 	},
 	"keywords": [
-		"tldraw",
+		"cmpd",
 		"drawing",
 		"app",
 		"development",
 		"whiteboard",
-		"canvas",
-		"infinite"
+		"canvas"
 	],
 	"scripts": {
 		"dev": "vite --host",

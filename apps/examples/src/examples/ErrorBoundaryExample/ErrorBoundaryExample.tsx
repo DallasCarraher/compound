@@ -1,5 +1,5 @@
-import { createShapeId, Tldraw, TLShapePartial } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound, TLShapePartial, createShapeId } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { ErrorShape, ErrorShapeUtil } from './ErrorShape'
 
 const shapes = [ErrorShapeUtil]
@@ -7,7 +7,7 @@ const shapes = [ErrorShapeUtil]
 export default function ErrorBoundaryExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				shapeUtils={shapes}
 				tools={[]}
 				components={{

@@ -1,5 +1,5 @@
-import { Tldraw } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { CardShapeTool } from './CardShape/CardShapeTool'
 import { CardShapeUtil } from './CardShape/CardShapeUtil'
 import { uiOverrides } from './ui-overrides'
@@ -10,7 +10,7 @@ const customTools = [CardShapeTool]
 export default function CustomConfigExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				// Pass in the array of custom shape classes
 				shapeUtils={customShapeUtils}
 				// Pass in the array of custom tool classes

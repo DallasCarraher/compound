@@ -1,5 +1,5 @@
-import { Tldraw } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { createContext, useCallback, useContext, useState } from 'react'
 
 const focusedEditorContext = createContext(
@@ -61,7 +61,7 @@ function EditorA() {
 		<div style={{ padding: 32 }}>
 			<h2>A</h2>
 			<div tabIndex={-1} onFocus={() => setFocusedEditor('A')} style={{ height: 600 }}>
-				<Tldraw
+				<Compound
 					persistenceKey="steve"
 					className="A"
 					autoFocus={isFocused}
@@ -82,7 +82,7 @@ function EditorB() {
 		<div>
 			<h2>B</h2>
 			<div tabIndex={-1} onFocus={() => setFocusedEditor('B')} style={{ height: 600 }}>
-				<Tldraw
+				<Compound
 					persistenceKey="david"
 					className="B"
 					autoFocus={isFocused}
@@ -103,7 +103,7 @@ function EditorC() {
 		<div>
 			<h2>C</h2>
 			<div tabIndex={-1} onFocus={() => setFocusedEditor('C')} style={{ height: 600 }}>
-				<Tldraw
+				<Compound
 					persistenceKey="david"
 					className="C"
 					autoFocus={isFocused}

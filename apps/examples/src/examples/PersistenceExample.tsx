@@ -1,5 +1,5 @@
-import { Tldraw, createTLStore, defaultShapeUtils, throttle } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import { Compound, createTLStore, defaultShapeUtils, throttle } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useLayoutEffect, useState } from 'react'
 
 const PERSISTENCE_KEY = 'example-3'
@@ -62,7 +62,7 @@ export default function PersistenceExample() {
 
 	return (
 		<div className="tldraw__editor">
-			<Tldraw store={store} />
+			<Compound store={store} />
 		</div>
 	)
 }

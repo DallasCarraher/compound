@@ -1,53 +1,51 @@
-<div alt style="text-align: center; transform: scale(.5);">
+<!-- <div alt style="text-align: center; transform: scale(.5);">
 	<picture>
 		<source media="(prefers-color-scheme: dark)" srcset="https://github.com/tldraw/tldraw/raw/main/assets/github-hero-dark.png" />
 		<img alt="tldraw" src="https://github.com/tldraw/tldraw/raw/main/assets/github-hero-light.png" />
 	</picture>
-</div>
+</div> -->
 
-# @tldraw/tldraw
+# @cmpd/compound
 
-This is the pre-release version of [tldraw](https://github.com/tldraw/tldraw).
+This is the pre-release version of [compound](https://github.com/DallasCarraher/compound).
 
-See the pre-release docs at [canary.tldraw.dev](https://canary.tldraw.com).
+In short, compound is a fork of @tldraw from the point at which it was still licensed under Apache 2.0. The intention for this library is to continue to build upon a more refined primitive of the original library.
 
 ## Installation
 
-Install the `@tldraw/tldraw` package using `@canary` for the latest canary release. (Or `@alpha` for the latest alpha release.)
-
 ```bash
-yarn add @tldraw/tldraw@canary
-# or
-npm install @tldraw/tldraw@canary
-# or
-pnpm i @tldraw/tldraw@canary
+yarn add @cmpd/compound | npm install @cmpd/compound
 ```
 
 Then start the local development server.
 
 ```bash
-yarn dev
-# or
-npm run dev
-# or
-pnpm dev
+yarn dev | npm run dev
 ```
 
 ## Usage
 
-An extremely minimal usage (without our UI) might look like this:
+An extremely minimal usage (without props) would look like this:
 
 ```tsx
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Compound } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 
-export default function () {
-	return <Tldraw />
+export default function App() {
+	return (
+		<div style={{
+			position: fixed;
+			inset: 0px;
+			overflow: hidden;
+		}}>
+			<Compound />
+		</div>
+	)
 }
 ```
 
-See the [examples folder](https://github.com/tldraw/tldraw/tree/main/apps/examples) for more examples.
+See the [examples folder](https://github.com/DallasCarraher/compound/tree/osmain/apps/examples) for more examples.
 
 ## License
 
-The source code in this repository (as well as our 2.0+ distributions and releases) are currently licensed under Apache-2.0. These licenses are subject to change in our upcoming 2.0 release. If you are planning to use tldraw in a commercial product, please reach out at [hello@tldraw.com](mailto://hello@tldraw.com).
+The source code in this repository is licensed under Apache-2.0.

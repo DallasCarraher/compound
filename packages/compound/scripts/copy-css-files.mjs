@@ -23,5 +23,5 @@ let combinedContent = [
 `
 )
 
-const destination = join(packageDir, 'tldraw.css')
+const destination = join(packageDir, 'compound.css')
 writeFileSync(destination, combinedContent)

@@ -12,7 +12,7 @@ import {
 	defaultShapeUtils,
 	defaultTools,
 } from '@cmpd/compound'
-import '@cmpd/compound/tldraw.css'
+import '@cmpd/compound/compound.css'
 
 const defaultComponents = {
 	Scribble: TldrawScribble,
