@@ -24,7 +24,7 @@ async function main() {
 
 	// module was called directly
 	const currentBranch = (await exec('git', ['rev-parse', '--abbrev-ref', 'HEAD'])).toString().trim()
-	if (currentBranch !== 'rebrand') throw new Error('Must be on the `osmain` branch to publish')
+	if (currentBranch !== 'osmain') throw new Error('Must be on the `osmain` branch to publish')
 
 	await auto.loadConfig()
 	nicelog('\n\n\n auto config loaded 📄 \n\n\n')

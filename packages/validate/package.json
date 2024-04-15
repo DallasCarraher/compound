@@ -1,6 +1,6 @@
 {
 	"name": "@cmpd/validate",
-	"description": "tbd",
+	"description": "a collection of validators, which are used to ensure that data matches a certain structure or meets certain criteria",
 	"version": "2.0.0-alpha.20",
 	"packageManager": "yarn@3.5.0",
 	"homepage": "https://cmpd.space",
@@ -14,12 +14,12 @@
 	},
 	"keywords": [
 		"cmpd",
+		"compound",
 		"drawing",
 		"app",
 		"development",
 		"whiteboard",
-		"canvas",
-		"infinite"
+		"canvas"
 	],
 	"/* NOTE */": "These `main` and `types` fields are rewritten by the build script. They are not the actual values we publish",
 	"main": "./src/index.ts",

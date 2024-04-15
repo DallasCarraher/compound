@@ -7,9 +7,17 @@
 
 # @cmpd/compound
 
-This is the pre-release version of [compound](https://github.com/DallasCarraher/compound).
+This is the pre-release version of [compound](https://github.com/DallasCarraher/compound). Use at your own caution.
 
-In short, compound is a fork of @tldraw from the point at which it was still licensed under Apache 2.0. The intention for this library is to continue to build upon a more refined primitive of the original library.
+## Preface
+
+**compound** is a fork of **tldraw** from the point at which it was still licensed under Apache 2.0.
+
+The intention for this library simply put, is to continue to build upon the existing foundations and architecture, enhancing its capabilities where possible, but more importantly refining it further to provide a streamlined API and **primitive** for react applications in need of a whiteboarding component or interactive canvas.
+
+The other mission of this library is to continue to offer a **completely free for commercial use tool**.
+
+You can use compound to create a drop-in whiteboard for your product or as the foundation on which to build your own canvas applications.
 
 ## Installation
 
@@ -33,18 +41,14 @@ import '@cmpd/compound/compound.css'
 
 export default function App() {
 	return (
-		<div style={{
-			position: fixed;
-			inset: 0px;
-			overflow: hidden;
-		}}>
+		<div style={{ position: fixed; inset: 0px; }}>
 			<Compound />
 		</div>
 	)
 }
 ```
 
-See the [examples folder](https://github.com/DallasCarraher/compound/tree/osmain/apps/examples) for more examples.
+See the [examples folder](https://github.com/DallasCarraher/compound/tree/osmain/apps/examples) for more examples or check them out soon on [examples.cmpd.space](https://examples.cmpd.space)
 
 ## License
 
