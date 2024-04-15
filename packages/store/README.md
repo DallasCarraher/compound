@@ -1,12 +1,12 @@
-# @tldraw/tlstore
+# @cmpd/store
 
 `tlstore` is a library for creating and managing data.
 
 > In this library, a "record" is an object that is stored under a typed id.
 
-`tlstore` is used by [tldraw](https://www.tldraw.com) to store its data.
+`tlstore` is used by [compound](https://www.cmpd.space) to store its data.
 
-It is designed to be used with `tlstate` (@tldraw/tlstate).
+It is designed to be used with `tlstate` (@cmpd/state).
 
 # Usage
 
@@ -351,4 +351,5 @@ A diff describing the changes to a collection.
 
 ## License
 
-The source code in this repository (as well as our 2.0+ distributions and releases) are currently licensed under Apache-2.0. These licenses are subject to change in our upcoming 2.0 release. If you are planning to use tldraw in a commercial product, please reach out at [hello@tldraw.com](mailto://hello@tldraw.com).
+The source code for various apps and packages in this repository are licensed under Apache-2.0.
+**These licenses are not subject to change.**

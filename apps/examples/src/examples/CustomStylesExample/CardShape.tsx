@@ -8,7 +8,7 @@ import {
 	TLBaseShape,
 	TLDefaultColorStyle,
 	getDefaultColorTheme,
-} from '@tldraw/tldraw'
+} from '@cmpd/compound'
 
 // Define a style that can be used across multiple shapes.
 // The ID (myApp:filter) must be globally unique, so we recommend prefixing it with a namespace.

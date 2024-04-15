@@ -161,20 +161,20 @@
     }
   },
   "kind": "Package",
-  "canonicalReference": "@tldraw/utils!",
+  "canonicalReference": "@cmpd/utils!",
   "docComment": "",
-  "name": "@tldraw/utils",
+  "name": "@cmpd/utils",
   "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "@tldraw/utils!",
+      "canonicalReference": "@cmpd/utils!",
       "name": "",
       "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!debounce:function(1)",
+          "canonicalReference": "@cmpd/utils!debounce:function(1)",
           "docComment": "/**\n * Debounce a function.\n *\n * @example\n * ```ts\n * const A = debounce(myFunction, 1000)\n * ```\n *\n * @see\n *\n * source - https://gist.github.com/ca0v/73a31f57b397606c9813472f7493a940\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -285,7 +285,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!dedupe:function(1)",
+          "canonicalReference": "@cmpd/utils!dedupe:function(1)",
           "docComment": "/**\n * Deduplicate the items in an array\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -359,7 +359,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!deepCopy:function(1)",
+          "canonicalReference": "@cmpd/utils!deepCopy:function(1)",
           "docComment": "/**\n * Deep copy function for TypeScript.\n *\n * @param obj - Target value to be copied.\n *\n * @example\n * ```ts\n * const A = deepCopy({ a: 1, b: { c: 2 } })\n * ```\n *\n * @see\n *\n * Source - project, ts-deeply https://github.com/ykdr2017/ts-deepcopy\n *\n * @see\n *\n * Code - pen https://codepen.io/erikvullings/pen/ejyBYg\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -425,7 +425,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!ErrorResult:type",
+          "canonicalReference": "@cmpd/utils!ErrorResult:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -464,7 +464,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!Expand:type",
+          "canonicalReference": "@cmpd/utils!Expand:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -503,7 +503,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/utils!FileHelpers:class",
+          "canonicalReference": "@cmpd/utils!FileHelpers:class",
           "docComment": "/**\n * Helpers for files\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -519,7 +519,7 @@
           "members": [
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!FileHelpers.fileToBase64:member(1)",
+              "canonicalReference": "@cmpd/utils!FileHelpers.fileToBase64:member(1)",
               "docComment": "/**\n * Convert a file to base64.\n *\n * @param value - The file as a blob.\n *\n * @example\n * ```ts\n * const A = fileToBase64('./test.png')\n * ```\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -576,7 +576,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!getFirstFromIterable:function(1)",
+          "canonicalReference": "@cmpd/utils!getFirstFromIterable:function(1)",
           "docComment": "/**\n * Get the first item from an iterable Set or Map.\n *\n * @param value - The iterable Set or Map.\n *\n * @example\n * ```ts\n * const A = getFirstItem(new Set([1, 2, 3])) // 1\n * const B = getFirstItem(\n * \tnew Map([\n * \t\t['a', 1],\n * \t\t['b', 2],\n * \t])\n * ) // 1\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -656,7 +656,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!getHashForObject:function(1)",
+          "canonicalReference": "@cmpd/utils!getHashForObject:function(1)",
           "docComment": "/**\n * Hash a string using the FNV-1a algorithm.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -701,7 +701,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!getHashForString:function(1)",
+          "canonicalReference": "@cmpd/utils!getHashForString:function(1)",
           "docComment": "/**\n * Hash a string using the FNV-1a algorithm.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -746,7 +746,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!isDefined:function(1)",
+          "canonicalReference": "@cmpd/utils!isDefined:function(1)",
           "docComment": "/**\n * Get whether a value is not undefined.\n *\n * @param value - The value to check.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -764,7 +764,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/utils!~value"
+              "canonicalReference": "@cmpd/utils!~value"
             },
             {
               "kind": "Content",
@@ -773,7 +773,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/utils!~value:var"
+              "canonicalReference": "@cmpd/utils!~value:var"
             },
             {
               "kind": "Content",
@@ -818,7 +818,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!isNonNull:function(1)",
+          "canonicalReference": "@cmpd/utils!isNonNull:function(1)",
           "docComment": "/**\n * Get whether a value is null\n *\n * @param value - The value to check.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -836,7 +836,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/utils!~value"
+              "canonicalReference": "@cmpd/utils!~value"
             },
             {
               "kind": "Content",
@@ -845,7 +845,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/utils!~value:var"
+              "canonicalReference": "@cmpd/utils!~value:var"
             },
             {
               "kind": "Content",
@@ -890,7 +890,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!isNonNullish:function(1)",
+          "canonicalReference": "@cmpd/utils!isNonNullish:function(1)",
           "docComment": "/**\n * Get whether a value is nullish (null, undefined).\n *\n * @param value - The value to check.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -908,7 +908,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/utils!~value"
+              "canonicalReference": "@cmpd/utils!~value"
             },
             {
               "kind": "Content",
@@ -917,7 +917,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/utils!~value:var"
+              "canonicalReference": "@cmpd/utils!~value:var"
             },
             {
               "kind": "Content",
@@ -926,7 +926,7 @@
             {
               "kind": "Reference",
               "text": "value",
-              "canonicalReference": "@tldraw/utils!~value:var"
+              "canonicalReference": "@cmpd/utils!~value:var"
             },
             {
               "kind": "Content",
@@ -971,7 +971,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!isValidUrl:function(1)",
+          "canonicalReference": "@cmpd/utils!isValidUrl:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1016,7 +1016,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!JsonArray:type",
+          "canonicalReference": "@cmpd/utils!JsonArray:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1026,7 +1026,7 @@
             {
               "kind": "Reference",
               "text": "JsonValue",
-              "canonicalReference": "@tldraw/utils!JsonValue:type"
+              "canonicalReference": "@cmpd/utils!JsonValue:type"
             },
             {
               "kind": "Content",
@@ -1047,7 +1047,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!JsonObject:type",
+          "canonicalReference": "@cmpd/utils!JsonObject:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1061,7 +1061,7 @@
             {
               "kind": "Reference",
               "text": "JsonValue",
-              "canonicalReference": "@tldraw/utils!JsonValue:type"
+              "canonicalReference": "@cmpd/utils!JsonValue:type"
             },
             {
               "kind": "Content",
@@ -1082,7 +1082,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!JsonPrimitive:type",
+          "canonicalReference": "@cmpd/utils!JsonPrimitive:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1108,7 +1108,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!JsonValue:type",
+          "canonicalReference": "@cmpd/utils!JsonValue:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1118,7 +1118,7 @@
             {
               "kind": "Reference",
               "text": "JsonArray",
-              "canonicalReference": "@tldraw/utils!JsonArray:type"
+              "canonicalReference": "@cmpd/utils!JsonArray:type"
             },
             {
               "kind": "Content",
@@ -1127,7 +1127,7 @@
             {
               "kind": "Reference",
               "text": "JsonObject",
-              "canonicalReference": "@tldraw/utils!JsonObject:type"
+              "canonicalReference": "@cmpd/utils!JsonObject:type"
             },
             {
               "kind": "Content",
@@ -1136,7 +1136,7 @@
             {
               "kind": "Reference",
               "text": "JsonPrimitive",
-              "canonicalReference": "@tldraw/utils!JsonPrimitive:type"
+              "canonicalReference": "@cmpd/utils!JsonPrimitive:type"
             },
             {
               "kind": "Content",
@@ -1153,7 +1153,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!lerp:function(1)",
+          "canonicalReference": "@cmpd/utils!lerp:function(1)",
           "docComment": "/**\n * Linear interpolate between two values.\n *\n * @example\n * ```ts\n * const A = lerp(0, 1, 0.5)\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1230,7 +1230,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!lns:function(1)",
+          "canonicalReference": "@cmpd/utils!lns:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1275,7 +1275,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/utils!MediaHelpers:class",
+          "canonicalReference": "@cmpd/utils!MediaHelpers:class",
           "docComment": "/**\n * Helpers for media\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1291,7 +1291,7 @@
           "members": [
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!MediaHelpers.getImageSizeFromSrc:member(1)",
+              "canonicalReference": "@cmpd/utils!MediaHelpers.getImageSizeFromSrc:member(1)",
               "docComment": "/**\n * Get the size of an image from its source.\n *\n * @param dataURL - The file as a string.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1344,7 +1344,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!MediaHelpers.getVideoSizeFromSrc:member(1)",
+              "canonicalReference": "@cmpd/utils!MediaHelpers.getVideoSizeFromSrc:member(1)",
               "docComment": "/**\n * Get the size of a video from its source.\n *\n * @param src - The source of the video.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1400,7 +1400,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!modulate:function(1)",
+          "canonicalReference": "@cmpd/utils!modulate:function(1)",
           "docComment": "/**\n * Modulate a value between two ranges.\n *\n * @param value - The interpolation value.\n *\n * @param rangeA - From [low, high]\n *\n * @param rangeB - To [low, high]\n *\n * @param clamp - Whether to clamp the the result to [low, high]\n *\n * @example\n * ```ts\n * const A = modulate(0, [0, 1], [0, 100])\n * ```\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1493,7 +1493,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!OkResult:type",
+          "canonicalReference": "@cmpd/utils!OkResult:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1532,7 +1532,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/utils!PngHelpers:class",
+          "canonicalReference": "@cmpd/utils!PngHelpers:class",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1548,7 +1548,7 @@
           "members": [
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!PngHelpers.findChunk:member(1)",
+              "canonicalReference": "@cmpd/utils!PngHelpers.findChunk:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1613,7 +1613,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!PngHelpers.getChunkType:member(1)",
+              "canonicalReference": "@cmpd/utils!PngHelpers.getChunkType:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1678,7 +1678,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!PngHelpers.isPng:member(1)",
+              "canonicalReference": "@cmpd/utils!PngHelpers.isPng:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1743,7 +1743,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!PngHelpers.parsePhys:member(1)",
+              "canonicalReference": "@cmpd/utils!PngHelpers.parsePhys:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1808,7 +1808,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!PngHelpers.readChunks:member(1)",
+              "canonicalReference": "@cmpd/utils!PngHelpers.readChunks:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1878,7 +1878,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/utils!PngHelpers.setPhysChunk:member(1)",
+              "canonicalReference": "@cmpd/utils!PngHelpers.setPhysChunk:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1964,7 +1964,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!RecursivePartial:type",
+          "canonicalReference": "@cmpd/utils!RecursivePartial:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -1978,7 +1978,7 @@
             {
               "kind": "Reference",
               "text": "RecursivePartial",
-              "canonicalReference": "@tldraw/utils!RecursivePartial:type"
+              "canonicalReference": "@cmpd/utils!RecursivePartial:type"
             },
             {
               "kind": "Content",
@@ -2012,7 +2012,7 @@
         },
         {
           "kind": "TypeAlias",
-          "canonicalReference": "@tldraw/utils!Result:type",
+          "canonicalReference": "@cmpd/utils!Result:type",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2022,7 +2022,7 @@
             {
               "kind": "Reference",
               "text": "ErrorResult",
-              "canonicalReference": "@tldraw/utils!ErrorResult:type"
+              "canonicalReference": "@cmpd/utils!ErrorResult:type"
             },
             {
               "kind": "Content",
@@ -2031,7 +2031,7 @@
             {
               "kind": "Reference",
               "text": "OkResult",
-              "canonicalReference": "@tldraw/utils!OkResult:type"
+              "canonicalReference": "@cmpd/utils!OkResult:type"
             },
             {
               "kind": "Content",
@@ -2076,7 +2076,7 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@tldraw/utils!Result:var",
+          "canonicalReference": "@cmpd/utils!Result:var",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2090,7 +2090,7 @@
             {
               "kind": "Reference",
               "text": "OkResult",
-              "canonicalReference": "@tldraw/utils!OkResult:type"
+              "canonicalReference": "@cmpd/utils!OkResult:type"
             },
             {
               "kind": "Content",
@@ -2099,7 +2099,7 @@
             {
               "kind": "Reference",
               "text": "ErrorResult",
-              "canonicalReference": "@tldraw/utils!ErrorResult:type"
+              "canonicalReference": "@cmpd/utils!ErrorResult:type"
             },
             {
               "kind": "Content",
@@ -2117,7 +2117,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!rng:function(1)",
+          "canonicalReference": "@cmpd/utils!rng:function(1)",
           "docComment": "/**\n * Seeded random number generator, using [xorshift](https://en.wikipedia.org/wiki/Xorshift). The result will always be betweeen -1 and 1.\n *\n * Adapted from [seedrandom](https://github.com/davidbau/seedrandom).\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2162,7 +2162,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!rotateArray:function(1)",
+          "canonicalReference": "@cmpd/utils!rotateArray:function(1)",
           "docComment": "/**\n * Rotate the contents of an array.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2236,7 +2236,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!sortById:function(1)",
+          "canonicalReference": "@cmpd/utils!sortById:function(1)",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2318,7 +2318,7 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@tldraw/utils!structuredClone_2:var",
+          "canonicalReference": "@cmpd/utils!structuredClone_2:var",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -2341,7 +2341,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@tldraw/utils!throttle:function(1)",
+          "canonicalReference": "@cmpd/utils!throttle:function(1)",
           "docComment": "/**\n * Throttle a function.\n *\n * @example\n * ```ts\n * const A = throttle(myFunction, 1000)\n * ```\n *\n * @see\n *\n * source - https://github.com/bameyrick/throttle-typescript\n *\n * @public\n */\n",
           "excerptTokens": [
             {

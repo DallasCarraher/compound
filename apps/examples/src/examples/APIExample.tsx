@@ -1,13 +1,13 @@
 import {
+	Compound,
 	DefaultColorStyle,
 	Editor,
 	TLGeoShape,
 	TLShapePartial,
-	Tldraw,
 	createShapeId,
 	useEditor,
-} from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+} from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useEffect } from 'react'
 
 // The tldraw component shares its App instance via its onMount callback prop.
@@ -70,9 +70,9 @@ export default function APIExample() {
 
 	return (
 		<div className="tldraw__editor">
-			<Tldraw persistenceKey="api-example" onMount={handleMount}>
+			<Compound persistenceKey="api-example" onMount={handleMount}>
 				<InsideOfEditorContext />
-			</Tldraw>
+			</Compound>
 		</div>
 	)
 }

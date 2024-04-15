@@ -1,7 +1,7 @@
-import { atom } from '@tldraw/state'
-import { defineMigrations, migrate } from '@tldraw/store'
-import { getDefaultTranslationLocale } from '@tldraw/tlschema'
-import { T } from '@tldraw/validate'
+import { atom } from '@cmpd/state'
+import { defineMigrations, migrate } from '@cmpd/store'
+import { getDefaultTranslationLocale } from '@cmpd/tlschema'
+import { T } from '@cmpd/validate'
 import { uniqueId } from '../utils/uniqueId'
 
 const USER_DATA_KEY = 'TLDRAW_USER_DATA_v3'

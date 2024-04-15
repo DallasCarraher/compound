@@ -17,4 +17,4 @@ apps/example/www/index.css
 **/dist/*
 *.cjs
 
-packages/tldraw/tldraw.css
+packages/compound/tldraw.css

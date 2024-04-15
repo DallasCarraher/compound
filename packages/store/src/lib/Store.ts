@@ -1,4 +1,4 @@
-import { Atom, Computed, Reactor, atom, computed, reactor, transact } from '@tldraw/state'
+import { Atom, Computed, Reactor, atom, computed, reactor, transact } from '@cmpd/state'
 import {
 	filterEntries,
 	objectMapEntries,
@@ -6,7 +6,7 @@ import {
 	objectMapKeys,
 	objectMapValues,
 	throttledRaf,
-} from '@tldraw/utils'
+} from '@cmpd/utils'
 import { nanoid } from 'nanoid'
 import { IdOf, RecordId, UnknownRecord } from './BaseRecord'
 import { Cache } from './Cache'

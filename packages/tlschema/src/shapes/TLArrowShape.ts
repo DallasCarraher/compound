@@ -1,5 +1,5 @@
-import { defineMigrations } from '@tldraw/store'
-import { T } from '@tldraw/validate'
+import { defineMigrations } from '@cmpd/store'
+import { T } from '@cmpd/validate'
 import { vec2dModelValidator } from '../misc/geometry-types'
 import { StyleProp } from '../styles/StyleProp'
 import { DefaultColorStyle, DefaultLabelColorStyle } from '../styles/TLColorStyle'

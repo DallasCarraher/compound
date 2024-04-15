@@ -1,14 +1,14 @@
-import { Tldraw, track, useEditor } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Compound, track, useEditor } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useEffect } from 'react'
 import './custom-ui.css'
 
 export default function CustomUiExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw hideUi>
+			<Compound hideUi>
 				<CustomUi />
-			</Tldraw>
+			</Compound>
 		</div>
 	)
 }

@@ -1,4 +1,4 @@
-import { TLHandle, TLShape, Vec2dModel } from '@tldraw/tlschema'
+import { TLHandle, TLShape, Vec2dModel } from '@cmpd/tlschema'
 import { VecLike } from '../../primitives/Vec2d'
 import { TLSelectionHandle } from './selection-types'
 

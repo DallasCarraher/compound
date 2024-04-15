@@ -1,29 +1,22 @@
-# compound (apache tldraw)
+# compound
 
-## What is compound?
+**compound** is a fork of **tldraw** from the point at which it was still licensed under Apache 2.0.
 
-compound is a collaborative digital whiteboard available at [compound.com](https://compound.com). Its editor, user interface, and other underlying libraries are open source and available in this repository. They are also distributed on npm. You can use compound to create a drop-in whiteboard for your product or as the foundation on which to build your own infinite canvas applications.
+The intention for this library simply put, is to continue to build upon the existing foundations and architecture, enhancing its capabilities where possible, but more importantly refining it further to provide a streamlined API and **primitive** for react applications in need of a whiteboarding component or interactive canvas.
 
-Learn more at [compound.dev](https://compound.dev).
+The other mission of this library is to continue to offer a **completely free for commercial use tool**.
 
-## Installation & Usage
+Compound's editor, user interface, and other underlying libraries are open source and available in this repository. They are also distributed on npm. You can use compound to create a drop-in whiteboard for your product or as the foundation on which to build your own canvas applications.
 
-To learn more about using compound in your React application, follow our guide [here](https://compound.dev/installation)
+<hr />
 
-```tsx
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+## Contributing
 
-export default function () {
-	return (
-		<div style={{ position: 'fixed', inset: 0 }}>
-			<Tldraw />
-		</div>
-	)
-}
-```
+If you want to contribute to the library please first read the [Contributing](https://github.com/DallasCarraher/compound/blob/osmain/CONTRIBUTING.md) doc.
 
-## Local development
+Found a bug? Please [submit an issue](https://github.com/DallasCarraher/compound/issues/new).
+
+## Local Development
 
 To run the local development server, first clone this repo.
 
@@ -39,14 +32,16 @@ Start the local development server:
 yarn dev
 ```
 
-Open the example project at `localhost:5420`.
+Open the example project at `localhost:8080`.
 
 ### Examples
 
-Our development server contains several examples that demonstrates different ways that you can customize compound or use its APIs. Each example is found in the [**apps/examples**](https://github.com/DallasCarraher/compound/tree/osmain/apps/examples) folder.
+The development server contains several examples that demonstrate different ways that you can customize compound or use its APIs. Each example is found in the [**apps/examples**](https://github.com/DallasCarraher/compound/tree/osmain/apps/examples) folder.
 
-- eg: `localhost:5420` for the basic example.
-- eg: `localhost:5420/api` for the API example.
+- eg: `localhost:8080` for the basic example.
+- eg: `localhost:8080/api` for the API example.
+
+<hr />
 
 ## About this repository
 
@@ -62,7 +57,7 @@ This repository's contents is divided across four primary sections:
 
 ### Applications
 
-- `examples`: our local development / examples project
+- `examples`: local development / examples project
 
 ### Packages
 
@@ -81,15 +76,11 @@ Have questions, comments or feedback? [start a discussion](https://github.com/Da
 
 ## Distributions
 
-You can't find compound on npm yet.
+compound's pre-release packages can be found on npm: [@cmpd](https://www.npmjs.com/search?q=%40cmpd)
 
-At the moment compound is in pre-alpha.
+<hr />
 
 ## License
 
-The source code for various apps and packages in this repository are licensed under Apache-2.0. These licenses are not subject to change.
-
-## Contribution
-
-Found a bug? Please [submit an issue](https://github.com/DallasCarraher/compound/issues/new).
-
+The source code for various apps and packages in this repository are licensed under Apache-2.0.
+**These licenses are not subject to change.**

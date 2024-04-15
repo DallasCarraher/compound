@@ -1,5 +1,11 @@
-import { stopEventPropagation, Tldraw, TLEditorComponents, track, useEditor } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import {
+	Compound,
+	TLEditorComponents,
+	stopEventPropagation,
+	track,
+	useEditor,
+} from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useState } from 'react'
 
 // The "OnTheCanvas" component is rendered on top of the canvas, but behind the UI.
@@ -81,7 +87,7 @@ const components: TLEditorComponents = {
 export default function OnTheCanvasExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw persistenceKey="things-on-the-canvas-example" components={components} />
+			<Compound persistenceKey="things-on-the-canvas-example" components={components} />
 		</div>
 	)
 }

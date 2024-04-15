@@ -1,4 +1,4 @@
-import { TLHandle, TLShapeId } from '@tldraw/tlschema'
+import { TLHandle, TLShapeId } from '@cmpd/tlschema'
 import classNames from 'classnames'
 import { ComponentType } from 'react'
 

@@ -1,5 +1,5 @@
-import { Tldraw, TLEditorComponents } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Compound, TLEditorComponents } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 
 const components: TLEditorComponents = {
 	Brush: function MyBrush({ brush }) {
@@ -34,7 +34,7 @@ const components: TLEditorComponents = {
 export default function CustomComponentsExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw persistenceKey="custom-components-example" components={components} />
+			<Compound persistenceKey="custom-components-example" components={components} />
 		</div>
 	)
 }

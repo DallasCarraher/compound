@@ -1,5 +1,5 @@
+import { Editor, TLShapeId, TLShapePartial } from '@cmpd/compound'
 import test, { Page, expect } from '@playwright/test'
-import { Editor, TLShapeId, TLShapePartial } from '@tldraw/tldraw'
 import assert from 'assert'
 import { rename, writeFile } from 'fs/promises'
 import { setupPage } from '../shared-e2e'

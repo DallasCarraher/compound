@@ -1,4 +1,4 @@
-import { uniqueId } from '@tldraw/tldraw'
+import { uniqueId } from '@cmpd/compound'
 import type { VscodeMessagePairs } from '../../../messages'
 import { vscode } from './vscode'
 

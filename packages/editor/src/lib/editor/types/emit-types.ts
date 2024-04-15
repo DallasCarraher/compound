@@ -1,5 +1,5 @@
-import { HistoryEntry } from '@tldraw/store'
-import { TLPageId, TLRecord } from '@tldraw/tlschema'
+import { HistoryEntry } from '@cmpd/store'
+import { TLPageId, TLRecord } from '@cmpd/tlschema'
 import { TLEventInfo } from './event-types'
 
 /** @public */

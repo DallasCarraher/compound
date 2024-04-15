@@ -1,4 +1,4 @@
-import { createShapeId } from '@tldraw/tlschema'
+import { createShapeId } from '@cmpd/tlschema'
 import { Vec2d } from '../../../../primitives/Vec2d'
 import { TLBaseBoxShape } from '../../../shapes/BaseBoxShapeUtil'
 import { TLEventHandlers } from '../../../types/event-types'

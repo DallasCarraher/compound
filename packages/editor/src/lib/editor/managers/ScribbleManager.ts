@@ -1,4 +1,4 @@
-import { TLScribble, Vec2dModel } from '@tldraw/tlschema'
+import { TLScribble, Vec2dModel } from '@cmpd/tlschema'
 import { Vec2d } from '../../primitives/Vec2d'
 import { uniqueId } from '../../utils/uniqueId'
 import { Editor } from '../Editor'

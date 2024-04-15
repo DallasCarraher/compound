@@ -1,4 +1,4 @@
-import { TLBaseShape } from '@tldraw/tlschema'
+import { TLBaseShape } from '@cmpd/tlschema'
 import { Geometry2d } from '../../primitives/geometry/Geometry2d'
 import { Rectangle2d } from '../../primitives/geometry/Rectangle2d'
 import { ShapeUtil, TLOnResizeHandler } from './ShapeUtil'

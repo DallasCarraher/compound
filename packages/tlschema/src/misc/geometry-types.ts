@@ -1,4 +1,4 @@
-import { T } from '@tldraw/validate'
+import { T } from '@cmpd/validate'
 
 /**
  * A serializable model for 2D boxes.

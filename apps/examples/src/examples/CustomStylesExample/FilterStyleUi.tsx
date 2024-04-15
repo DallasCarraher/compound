@@ -1,4 +1,4 @@
-import { track, useEditor } from '@tldraw/tldraw'
+import { track, useEditor } from '@cmpd/compound'
 import { MyFilterStyle } from './CardShape'
 
 export const FilterStyleUi = track(function FilterStyleUi() {

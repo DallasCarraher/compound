@@ -1,5 +1,5 @@
-import { useValue } from '@tldraw/state'
-import { TLInstancePresence } from '@tldraw/tlschema'
+import { useValue } from '@cmpd/state'
+import { TLInstancePresence } from '@cmpd/tlschema'
 import { useMemo } from 'react'
 import { useEditor } from './useEditor'
 

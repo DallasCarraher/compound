@@ -1,4 +1,4 @@
-import { TLShape } from '@tldraw/tlschema'
+import { TLShape } from '@cmpd/tlschema'
 import { StateNode } from '../StateNode'
 import { Idle } from './children/Idle'
 import { Pointing } from './children/Pointing'

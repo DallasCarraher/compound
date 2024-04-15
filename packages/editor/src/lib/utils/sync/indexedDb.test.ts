@@ -1,4 +1,4 @@
-import { createTLSchema } from '@tldraw/tlschema'
+import { createTLSchema } from '@cmpd/tlschema'
 import {
 	getAllIndexDbNames,
 	loadDataFromStore,

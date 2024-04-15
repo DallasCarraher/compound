@@ -1,4 +1,4 @@
-import { Box2dModel } from '@tldraw/tlschema'
+import { Box2dModel } from '@cmpd/tlschema'
 import { Vec2d, VecLike } from './Vec2d'
 import { PI, PI2, toPrecision } from './utils'
 

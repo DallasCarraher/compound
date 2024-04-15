@@ -1,40 +1,44 @@
 import { Auto } from '@auto-it/core'
-import fetch from 'cross-fetch'
-import { assert } from 'node:console'
+import 'dotenv/config'
 import { parse } from 'semver'
+
 import { exec } from './lib/exec'
 import { BUBLIC_ROOT } from './lib/file'
 import { nicelog } from './lib/nicelog'
 import { getLatestVersion, publish, setAllVersions } from './lib/publishing'
 import { getAllWorkspacePackages } from './lib/workspace'
 
+/**
+ * Publish a new version of the packages.
+ */
 async function main() {
-	const huppyToken = process.env.HUPPY_TOKEN
-	assert(huppyToken && typeof huppyToken === 'string', 'HUPPY_ACCESS_KEY env var must be set')
-
+	nicelog('\n\n\n Publishing new version... \n\n\n')
 	const auto = new Auto({
 		plugins: ['npm'],
-		baseBranch: 'main',
-		owner: 'tldraw',
-		repo: 'tldraw',
+		baseBranch: 'osmain',
+		owner: 'DallasCarraher',
+		repo: 'compound',
 		verbose: true,
 	})
+	nicelog('\n\n\n auto created ⚙️ \n\n\n')
 
 	// module was called directly
 	const currentBranch = (await exec('git', ['rev-parse', '--abbrev-ref', 'HEAD'])).toString().trim()
-	if (currentBranch !== 'main') {
-		throw new Error('Must be on main branch to publish')
-	}
+	if (currentBranch !== 'osmain') throw new Error('Must be on the `osmain` branch to publish')
 
 	await auto.loadConfig()
+	nicelog('\n\n\n auto config loaded 📄 \n\n\n')
+
+	// bump the version
 	const bump = await auto.getVersion()
+	nicelog('bump ===', bump)
 	if (!bump) {
-		nicelog('nothing to do')
+		nicelog('nothing to do', bump)
 		return
 	}
 
+	// get the latest version
 	const latestVersion = parse(getLatestVersion())!
-
 	nicelog('latestVersion', latestVersion)
 
 	const [prereleaseTag, prereleaseNumber] = latestVersion.prerelease
@@ -58,6 +62,10 @@ async function main() {
 			packageJsonFilesToAdd.push(`${workspace.relativePath}/package.json`)
 		}
 	}
+
+	nicelog('packageJsonFilesToAdd', packageJsonFilesToAdd)
+
+	return
 	await exec('git', [
 		'add',
 		'lerna.json',
@@ -81,17 +89,17 @@ async function main() {
 	// finally, publish the packages [IF THIS STEP FAILS, RUN THE `publish-manual.ts` script locally]
 	await publish()
 
-	nicelog('Notifying huppy of release...')
-	const huppyResponse = await fetch('https://tldraw-repo-sync.fly.dev/api/on-release', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify({ apiKey: huppyToken, tagToRelease: `v${nextVersion}`, canary: false }),
-	})
-	nicelog(
-		`huppy: [${huppyResponse.status} ${huppyResponse.statusText}] ${await huppyResponse.text()}`
-	)
+	// nicelog('Notifying huppy of release...')
+	// const huppyResponse = await fetch('https://tldraw-repo-sync.fly.dev/api/on-release', {
+	// 	method: 'POST',
+	// 	headers: {
+	// 		'Content-Type': 'application/json',
+	// 	},
+	// 	body: JSON.stringify({ apiKey: huppyToken, tagToRelease: `v${nextVersion}`, canary: false }),
+	// })
+	// nicelog(
+	// 	`huppy: [${huppyResponse.status} ${huppyResponse.statusText}] ${await huppyResponse.text()}`
+	// )
 }
 
 main()

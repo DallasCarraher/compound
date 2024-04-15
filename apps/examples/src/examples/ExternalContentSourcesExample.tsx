@@ -1,5 +1,5 @@
-import { BaseBoxShapeUtil, Editor, HTMLContainer, TLBaseShape, Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { BaseBoxShapeUtil, Compound, Editor, HTMLContainer, TLBaseShape } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useCallback } from 'react'
 
 export type IDangerousHtmlShape = TLBaseShape<
@@ -61,7 +61,7 @@ export default function ExternalContentSourcesExample() {
 
 	return (
 		<div className="tldraw__editor">
-			<Tldraw autoFocus onMount={handleMount} shapeUtils={[DangerousHtmlExample]} />
+			<Compound autoFocus onMount={handleMount} shapeUtils={[DangerousHtmlExample]} />
 		</div>
 	)
 }

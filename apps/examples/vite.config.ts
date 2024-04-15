@@ -11,7 +11,7 @@ export default defineConfig({
 		assetsInlineLimit: 0,
 	},
 	server: {
-		port: 5420,
+		port: 8080,
 	},
 	clearScreen: false,
 	optimizeDeps: {

@@ -1,5 +1,5 @@
-import { RecordsDiff, SerializedSchema, SerializedStore } from '@tldraw/store'
-import { TLRecord, TLStoreSchema } from '@tldraw/tlschema'
+import { RecordsDiff, SerializedSchema, SerializedStore } from '@cmpd/store'
+import { TLRecord, TLStoreSchema } from '@cmpd/tlschema'
 import { IDBPDatabase, openDB } from 'idb'
 import { TLSessionStateSnapshot } from '../../config/TLSessionStateSnapshot'
 

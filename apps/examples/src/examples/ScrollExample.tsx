@@ -1,5 +1,5 @@
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Compound } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 
 export default function ScrollExample() {
 	return (
@@ -14,7 +14,7 @@ export default function ScrollExample() {
 			}}
 		>
 			<div style={{ width: '60vw', height: '80vh' }}>
-				<Tldraw persistenceKey="scroll-example" />
+				<Compound persistenceKey="scroll-example" />
 			</div>
 		</div>
 	)

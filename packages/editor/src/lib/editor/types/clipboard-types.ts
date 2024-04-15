@@ -1,5 +1,5 @@
-import { SerializedSchema } from '@tldraw/store'
-import { TLAsset, TLShape, TLShapeId } from '@tldraw/tlschema'
+import { SerializedSchema } from '@cmpd/store'
+import { TLAsset, TLShape, TLShapeId } from '@cmpd/tlschema'
 
 /** @public */
 export interface TLContent {

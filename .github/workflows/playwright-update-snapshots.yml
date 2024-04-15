@@ -14,8 +14,9 @@
 name: Update playwright snapshots
 
 on:
-  pull_request:
-    types: [labeled]
+  workflow_dispatch
+  # pull_request:
+  # types: [labeled]
 
 env:
   CI: 1

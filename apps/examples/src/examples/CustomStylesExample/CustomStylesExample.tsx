@@ -1,5 +1,5 @@
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Compound } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { CardShapeTool, CardShapeUtil } from './CardShape'
 import { FilterStyleUi } from './FilterStyleUi'
 import { uiOverrides } from './ui-overrides'
@@ -10,14 +10,14 @@ const customTools = [CardShapeTool]
 export default function CustomStylesExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				persistenceKey="custom-styles-example"
 				shapeUtils={customShapeUtils}
 				tools={customTools}
 				overrides={uiOverrides}
 			>
 				<FilterStyleUi />
-			</Tldraw>
+			</Compound>
 		</div>
 	)
 }

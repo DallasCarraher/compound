@@ -1,4 +1,4 @@
-import { TLDefaultDashStyle } from '@tldraw/tlschema'
+import { TLDefaultDashStyle } from '@cmpd/tlschema'
 
 export function getPerfectDashProps(
 	totalLength: number,

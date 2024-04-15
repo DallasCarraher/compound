@@ -1,5 +1,5 @@
-import { Editor, TLEventMapHandler, Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Compound, Editor, TLEventMapHandler } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { useCallback, useEffect, useState } from 'react'
 
 export default function StoreEventsExample() {
@@ -58,7 +58,7 @@ export default function StoreEventsExample() {
 	return (
 		<div style={{ display: 'flex' }}>
 			<div style={{ width: '60vw', height: '100vh' }}>
-				<Tldraw onMount={setAppToState} />
+				<Compound onMount={setAppToState} />
 			</div>
 			<div>
 				<div

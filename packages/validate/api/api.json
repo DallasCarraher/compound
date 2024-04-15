@@ -161,20 +161,20 @@
     }
   },
   "kind": "Package",
-  "canonicalReference": "@tldraw/validate!",
+  "canonicalReference": "@cmpd/validate!",
   "docComment": "",
-  "name": "@tldraw/validate",
+  "name": "@cmpd/validate",
   "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "@tldraw/validate!",
+      "canonicalReference": "@cmpd/validate!",
       "name": "",
       "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/validate!ArrayOfValidator:class",
+          "canonicalReference": "@cmpd/validate!ArrayOfValidator:class",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -184,7 +184,7 @@
             {
               "kind": "Reference",
               "text": "Validator",
-              "canonicalReference": "@tldraw/validate!Validator:class"
+              "canonicalReference": "@cmpd/validate!Validator:class"
             },
             {
               "kind": "Content",
@@ -216,7 +216,7 @@
           "members": [
             {
               "kind": "Constructor",
-              "canonicalReference": "@tldraw/validate!ArrayOfValidator:constructor(1)",
+              "canonicalReference": "@cmpd/validate!ArrayOfValidator:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `ArrayOfValidator` class\n */\n",
               "excerptTokens": [
                 {
@@ -226,7 +226,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -253,7 +253,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/validate!ArrayOfValidator#itemValidator:member",
+              "canonicalReference": "@cmpd/validate!ArrayOfValidator#itemValidator:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -263,7 +263,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -288,7 +288,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!ArrayOfValidator#lengthGreaterThan1:member(1)",
+              "canonicalReference": "@cmpd/validate!ArrayOfValidator#lengthGreaterThan1:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -298,7 +298,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -324,7 +324,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!ArrayOfValidator#nonEmpty:member(1)",
+              "canonicalReference": "@cmpd/validate!ArrayOfValidator#nonEmpty:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -334,7 +334,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -367,7 +367,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/validate!DictValidator:class",
+          "canonicalReference": "@cmpd/validate!DictValidator:class",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -385,7 +385,7 @@
             {
               "kind": "Reference",
               "text": "Validator",
-              "canonicalReference": "@tldraw/validate!Validator:class"
+              "canonicalReference": "@cmpd/validate!Validator:class"
             },
             {
               "kind": "Content",
@@ -437,7 +437,7 @@
           "members": [
             {
               "kind": "Constructor",
-              "canonicalReference": "@tldraw/validate!DictValidator:constructor(1)",
+              "canonicalReference": "@cmpd/validate!DictValidator:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `DictValidator` class\n */\n",
               "excerptTokens": [
                 {
@@ -447,7 +447,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -460,7 +460,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -495,7 +495,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/validate!DictValidator#keyValidator:member",
+              "canonicalReference": "@cmpd/validate!DictValidator#keyValidator:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -505,7 +505,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -530,7 +530,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/validate!DictValidator#valueValidator:member",
+              "canonicalReference": "@cmpd/validate!DictValidator#valueValidator:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -540,7 +540,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -572,7 +572,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/validate!ObjectValidator:class",
+          "canonicalReference": "@cmpd/validate!ObjectValidator:class",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -590,7 +590,7 @@
             {
               "kind": "Reference",
               "text": "Validator",
-              "canonicalReference": "@tldraw/validate!Validator:class"
+              "canonicalReference": "@cmpd/validate!Validator:class"
             },
             {
               "kind": "Content",
@@ -622,7 +622,7 @@
           "members": [
             {
               "kind": "Constructor",
-              "canonicalReference": "@tldraw/validate!ObjectValidator:constructor(1)",
+              "canonicalReference": "@cmpd/validate!ObjectValidator:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `ObjectValidator` class\n */\n",
               "excerptTokens": [
                 {
@@ -636,7 +636,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -679,7 +679,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!ObjectValidator#allowUnknownProperties:member(1)",
+              "canonicalReference": "@cmpd/validate!ObjectValidator#allowUnknownProperties:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -689,7 +689,7 @@
                 {
                   "kind": "Reference",
                   "text": "ObjectValidator",
-                  "canonicalReference": "@tldraw/validate!ObjectValidator:class"
+                  "canonicalReference": "@cmpd/validate!ObjectValidator:class"
                 },
                 {
                   "kind": "Content",
@@ -715,7 +715,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/validate!ObjectValidator#config:member",
+              "canonicalReference": "@cmpd/validate!ObjectValidator#config:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -729,7 +729,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -754,7 +754,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!ObjectValidator#extend:member(1)",
+              "canonicalReference": "@cmpd/validate!ObjectValidator#extend:member(1)",
               "docComment": "/**\n * Extend an object validator by adding additional properties.\n *\n * @example\n * ```ts\n * const animalValidator = T.object({\n * \tname: T.string,\n * })\n * const catValidator = animalValidator.extend({\n * \tmeowVolume: T.number,\n * })\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
@@ -781,7 +781,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -794,7 +794,7 @@
                 {
                   "kind": "Reference",
                   "text": "ObjectValidator",
-                  "canonicalReference": "@tldraw/validate!ObjectValidator:class"
+                  "canonicalReference": "@cmpd/validate!ObjectValidator:class"
                 },
                 {
                   "kind": "Content",
@@ -849,7 +849,7 @@
         },
         {
           "kind": "Namespace",
-          "canonicalReference": "@tldraw/validate!T:namespace",
+          "canonicalReference": "@cmpd/validate!T:namespace",
           "docComment": "",
           "excerptTokens": [],
           "fileUrlPath": "packages/validate/src/index.ts",
@@ -859,7 +859,7 @@
           "members": [
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.any:var",
+              "canonicalReference": "@cmpd/validate!T.any:var",
               "docComment": "/**\n * Validation that accepts any value. Generally this should be avoided, but you can use it as an escape hatch if you want to work without validations for e.g. a prototype.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -869,7 +869,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -887,7 +887,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.array:var",
+              "canonicalReference": "@cmpd/validate!T.array:var",
               "docComment": "/**\n * Validates that a value is an array. To check the contents of the array, use T.arrayOf.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -897,7 +897,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -915,7 +915,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.arrayOf:function(1)",
+              "canonicalReference": "@cmpd/validate!T.arrayOf:function(1)",
               "docComment": "/**\n * Validates that a value is an array whose contents matches the passed-in validator.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -925,7 +925,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -938,7 +938,7 @@
                 {
                   "kind": "Reference",
                   "text": "ArrayOfValidator",
-                  "canonicalReference": "@tldraw/validate!ArrayOfValidator:class"
+                  "canonicalReference": "@cmpd/validate!ArrayOfValidator:class"
                 },
                 {
                   "kind": "Content",
@@ -983,7 +983,7 @@
             },
             {
               "kind": "Class",
-              "canonicalReference": "@tldraw/validate!T.ArrayOfValidator:class",
+              "canonicalReference": "@cmpd/validate!T.ArrayOfValidator:class",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -993,7 +993,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1025,7 +1025,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "@tldraw/validate!T.ArrayOfValidator:constructor(1)",
+                  "canonicalReference": "@cmpd/validate!T.ArrayOfValidator:constructor(1)",
                   "docComment": "/**\n * Constructs a new instance of the `ArrayOfValidator` class\n */\n",
                   "excerptTokens": [
                     {
@@ -1035,7 +1035,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -1062,7 +1062,7 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "@tldraw/validate!T.ArrayOfValidator#itemValidator:member",
+                  "canonicalReference": "@cmpd/validate!T.ArrayOfValidator#itemValidator:member",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -1072,7 +1072,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -1097,7 +1097,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.ArrayOfValidator#lengthGreaterThan1:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.ArrayOfValidator#lengthGreaterThan1:member(1)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -1107,7 +1107,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validator",
-                      "canonicalReference": "@tldraw/validate!Validator:class"
+                      "canonicalReference": "@cmpd/validate!Validator:class"
                     },
                     {
                       "kind": "Content",
@@ -1133,7 +1133,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.ArrayOfValidator#nonEmpty:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.ArrayOfValidator#nonEmpty:member(1)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -1143,7 +1143,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validator",
-                      "canonicalReference": "@tldraw/validate!Validator:class"
+                      "canonicalReference": "@cmpd/validate!Validator:class"
                     },
                     {
                       "kind": "Content",
@@ -1176,7 +1176,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.bigint:var",
+              "canonicalReference": "@cmpd/validate!T.bigint:var",
               "docComment": "/**\n * Validates that a value is a bigint.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1186,7 +1186,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1204,7 +1204,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.boolean:var",
+              "canonicalReference": "@cmpd/validate!T.boolean:var",
               "docComment": "/**\n * Validates that a value is boolean.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1214,7 +1214,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1232,7 +1232,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.dict:function(1)",
+              "canonicalReference": "@cmpd/validate!T.dict:function(1)",
               "docComment": "/**\n * Validation that an option is a dict with particular keys and values.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1250,7 +1250,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -1263,7 +1263,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -1276,7 +1276,7 @@
                 {
                   "kind": "Reference",
                   "text": "DictValidator",
-                  "canonicalReference": "@tldraw/validate!DictValidator:class"
+                  "canonicalReference": "@cmpd/validate!DictValidator:class"
                 },
                 {
                   "kind": "Content",
@@ -1340,7 +1340,7 @@
             },
             {
               "kind": "Class",
-              "canonicalReference": "@tldraw/validate!T.DictValidator:class",
+              "canonicalReference": "@cmpd/validate!T.DictValidator:class",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1358,7 +1358,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1410,7 +1410,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "@tldraw/validate!T.DictValidator:constructor(1)",
+                  "canonicalReference": "@cmpd/validate!T.DictValidator:constructor(1)",
                   "docComment": "/**\n * Constructs a new instance of the `DictValidator` class\n */\n",
                   "excerptTokens": [
                     {
@@ -1420,7 +1420,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -1433,7 +1433,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -1468,7 +1468,7 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "@tldraw/validate!T.DictValidator#keyValidator:member",
+                  "canonicalReference": "@cmpd/validate!T.DictValidator#keyValidator:member",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -1478,7 +1478,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -1503,7 +1503,7 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "@tldraw/validate!T.DictValidator#valueValidator:member",
+                  "canonicalReference": "@cmpd/validate!T.DictValidator#valueValidator:member",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -1513,7 +1513,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -1545,7 +1545,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.integer:var",
+              "canonicalReference": "@cmpd/validate!T.integer:var",
               "docComment": "/**\n * Fails if number is not an integer\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1555,7 +1555,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1573,7 +1573,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.jsonDict:function(1)",
+              "canonicalReference": "@cmpd/validate!T.jsonDict:function(1)",
               "docComment": "/**\n * Validate an object has a particular shape.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1583,7 +1583,7 @@
                 {
                   "kind": "Reference",
                   "text": "DictValidator",
-                  "canonicalReference": "@tldraw/validate!DictValidator:class"
+                  "canonicalReference": "@cmpd/validate!DictValidator:class"
                 },
                 {
                   "kind": "Content",
@@ -1592,7 +1592,7 @@
                 {
                   "kind": "Reference",
                   "text": "JsonValue",
-                  "canonicalReference": "@tldraw/utils!JsonValue:type"
+                  "canonicalReference": "@cmpd/utils!JsonValue:type"
                 },
                 {
                   "kind": "Content",
@@ -1615,7 +1615,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.jsonValue:var",
+              "canonicalReference": "@cmpd/validate!T.jsonValue:var",
               "docComment": "/**\n * Validate that a value is valid JSON.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1625,7 +1625,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1634,7 +1634,7 @@
                 {
                   "kind": "Reference",
                   "text": "JsonValue",
-                  "canonicalReference": "@tldraw/utils!JsonValue:type"
+                  "canonicalReference": "@cmpd/utils!JsonValue:type"
                 },
                 {
                   "kind": "Content",
@@ -1652,7 +1652,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.literal:function(1)",
+              "canonicalReference": "@cmpd/validate!T.literal:function(1)",
               "docComment": "/**\n * Validates that a value matches another that was passed in.\n *\n * @example\n * ```ts\n * const trueValidator = T.literal(true)\n * ```\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1678,7 +1678,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1723,7 +1723,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.literalEnum:function(1)",
+              "canonicalReference": "@cmpd/validate!T.literalEnum:function(1)",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1749,7 +1749,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1794,7 +1794,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.model:function(1)",
+              "canonicalReference": "@cmpd/validate!T.model:function(1)",
               "docComment": "/**\n * A named object with an ID. Errors will be reported as being part of the object with the given name.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1820,7 +1820,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -1833,7 +1833,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1886,7 +1886,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.nonZeroInteger:var",
+              "canonicalReference": "@cmpd/validate!T.nonZeroInteger:var",
               "docComment": "/**\n * Fails if value \\<= 0 and is not an integer\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1896,7 +1896,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1914,7 +1914,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.nonZeroNumber:var",
+              "canonicalReference": "@cmpd/validate!T.nonZeroNumber:var",
               "docComment": "/**\n * Fails if value \\<= 0\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1924,7 +1924,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -1942,7 +1942,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.nullable:function(1)",
+              "canonicalReference": "@cmpd/validate!T.nullable:function(1)",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -1952,7 +1952,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -1965,7 +1965,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2010,7 +2010,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.number:var",
+              "canonicalReference": "@cmpd/validate!T.number:var",
               "docComment": "/**\n * Validates that a value is a finite non-NaN number.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2020,7 +2020,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2038,7 +2038,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.object:function(1)",
+              "canonicalReference": "@cmpd/validate!T.object:function(1)",
               "docComment": "/**\n * Validate an object has a particular shape.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2060,7 +2060,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -2073,7 +2073,7 @@
                 {
                   "kind": "Reference",
                   "text": "ObjectValidator",
-                  "canonicalReference": "@tldraw/validate!ObjectValidator:class"
+                  "canonicalReference": "@cmpd/validate!ObjectValidator:class"
                 },
                 {
                   "kind": "Content",
@@ -2118,7 +2118,7 @@
             },
             {
               "kind": "Class",
-              "canonicalReference": "@tldraw/validate!T.ObjectValidator:class",
+              "canonicalReference": "@cmpd/validate!T.ObjectValidator:class",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2136,7 +2136,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2168,7 +2168,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "@tldraw/validate!T.ObjectValidator:constructor(1)",
+                  "canonicalReference": "@cmpd/validate!T.ObjectValidator:constructor(1)",
                   "docComment": "/**\n * Constructs a new instance of the `ObjectValidator` class\n */\n",
                   "excerptTokens": [
                     {
@@ -2182,7 +2182,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -2225,7 +2225,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.ObjectValidator#allowUnknownProperties:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.ObjectValidator#allowUnknownProperties:member(1)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -2235,7 +2235,7 @@
                     {
                       "kind": "Reference",
                       "text": "ObjectValidator",
-                      "canonicalReference": "@tldraw/validate!ObjectValidator:class"
+                      "canonicalReference": "@cmpd/validate!ObjectValidator:class"
                     },
                     {
                       "kind": "Content",
@@ -2261,7 +2261,7 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "@tldraw/validate!T.ObjectValidator#config:member",
+                  "canonicalReference": "@cmpd/validate!T.ObjectValidator#config:member",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -2275,7 +2275,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -2300,7 +2300,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.ObjectValidator#extend:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.ObjectValidator#extend:member(1)",
                   "docComment": "/**\n * Extend an object validator by adding additional properties.\n *\n * @example\n * ```ts\n * const animalValidator = T.object({\n * \tname: T.string,\n * })\n * const catValidator = animalValidator.extend({\n * \tmeowVolume: T.number,\n * })\n * ```\n *\n */\n",
                   "excerptTokens": [
                     {
@@ -2327,7 +2327,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validatable",
-                      "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                      "canonicalReference": "@cmpd/validate!T.Validatable:type"
                     },
                     {
                       "kind": "Content",
@@ -2340,7 +2340,7 @@
                     {
                       "kind": "Reference",
                       "text": "ObjectValidator",
-                      "canonicalReference": "@tldraw/validate!ObjectValidator:class"
+                      "canonicalReference": "@cmpd/validate!ObjectValidator:class"
                     },
                     {
                       "kind": "Content",
@@ -2395,7 +2395,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.optional:function(1)",
+              "canonicalReference": "@cmpd/validate!T.optional:function(1)",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2405,7 +2405,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -2418,7 +2418,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2463,7 +2463,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.positiveInteger:var",
+              "canonicalReference": "@cmpd/validate!T.positiveInteger:var",
               "docComment": "/**\n * Fails if value \\< 0 and is not an integer\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2473,7 +2473,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2491,7 +2491,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.positiveNumber:var",
+              "canonicalReference": "@cmpd/validate!T.positiveNumber:var",
               "docComment": "/**\n * Fails if value \\< 0\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2501,7 +2501,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2519,7 +2519,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.setEnum:function(1)",
+              "canonicalReference": "@cmpd/validate!T.setEnum:function(1)",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2542,7 +2542,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2587,7 +2587,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.string:var",
+              "canonicalReference": "@cmpd/validate!T.string:var",
               "docComment": "/**\n * Validates that a value is a string.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2597,7 +2597,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2615,7 +2615,7 @@
             },
             {
               "kind": "TypeAlias",
-              "canonicalReference": "@tldraw/validate!T.TypeOf:type",
+              "canonicalReference": "@cmpd/validate!T.TypeOf:type",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2625,7 +2625,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -2642,7 +2642,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -2676,7 +2676,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "@tldraw/validate!T.union:function(1)",
+              "canonicalReference": "@cmpd/validate!T.union:function(1)",
               "docComment": "/**\n * Validate a union of several object types. Each object must have a property matching `key` which should be a unique string.\n *\n * @example\n * ```ts\n * const catValidator = T.object({ kind: T.value('cat'), meow: T.boolean })\n * const dogValidator = T.object({ kind: T.value('dog'), bark: T.boolean })\n * const animalValidator = T.union('kind', { cat: catValidator, dog: dogValidator })\n * ```\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2694,7 +2694,7 @@
                 {
                   "kind": "Reference",
                   "text": "UnionValidatorConfig",
-                  "canonicalReference": "@tldraw/validate!~UnionValidatorConfig:type"
+                  "canonicalReference": "@cmpd/validate!~UnionValidatorConfig:type"
                 },
                 {
                   "kind": "Content",
@@ -2723,7 +2723,7 @@
                 {
                   "kind": "Reference",
                   "text": "UnionValidator",
-                  "canonicalReference": "@tldraw/validate!UnionValidator:class"
+                  "canonicalReference": "@cmpd/validate!UnionValidator:class"
                 },
                 {
                   "kind": "Content",
@@ -2787,7 +2787,7 @@
             },
             {
               "kind": "Class",
-              "canonicalReference": "@tldraw/validate!T.UnionValidator:class",
+              "canonicalReference": "@cmpd/validate!T.UnionValidator:class",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -2805,7 +2805,7 @@
                 {
                   "kind": "Reference",
                   "text": "UnionValidatorConfig",
-                  "canonicalReference": "@tldraw/validate!~UnionValidatorConfig:type"
+                  "canonicalReference": "@cmpd/validate!~UnionValidatorConfig:type"
                 },
                 {
                   "kind": "Content",
@@ -2826,7 +2826,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -2835,7 +2835,7 @@
                 {
                   "kind": "Reference",
                   "text": "TypeOf",
-                  "canonicalReference": "@tldraw/validate!T.TypeOf:type"
+                  "canonicalReference": "@cmpd/validate!T.TypeOf:type"
                 },
                 {
                   "kind": "Content",
@@ -2889,7 +2889,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "@tldraw/validate!T.UnionValidator:constructor(1)",
+                  "canonicalReference": "@cmpd/validate!T.UnionValidator:constructor(1)",
                   "docComment": "/**\n * Constructs a new instance of the `UnionValidator` class\n */\n",
                   "excerptTokens": [
                     {
@@ -2953,7 +2953,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.UnionValidator#validateUnknownVariants:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.UnionValidator#validateUnknownVariants:member(1)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -2971,7 +2971,7 @@
                     {
                       "kind": "Reference",
                       "text": "UnionValidator",
-                      "canonicalReference": "@tldraw/validate!UnionValidator:class"
+                      "canonicalReference": "@cmpd/validate!UnionValidator:class"
                     },
                     {
                       "kind": "Content",
@@ -3026,7 +3026,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.unknown:var",
+              "canonicalReference": "@cmpd/validate!T.unknown:var",
               "docComment": "/**\n * Validation that accepts any value. Useful as a starting point for building your own custom validations.\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3036,7 +3036,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -3054,7 +3054,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "@tldraw/validate!T.unknownObject:var",
+              "canonicalReference": "@cmpd/validate!T.unknownObject:var",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3064,7 +3064,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -3091,7 +3091,7 @@
             },
             {
               "kind": "TypeAlias",
-              "canonicalReference": "@tldraw/validate!T.Validatable:type",
+              "canonicalReference": "@cmpd/validate!T.Validatable:type",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3130,7 +3130,7 @@
             },
             {
               "kind": "Class",
-              "canonicalReference": "@tldraw/validate!T.ValidationError:class",
+              "canonicalReference": "@cmpd/validate!T.ValidationError:class",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3155,7 +3155,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "@tldraw/validate!T.ValidationError:constructor(1)",
+                  "canonicalReference": "@cmpd/validate!T.ValidationError:constructor(1)",
                   "docComment": "/**\n * Constructs a new instance of the `ValidationError` class\n */\n",
                   "excerptTokens": [
                     {
@@ -3208,7 +3208,7 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "@tldraw/validate!T.ValidationError#name:member",
+                  "canonicalReference": "@cmpd/validate!T.ValidationError#name:member",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -3238,7 +3238,7 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "@tldraw/validate!T.ValidationError#path:member",
+                  "canonicalReference": "@cmpd/validate!T.ValidationError#path:member",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -3273,7 +3273,7 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "@tldraw/validate!T.ValidationError#rawMessage:member",
+                  "canonicalReference": "@cmpd/validate!T.ValidationError#rawMessage:member",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -3310,7 +3310,7 @@
             },
             {
               "kind": "Class",
-              "canonicalReference": "@tldraw/validate!T.Validator:class",
+              "canonicalReference": "@cmpd/validate!T.Validator:class",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3320,7 +3320,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validatable",
-                  "canonicalReference": "@tldraw/validate!T.Validatable:type"
+                  "canonicalReference": "@cmpd/validate!T.Validatable:type"
                 },
                 {
                   "kind": "Content",
@@ -3352,7 +3352,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "@tldraw/validate!T.Validator:constructor(1)",
+                  "canonicalReference": "@cmpd/validate!T.Validator:constructor(1)",
                   "docComment": "/**\n * Constructs a new instance of the `Validator` class\n */\n",
                   "excerptTokens": [
                     {
@@ -3362,7 +3362,7 @@
                     {
                       "kind": "Reference",
                       "text": "ValidatorFn",
-                      "canonicalReference": "@tldraw/validate!T.ValidatorFn:type"
+                      "canonicalReference": "@cmpd/validate!T.ValidatorFn:type"
                     },
                     {
                       "kind": "Content",
@@ -3389,7 +3389,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.Validator#check:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.Validator#check:member(1)",
                   "docComment": "/**\n * Refine this validation with an additional check that doesn't change the resulting value.\n *\n * @example\n * ```ts\n * const numberLessThan10Validator = T.number.check((value) => {\n * \tif (value >= 10) {\n * \t\tthrow new ValidationError(`Expected number less than 10, got ${value}`)\n * \t}\n * })\n * ```\n *\n */\n",
                   "excerptTokens": [
                     {
@@ -3415,7 +3415,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validator",
-                      "canonicalReference": "@tldraw/validate!Validator:class"
+                      "canonicalReference": "@cmpd/validate!Validator:class"
                     },
                     {
                       "kind": "Content",
@@ -3458,7 +3458,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.Validator#check:member(2)",
+                  "canonicalReference": "@cmpd/validate!T.Validator#check:member(2)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -3476,7 +3476,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validator",
-                      "canonicalReference": "@tldraw/validate!Validator:class"
+                      "canonicalReference": "@cmpd/validate!Validator:class"
                     },
                     {
                       "kind": "Content",
@@ -3511,7 +3511,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.Validator#nullable:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.Validator#nullable:member(1)",
                   "docComment": "/**\n * Returns a new validator that also accepts null or undefined. The resulting value will always be null.\n */\n",
                   "excerptTokens": [
                     {
@@ -3521,7 +3521,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validator",
-                      "canonicalReference": "@tldraw/validate!Validator:class"
+                      "canonicalReference": "@cmpd/validate!Validator:class"
                     },
                     {
                       "kind": "Content",
@@ -3547,7 +3547,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.Validator#optional:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.Validator#optional:member(1)",
                   "docComment": "/**\n * Returns a new validator that also accepts null or undefined. The resulting value will always be null.\n */\n",
                   "excerptTokens": [
                     {
@@ -3557,7 +3557,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validator",
-                      "canonicalReference": "@tldraw/validate!Validator:class"
+                      "canonicalReference": "@cmpd/validate!Validator:class"
                     },
                     {
                       "kind": "Content",
@@ -3583,7 +3583,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.Validator#refine:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.Validator#refine:member(1)",
                   "docComment": "/**\n * Refine this validation to a new type. The passed-in validation function should throw an error if the value can't be converted to the new type, or return the new type otherwise.\n */\n",
                   "excerptTokens": [
                     {
@@ -3601,7 +3601,7 @@
                     {
                       "kind": "Reference",
                       "text": "Validator",
-                      "canonicalReference": "@tldraw/validate!Validator:class"
+                      "canonicalReference": "@cmpd/validate!Validator:class"
                     },
                     {
                       "kind": "Content",
@@ -3649,7 +3649,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "@tldraw/validate!T.Validator#validate:member(1)",
+                  "canonicalReference": "@cmpd/validate!T.Validator#validate:member(1)",
                   "docComment": "/**\n * Asserts that the passed value is of the correct type and returns it. The returned value is guaranteed to be referentially equal to the passed value.\n */\n",
                   "excerptTokens": [
                     {
@@ -3697,7 +3697,7 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "@tldraw/validate!T.Validator#validationFn:member",
+                  "canonicalReference": "@cmpd/validate!T.Validator#validationFn:member",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -3707,7 +3707,7 @@
                     {
                       "kind": "Reference",
                       "text": "ValidatorFn",
-                      "canonicalReference": "@tldraw/validate!T.ValidatorFn:type"
+                      "canonicalReference": "@cmpd/validate!T.ValidatorFn:type"
                     },
                     {
                       "kind": "Content",
@@ -3740,7 +3740,7 @@
             },
             {
               "kind": "TypeAlias",
-              "canonicalReference": "@tldraw/validate!T.ValidatorFn:type",
+              "canonicalReference": "@cmpd/validate!T.ValidatorFn:type",
               "docComment": "/**\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -3781,7 +3781,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/validate!UnionValidator:class",
+          "canonicalReference": "@cmpd/validate!UnionValidator:class",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -3799,7 +3799,7 @@
             {
               "kind": "Reference",
               "text": "UnionValidatorConfig",
-              "canonicalReference": "@tldraw/validate!~UnionValidatorConfig:type"
+              "canonicalReference": "@cmpd/validate!~UnionValidatorConfig:type"
             },
             {
               "kind": "Content",
@@ -3820,7 +3820,7 @@
             {
               "kind": "Reference",
               "text": "Validator",
-              "canonicalReference": "@tldraw/validate!Validator:class"
+              "canonicalReference": "@cmpd/validate!Validator:class"
             },
             {
               "kind": "Content",
@@ -3829,7 +3829,7 @@
             {
               "kind": "Reference",
               "text": "TypeOf",
-              "canonicalReference": "@tldraw/validate!T.TypeOf:type"
+              "canonicalReference": "@cmpd/validate!T.TypeOf:type"
             },
             {
               "kind": "Content",
@@ -3883,7 +3883,7 @@
           "members": [
             {
               "kind": "Constructor",
-              "canonicalReference": "@tldraw/validate!UnionValidator:constructor(1)",
+              "canonicalReference": "@cmpd/validate!UnionValidator:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `UnionValidator` class\n */\n",
               "excerptTokens": [
                 {
@@ -3947,7 +3947,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!UnionValidator#validateUnknownVariants:member(1)",
+              "canonicalReference": "@cmpd/validate!UnionValidator#validateUnknownVariants:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -3965,7 +3965,7 @@
                 {
                   "kind": "Reference",
                   "text": "UnionValidator",
-                  "canonicalReference": "@tldraw/validate!UnionValidator:class"
+                  "canonicalReference": "@cmpd/validate!UnionValidator:class"
                 },
                 {
                   "kind": "Content",
@@ -4020,7 +4020,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@tldraw/validate!Validator:class",
+          "canonicalReference": "@cmpd/validate!Validator:class",
           "docComment": "/**\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -4030,7 +4030,7 @@
             {
               "kind": "Reference",
               "text": "Validatable",
-              "canonicalReference": "@tldraw/validate!T.Validatable:type"
+              "canonicalReference": "@cmpd/validate!T.Validatable:type"
             },
             {
               "kind": "Content",
@@ -4062,7 +4062,7 @@
           "members": [
             {
               "kind": "Constructor",
-              "canonicalReference": "@tldraw/validate!Validator:constructor(1)",
+              "canonicalReference": "@cmpd/validate!Validator:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `Validator` class\n */\n",
               "excerptTokens": [
                 {
@@ -4072,7 +4072,7 @@
                 {
                   "kind": "Reference",
                   "text": "ValidatorFn",
-                  "canonicalReference": "@tldraw/validate!T.ValidatorFn:type"
+                  "canonicalReference": "@cmpd/validate!T.ValidatorFn:type"
                 },
                 {
                   "kind": "Content",
@@ -4099,7 +4099,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!Validator#check:member(1)",
+              "canonicalReference": "@cmpd/validate!Validator#check:member(1)",
               "docComment": "/**\n * Refine this validation with an additional check that doesn't change the resulting value.\n *\n * @example\n * ```ts\n * const numberLessThan10Validator = T.number.check((value) => {\n * \tif (value >= 10) {\n * \t\tthrow new ValidationError(`Expected number less than 10, got ${value}`)\n * \t}\n * })\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
@@ -4125,7 +4125,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -4168,7 +4168,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!Validator#check:member(2)",
+              "canonicalReference": "@cmpd/validate!Validator#check:member(2)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -4186,7 +4186,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -4221,7 +4221,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!Validator#nullable:member(1)",
+              "canonicalReference": "@cmpd/validate!Validator#nullable:member(1)",
               "docComment": "/**\n * Returns a new validator that also accepts null or undefined. The resulting value will always be null.\n */\n",
               "excerptTokens": [
                 {
@@ -4231,7 +4231,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -4257,7 +4257,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!Validator#optional:member(1)",
+              "canonicalReference": "@cmpd/validate!Validator#optional:member(1)",
               "docComment": "/**\n * Returns a new validator that also accepts null or undefined. The resulting value will always be null.\n */\n",
               "excerptTokens": [
                 {
@@ -4267,7 +4267,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -4293,7 +4293,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!Validator#refine:member(1)",
+              "canonicalReference": "@cmpd/validate!Validator#refine:member(1)",
               "docComment": "/**\n * Refine this validation to a new type. The passed-in validation function should throw an error if the value can't be converted to the new type, or return the new type otherwise.\n */\n",
               "excerptTokens": [
                 {
@@ -4311,7 +4311,7 @@
                 {
                   "kind": "Reference",
                   "text": "Validator",
-                  "canonicalReference": "@tldraw/validate!Validator:class"
+                  "canonicalReference": "@cmpd/validate!Validator:class"
                 },
                 {
                   "kind": "Content",
@@ -4359,7 +4359,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@tldraw/validate!Validator#validate:member(1)",
+              "canonicalReference": "@cmpd/validate!Validator#validate:member(1)",
               "docComment": "/**\n * Asserts that the passed value is of the correct type and returns it. The returned value is guaranteed to be referentially equal to the passed value.\n */\n",
               "excerptTokens": [
                 {
@@ -4407,7 +4407,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@tldraw/validate!Validator#validationFn:member",
+              "canonicalReference": "@cmpd/validate!Validator#validationFn:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -4417,7 +4417,7 @@
                 {
                   "kind": "Reference",
                   "text": "ValidatorFn",
-                  "canonicalReference": "@tldraw/validate!T.ValidatorFn:type"
+                  "canonicalReference": "@cmpd/validate!T.ValidatorFn:type"
                 },
                 {
                   "kind": "Content",

@@ -1,5 +1,5 @@
-import { useQuickReactor } from '@tldraw/state'
-import { TLCursorType } from '@tldraw/tlschema'
+import { useQuickReactor } from '@cmpd/state'
+import { TLCursorType } from '@cmpd/tlschema'
 import { PI, radiansToDegrees } from '../primitives/utils'
 import { useContainer } from './useContainer'
 import { useEditor } from './useEditor'

@@ -1,14 +1,14 @@
 import {
 	Box2d,
+	Compound,
 	TLEditorComponents,
 	TLUiAssetUrlOverrides,
 	TLUiOverrides,
-	Tldraw,
 	toolbarItem,
 	useEditor,
 	useValue,
-} from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+} from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 import { ScreenshotTool } from './ScreenshotTool/ScreenshotTool'
 import { ScreenshotDragging } from './ScreenshotTool/childStates/Dragging'
 
@@ -102,7 +102,7 @@ const customComponents: TLEditorComponents = {
 export default function ScreenshotToolExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				persistenceKey="tldraw_screenshot_example"
 				tools={customTools}
 				overrides={customUiOverrides}

@@ -1,4 +1,4 @@
-import { menuGroup, menuItem, TLUiOverrides } from '@tldraw/tldraw'
+import { menuGroup, menuItem, TLUiOverrides } from '@cmpd/compound'
 import { openUrl } from './openUrl'
 
 export const GITHUB_URL = 'https://github.com/tldraw/tldraw'

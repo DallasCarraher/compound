@@ -1,4 +1,4 @@
-import { TLScribble } from '@tldraw/tlschema'
+import { TLScribble } from '@cmpd/tlschema'
 import classNames from 'classnames'
 import { ComponentType } from 'react'
 import { getSvgPathFromPoints } from '../../utils/getSvgPathFromPoints'

@@ -1,5 +1,5 @@
-import { defineMigrations } from '@tldraw/store'
-import { T } from '@tldraw/validate'
+import { defineMigrations } from '@cmpd/store'
+import { T } from '@cmpd/validate'
 import { assetIdValidator } from '../assets/TLBaseAsset'
 import { ShapePropsType, TLBaseShape } from './TLBaseShape'
 

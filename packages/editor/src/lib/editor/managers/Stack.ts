@@ -1,4 +1,4 @@
-import { EMPTY_ARRAY } from '@tldraw/state'
+import { EMPTY_ARRAY } from '@cmpd/state'
 
 export type Stack<T> = StackItem<T> | EmptyStackItem<T>
 

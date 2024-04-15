@@ -1,9 +1,15 @@
 import { linksUiOverrides } from './utils/links'
 // eslint-disable-next-line import/no-internal-modules
-import '@tldraw/tldraw/tldraw.css'
+import '@cmpd/compound/compound.css'
 // eslint-disable-next-line import/no-internal-modules
-import { getAssetUrlsByImport } from '@tldraw/assets/imports'
-import { Editor, ErrorBoundary, TLUiMenuSchema, Tldraw, setRuntimeOverrides } from '@tldraw/tldraw'
+import { getAssetUrlsByImport } from '@cmpd/assets/imports'
+import {
+	Compound,
+	Editor,
+	ErrorBoundary,
+	TLUiMenuSchema,
+	setRuntimeOverrides,
+} from '@cmpd/compound'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { VscodeMessage } from '../../messages'
 import '../public/index.css'
@@ -122,7 +128,7 @@ function TldrawInner({ uri, assetSrc, isDarkMode, fileContents }: TLDrawInnerPro
 	}, [])
 
 	return (
-		<Tldraw
+		<Compound
 			assetUrls={assetUrls}
 			persistenceKey={uri}
 			onMount={handleMount}
@@ -132,6 +138,6 @@ function TldrawInner({ uri, assetSrc, isDarkMode, fileContents }: TLDrawInnerPro
 			{/* <DarkModeHandler themeKind={themeKind} /> */}
 			<FileOpen fileContents={fileContents} forceDarkMode={isDarkMode} />
 			<ChangeResponder />
-		</Tldraw>
+		</Compound>
 	)
 }

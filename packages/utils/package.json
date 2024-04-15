@@ -1,29 +1,24 @@
 {
-	"name": "@tldraw/utils",
-	"description": "A tiny little drawing app (private utilities).",
-	"version": "2.0.0-alpha.19",
+	"name": "@cmpd/utils",
+	"description": "A collection of utilities for compound",
+	"version": "2.0.0-alpha.20",
 	"packageManager": "yarn@3.5.0",
-	"author": {
-		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
-	},
-	"homepage": "https://tldraw.dev",
+	"homepage": "https://cmpd.space",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/DallasCarraher/compound"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/DallasCarraher/compound/issues"
 	},
 	"keywords": [
-		"tldraw",
+		"cmpd",
 		"drawing",
 		"app",
 		"development",
 		"whiteboard",
-		"canvas",
-		"infinite"
+		"canvas"
 	],
 	"/* NOTE */": "These `main` and `types` fields are rewritten by the build script. They are not the actual values we publish",
 	"main": "./src/index.ts",

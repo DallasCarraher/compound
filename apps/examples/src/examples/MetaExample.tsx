@@ -1,10 +1,10 @@
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Compound } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 
 export default function MetaExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				persistenceKey="tldraw_example"
 				onMount={(editor) => {
 					// There's no API for setting getInitialMetaForShape yet, but

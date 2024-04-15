@@ -1,6 +1,6 @@
-import { BaseRecord } from '@tldraw/store'
-import { JsonObject } from '@tldraw/utils'
-import { T } from '@tldraw/validate'
+import { BaseRecord } from '@cmpd/store'
+import { JsonObject } from '@cmpd/utils'
+import { T } from '@cmpd/validate'
 import { idValidator } from '../misc/id-validator'
 import { TLAssetId } from '../records/TLAsset'
 

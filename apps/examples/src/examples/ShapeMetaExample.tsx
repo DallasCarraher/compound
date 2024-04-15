@@ -1,10 +1,10 @@
-import { TLShape, Tldraw, track, useEditor } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Compound, TLShape, track, useEditor } from '@cmpd/compound'
+import '@cmpd/compound/compound.css'
 
 export default function ShapeMetaExample() {
 	return (
 		<div className="tldraw__editor">
-			<Tldraw
+			<Compound
 				persistenceKey="shape_meta_example"
 				onMount={(editor) => {
 					editor.getInitialMetaForShape = (shape) => {
@@ -13,7 +13,7 @@ export default function ShapeMetaExample() {
 				}}
 			>
 				<ShapeLabelUiWithHelper />
-			</Tldraw>
+			</Compound>
 		</div>
 	)
 }

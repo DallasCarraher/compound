@@ -1,11 +1,11 @@
-import { Signal, computed, transact } from '@tldraw/state'
+import { Signal, computed, transact } from '@cmpd/state'
 import {
 	RecordsDiff,
 	UnknownRecord,
 	defineMigrations,
 	migrate,
 	squashRecordDiffs,
-} from '@tldraw/store'
+} from '@cmpd/store'
 import {
 	CameraRecordType,
 	InstancePageStateRecordType,
@@ -16,9 +16,9 @@ import {
 	TLStore,
 	pageIdValidator,
 	shapeIdValidator,
-} from '@tldraw/tlschema'
-import { objectMapFromEntries } from '@tldraw/utils'
-import { T } from '@tldraw/validate'
+} from '@cmpd/tlschema'
+import { objectMapFromEntries } from '@cmpd/utils'
+import { T } from '@cmpd/validate'
 import { uniqueId } from '../utils/uniqueId'
 
 const tabIdKey = 'TLDRAW_TAB_ID_v2' as const
