@@ -4,7 +4,7 @@ import { parse } from 'semver'
 
 import { exec } from './lib/exec'
 import { BUBLIC_ROOT } from './lib/file'
-import { nicelog } from './lib/nicelog'
+import { log } from './lib/log'
 import { getLatestVersion, publish, setAllVersions } from './lib/publishing'
 import { getAllWorkspacePackages } from './lib/workspace'
 
@@ -12,7 +12,7 @@ import { getAllWorkspacePackages } from './lib/workspace'
  * Publish a new version of the packages.
  */
 async function main() {
-	nicelog('\n\n\n Publishing new version... \n\n\n')
+	log('\n\n\n Publishing new version... \n\n\n')
 	const auto = new Auto({
 		plugins: ['npm'],
 		baseBranch: 'osmain',
@@ -20,26 +20,26 @@ async function main() {
 		repo: 'compound',
 		verbose: true,
 	})
-	nicelog('\n\n\n auto created ⚙️ \n\n\n')
+	log('\n\n\n auto created ⚙️ \n\n\n')
 
 	// module was called directly
 	const currentBranch = (await exec('git', ['rev-parse', '--abbrev-ref', 'HEAD'])).toString().trim()
 	if (currentBranch !== 'osmain') throw new Error('Must be on the `osmain` branch to publish')
 
 	await auto.loadConfig()
-	nicelog('\n\n\n auto config loaded 📄 \n\n\n')
+	log('\n\n\n auto config loaded 📄 \n\n\n')
 
 	// bump the version
 	const bump = await auto.getVersion()
-	nicelog('bump ===', bump)
+	log('bump ===', bump)
 	if (!bump) {
-		nicelog('nothing to do', bump)
+		log('nothing to do', bump)
 		return
 	}
 
 	// get the latest version
 	const latestVersion = parse(getLatestVersion())!
-	nicelog('latestVersion', latestVersion)
+	log('latestVersion', latestVersion)
 
 	const [prereleaseTag, prereleaseNumber] = latestVersion.prerelease
 	if (prereleaseTag && typeof prereleaseNumber !== 'number') {
@@ -63,7 +63,7 @@ async function main() {
 		}
 	}
 
-	nicelog('packageJsonFilesToAdd', packageJsonFilesToAdd)
+	log('packageJsonFilesToAdd', packageJsonFilesToAdd)
 
 	return
 	await exec('git', [

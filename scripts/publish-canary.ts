@@ -1,5 +1,5 @@
 import { exec } from './lib/exec'
-import { nicelog } from './lib/nicelog'
+import { log } from './lib/log'
 import { getLatestVersion, publish, setAllVersions } from './lib/publishing'
 
 async function main() {
@@ -24,11 +24,11 @@ async function main() {
 		| 'patch'
 		| ''
 
-	nicelog('bumpType', bumpType)
+	log('bumpType', bumpType)
 	if (bumpType === '') {
-		nicelog('nothing to do')
+		log('nothing to do')
 	} else if (['major', 'minor', 'patch'].includes(bumpType)) {
-		nicelog('setting canary versions')
+		log('setting canary versions')
 		setCanaryVersions(bumpType)
 		publish()
 	} else {

@@ -1,7 +1,7 @@
 import kleur from 'kleur'
 import path from 'path'
 import { REPO_ROOT, writeJsonFile } from './lib/file'
-import { nicelog } from './lib/nicelog'
+import { log } from './lib/log'
 import { getAllWorkspacePackages } from './lib/workspace'
 
 function scriptPath(packageDir: string, scriptName: string) {
@@ -83,7 +83,7 @@ async function main({ fix }: { fix?: boolean }) {
 			const actualScript = packageScripts[scriptName]
 			const expectedScript = getExpectedScript(packageDir)
 			if (actualScript !== expectedScript) {
-				nicelog(
+				log(
 					[
 						'❌ ',
 						kleur.red(`${name}: `),
@@ -99,7 +99,7 @@ async function main({ fix }: { fix?: boolean }) {
 				needsFix.add(name)
 				errorCount++
 			} else {
-				nicelog(
+				log(
 					[
 						'✅ ',
 						kleur.green(`${name}: `),
@@ -116,14 +116,14 @@ async function main({ fix }: { fix?: boolean }) {
 		if (fix) {
 			for (const { packageJson, name, relativePath } of packages) {
 				if (needsFix.has(name)) {
-					nicelog(kleur.yellow(`Fixing ${name}...`))
+					log(kleur.yellow(`Fixing ${name}...`))
 					await writeJsonFile(path.join(REPO_ROOT, relativePath, 'package.json'), packageJson)
 				}
 			}
-			nicelog(kleur.yellow(`Fixed ${errorCount} errors`))
+			log(kleur.yellow(`Fixed ${errorCount} errors`))
 			process.exit(0)
 		} else {
-			nicelog(kleur.red(`Found ${errorCount} errors`))
+			log(kleur.red(`Found ${errorCount} errors`))
 			process.exit(1)
 		}
 	}

@@ -6,7 +6,7 @@ import path, { join } from 'path'
 import { compare, parse } from 'semver'
 import { exec } from './exec'
 import { BUBLIC_ROOT } from './file'
-import { nicelog } from './nicelog'
+import { log } from './log'
 
 export type PackageDetails = {
 	name: string
@@ -137,6 +137,34 @@ function topologicalSortPackages(packages: Record<string, PackageDetails>) {
 }
 
 /**
+ * Retries a function up to a specified number of times with a delay between each attempt.
+ */
+function retry(
+	fn: (args: { attempt: number; remaining: number; total: number }) => Promise<void>,
+	opts: {
+		numAttempts: number
+		delay: number
+	}
+): Promise<void> {
+	return new Promise((resolve, reject) => {
+		let attempts = 0
+		function attempt() {
+			fn({ attempt: attempts, remaining: opts.numAttempts - attempts, total: opts.numAttempts })
+				.then(resolve)
+				.catch((err) => {
+					attempts++
+					if (attempts >= opts.numAttempts) {
+						reject(err)
+					} else {
+						setTimeout(attempt, opts.delay)
+					}
+				})
+		}
+		attempt()
+	})
+}
+
+/**
  * Publishes all packages in the monorepo to the NPM registry.
  * This function assumes that the NPM token is set in the NPM_TOKEN environment variable.
  * It also assumes that the packages are in the correct state and that the version has been bumped.
@@ -167,7 +195,7 @@ export async function publish() {
 		// Get the prerelease tag from the package version or set it to 'latest'
 		const prereleaseTag = parse(packageDetails.version)?.prerelease[0] ?? 'latest'
 		// Log the package name, version, and tag
-		nicelog(
+		log(
 			`\n\n\n Publishing ${packageDetails.name} with version ${packageDetails.version} under tag @${prereleaseTag}`
 		)
 
@@ -192,11 +220,11 @@ export async function publish() {
 							pwd: packageDetails.dir,
 							processStdoutLine: (line) => {
 								output += line + '\n'
-								nicelog(line)
+								log(line)
 							},
 							processStderrLine: (line) => {
 								output += line + '\n'
-								nicelog(line)
+								log(line)
 							},
 						}
 					)
@@ -219,13 +247,13 @@ export async function publish() {
 		await retry(
 			async ({ attempt, total }) => {
 				// Log the attempt number
-				nicelog('Waiting for package to be published... attempt', attempt, 'of', total)
+				log('Waiting for package to be published... attempt', attempt, 'of', total)
 				// Fetch the new package directly from the npm registry
 				const newVersion = packageDetails.version
 				const unscopedName = packageDetails.name.replace('@cmpd/', '')
 
 				const url = `https://registry.npmjs.org/@cmpd/${unscopedName}/-/${unscopedName}-${newVersion}.tgz`
-				nicelog('looking for package at url: ', url)
+				log('looking for package at url: ', url)
 				const res = await fetch(url, {
 					method: 'HEAD',
 				})
@@ -240,29 +268,4 @@ export async function publish() {
 			}
 		)
 	}
-}
-
-function retry(
-	fn: (args: { attempt: number; remaining: number; total: number }) => Promise<void>,
-	opts: {
-		numAttempts: number
-		delay: number
-	}
-): Promise<void> {
-	return new Promise((resolve, reject) => {
-		let attempts = 0
-		function attempt() {
-			fn({ attempt: attempts, remaining: opts.numAttempts - attempts, total: opts.numAttempts })
-				.then(resolve)
-				.catch((err) => {
-					attempts++
-					if (attempts >= opts.numAttempts) {
-						reject(err)
-					} else {
-						setTimeout(attempt, opts.delay)
-					}
-				})
-		}
-		attempt()
-	})
 }

@@ -1,4 +1,4 @@
-export function nicelog(...args: any[]) {
+export function log(...args: any[]) {
 	// eslint-disable-next-line no-console
 	console.log(...args)
 }

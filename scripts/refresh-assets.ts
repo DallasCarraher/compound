@@ -9,7 +9,7 @@ import {
 	writeJsonFile,
 	writeStringFile,
 } from './lib/file'
-import { nicelog } from './lib/nicelog'
+import { log } from './lib/log'
 
 // We'll need to copy the assets into these folders
 const PUBLIC_FOLDER_PATHS = [join(BUBLIC_ROOT, 'packages', 'assets')]
@@ -167,7 +167,7 @@ async function copyFonts() {
 		const itemWithoutExtension = item.replace(extension, '')
 		const name = FONT_MAPPING[itemWithoutExtension]
 		if (!name) {
-			nicelog('Font mapping not found for', itemWithoutExtension)
+			log('Font mapping not found for', itemWithoutExtension)
 			process.exit(1)
 		}
 		collectedAssetUrls.fonts[name] = `${folderName}/${item}`
@@ -397,20 +397,20 @@ async function writeAssetDeclarationDTSFile() {
 
 // --- RUN
 async function main() {
-	nicelog('Copying icons...')
+	log('Copying icons...')
 	await copyIcons()
-	nicelog('Copying embed icons...')
+	log('Copying embed icons...')
 	await copyEmbedIcons()
-	nicelog('Copying fonts...')
+	log('Copying fonts...')
 	await copyFonts()
-	nicelog('Copying translations...')
+	log('Copying translations...')
 	await copyTranslations()
-	nicelog('Writing asset declaration file...')
+	log('Writing asset declaration file...')
 	await writeAssetDeclarationDTSFile()
 	await writeUrlBasedAssetDeclarationFile()
 	await writeImportBasedAssetDeclarationFile()
 	await writeSelfHostedAssetDeclarationFile()
-	nicelog('Done!')
+	log('Done!')
 }
 
 main()
