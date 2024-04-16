@@ -88,18 +88,6 @@ async function main() {
 
 	// finally, publish the packages [IF THIS STEP FAILS, RUN THE `publish-manual.ts` script locally]
 	await publish()
-
-	// nicelog('Notifying huppy of release...')
-	// const huppyResponse = await fetch('https://tldraw-repo-sync.fly.dev/api/on-release', {
-	// 	method: 'POST',
-	// 	headers: {
-	// 		'Content-Type': 'application/json',
-	// 	},
-	// 	body: JSON.stringify({ apiKey: huppyToken, tagToRelease: `v${nextVersion}`, canary: false }),
-	// })
-	// nicelog(
-	// 	`huppy: [${huppyResponse.status} ${huppyResponse.statusText}] ${await huppyResponse.text()}`
-	// )
 }
 
 main()

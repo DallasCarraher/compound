@@ -187,8 +187,8 @@ export async function publish() {
 	const publishOrder = topologicalSortPackages(packages)
 
 	// for debugging
-	// const tempOrder = publishOrder.filter((p) => p.name === '@cmpd/compound')
-	// console.log('publishOrder', tempOrder)
+	// const tempOrder = publishOrder.filter((p) => p.name.includes('compound'))
+	// log('publishOrder', tempOrder)
 
 	// Loop through each package in the sorted order
 	for (const packageDetails of publishOrder) {
