@@ -4,11 +4,11 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 const config: Config = {
 	title: 'Compound',
-	tagline: 'A powerful primitive for building whiteboard applications',
+	tagline: 'A powerful primitive for building canvas applications',
 	favicon: 'img/compound.svg',
 
 	// Set the production url of your site here
-	url: 'https://your-docusaurus-site.example.com',
+	url: 'https://docs.cmpd.space',
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: '/',

@@ -27,12 +27,9 @@ function HomepageHeader() {
 }
 
 export default function Home(): React.JSX.Element {
-	const { siteConfig } = useDocusaurusContext()
+	// const { siteConfig } = useDocusaurusContext()
 	return (
-		<Layout
-			title={`Hello from ${siteConfig.title}`}
-			description="Description will go into a meta tag in <head />"
-		>
+		<Layout title="Home" description="A powerful primitive for building canvas applications">
 			<HomepageHeader />
 			<main>
 				<HomepageFeatures />
