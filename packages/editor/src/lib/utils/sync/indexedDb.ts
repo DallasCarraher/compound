@@ -4,8 +4,8 @@ import { IDBPDatabase, openDB } from 'idb'
 import { TLSessionStateSnapshot } from '../../config/TLSessionStateSnapshot'
 
 // DO NOT CHANGE THESE WITHOUT ADDING MIGRATION LOGIC. DOING SO WOULD WIPE ALL EXISTING DATA.
-const STORE_PREFIX = 'TLDRAW_DOCUMENT_v2'
-const dbNameIndexKey = 'TLDRAW_DB_NAME_INDEX_v2'
+const STORE_PREFIX = 'COMPOUND_DOCUMENT_v2'
+const dbNameIndexKey = 'COMPOUND_DB_NAME_INDEX_v2'
 
 const Table = {
 	Records: 'records',

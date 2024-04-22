@@ -149,8 +149,8 @@ export const DefaultColorThemePalette: {
 			},
 		},
 		yellow: {
-			solid: '#ffc078',
-			semi: '#f9f0e6',
+			solid: '#fff9b1',
+			semi: '#fffcd9',
 			pattern: '#fecb92',
 			highlight: {
 				srgb: '#fddd00',
@@ -264,8 +264,8 @@ export const DefaultColorThemePalette: {
 			},
 		},
 		yellow: {
-			solid: '#cba371',
-			semi: '#3c3934',
+			solid: '#fff259',
+			semi: '#3c3c34',
 			pattern: '#fecb92',
 			highlight: {
 				srgb: '#d2b700',
@@ -281,13 +281,13 @@ export function getDefaultColorTheme(opts: { isDarkMode: boolean }): TLDefaultCo
 }
 
 /** @public */
-export const DefaultColorStyle = StyleProp.defineEnum('tldraw:color', {
+export const DefaultColorStyle = StyleProp.defineEnum('compound:color', {
 	defaultValue: 'black',
 	values: colors,
 })
 
 /** @public */
-export const DefaultLabelColorStyle = StyleProp.defineEnum('tldraw:labelColor', {
+export const DefaultLabelColorStyle = StyleProp.defineEnum('compound:labelColor', {
 	defaultValue: 'black',
 	values: colors,
 })

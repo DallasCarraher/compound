@@ -162,6 +162,7 @@ export const TldrawEditor = memo(function TldrawEditor({
 
 	return (
 		<div
+			id="compound-editor"
 			ref={setContainer}
 			draggable={false}
 			className={classNames('tl-container tl-theme__light', className)}

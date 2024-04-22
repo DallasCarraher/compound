@@ -4,7 +4,7 @@ import { getDefaultTranslationLocale } from '@cmpd/tlschema'
 import { T } from '@cmpd/validate'
 import { uniqueId } from '../utils/uniqueId'
 
-const USER_DATA_KEY = 'TLDRAW_USER_DATA_v3'
+const USER_DATA_KEY = 'COMPOUND_USER_DATA_v3'
 
 /**
  * A user of tldraw
