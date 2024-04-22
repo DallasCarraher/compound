@@ -13,10 +13,10 @@ const config: Config = {
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: '/',
 
-	// GitHub pages deployment config.
-	// If you aren't using GitHub pages, you don't need these.
-	organizationName: 'DallasCarraher', // Usually your GitHub org/user name.
-	projectName: 'compound', // Usually your repo name.
+	// // GitHub pages deployment config.
+	// // If you aren't using GitHub pages, you don't need these.
+	// organizationName: 'DallasCarraher', // Usually your GitHub org/user name.
+	// projectName: 'compound', // Usually your repo name.
 
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
@@ -37,15 +37,13 @@ const config: Config = {
 					sidebarPath: './sidebars.ts',
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
-					editUrl:
-						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+					editUrl: 'https://github.com/DallasCarraher/compound/tree/osmain/docs/',
 				},
 				blog: {
 					showReadingTime: true,
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
-					editUrl:
-						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+					editUrl: 'https://github.com/DallasCarraher/compound/tree/osmain/blog/',
 				},
 				theme: {
 					customCss: './src/css/custom.css',
@@ -60,26 +58,27 @@ const config: Config = {
 		navbar: {
 			title: 'Compound',
 			logo: {
-				alt: 'My Site Logo',
+				alt: 'Compound Logo',
 				src: 'img/compound.svg',
 			},
 			items: [
-				// {
-				// 	type: 'docSidebar',
-				// 	sidebarId: 'tutorialSidebar',
-				// 	position: 'left',
-				// 	label: 'Tutorial',
-				// },
-				// { to: '/blog', label: 'Blog', position: 'left' },
+				{
+					type: 'docSidebar',
+					sidebarId: 'tutorialSidebar',
+					position: 'left',
+					label: 'How to Start',
+				},
+				{ to: '/blog', label: 'Blog', position: 'right' },
 				{
 					href: 'https://github.com/DallasCarraher/compound',
-					label: 'GitHub',
 					position: 'right',
+					className: 'header-github-link',
+					'aria-label': 'GitHub repository',
 				},
 			],
 		},
 		footer: {
-			style: 'dark',
+			style: 'light',
 			links: [
 				// {
 				// 	title: 'Docs',

@@ -21,6 +21,7 @@
 	],
 	"workspaces": [
 		"apps/*",
+		"docs",
 		"packages/*",
 		"apps/vscode/*",
 		"e2e",
