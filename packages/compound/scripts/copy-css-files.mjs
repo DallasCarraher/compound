@@ -17,11 +17,13 @@ let combinedContent = [
 		return acc
 	},
 	`/* THIS CSS FILE IS GENERATED! DO NOT EDIT. OR EDIT. I'M A COMMENT NOT A COP */ 
-/* This file is created by the copy-css-files.mjs script in @tldraw/tldraw. */
-/* It combines @tldraw/editor's editor.css and @tldraw/tldraw's ui.css */
+/* This file is created by the copy-css-files.mjs script in @cmpd/compound. */
+/* It combines @cmpd/editor's editor.css and @cmpd/compound's ui.css */
 
 `
 )
 
 const destination = join(packageDir, 'compound.css')
 writeFileSync(destination, combinedContent)
+
+console.log('compound.css updated! ✅')

@@ -1,6 +1,6 @@
-/* THIS CSS FILE IS GENERATED! DO NOT EDIT. OR EDIT. I'M A COMMENT NOT A COP */
-/* This file is created by the copy-css-files.mjs script in @tldraw/tldraw. */
-/* It combines @tldraw/editor's editor.css and @tldraw/tldraw's ui.css */
+/* THIS CSS FILE IS GENERATED! DO NOT EDIT. OR EDIT. I'M A COMMENT NOT A COP */ 
+/* This file is created by the copy-css-files.mjs script in @cmpd/compound. */
+/* It combines @cmpd/editor's editor.css and @cmpd/compound's ui.css */
 
 /* @tldraw/editor */
 
@@ -119,8 +119,8 @@
 	--color-panel-overlay: rgba(255, 255, 255, 0.82);
 	--color-panel: #fdfdfd;
 	--color-focus: #004094;
-	--color-selected: #111111;
 	/* --color-selected: #2f80ed; */
+	--color-selected: #111111;
 	--color-selected-contrast: #ffffff;
 	--color-selection-fill: #1e90ff06;
 	--color-selection-stroke: #2f80ed;
@@ -1265,7 +1265,7 @@ input,
 	position: relative;
 	width: 100%;
 	height: 100%;
-	border-radius: var(--radius-2);
+	/* border-radius: var(--radius-1); */
 	box-shadow: var(--shadow-1);
 	overflow: hidden;
 	border-color: currentColor;
@@ -1659,7 +1659,7 @@ it from receiving any pointer events or affecting the cursor. */
 	font-family: monospace;
 }
 
-/* @tldraw/ui */
+/* @cmpd/ui */
 
 .tl-container {
 	--layer-panels: 300;
@@ -1728,7 +1728,7 @@ it from receiving any pointer events or affecting the cursor. */
 	position: absolute;
 	inset: 4px;
 	background-color: transparent;
-	border-radius: var(--radius-2);
+	border-radius: var(--radius-1);
 }
 
 .tlui-button[aria-expanded='true']::after {
@@ -1901,7 +1901,7 @@ it from receiving any pointer events or affecting the cursor. */
 @media (hover: hover) {
 	.tlui-button__tool::after {
 		inset: 4px;
-		border-radius: 8px;
+		/* border-radius: 8px; */
 	}
 
 	.tlui-button__tool[data-state='selected']:not(:disabled, :focus-visible):hover {
@@ -1925,12 +1925,12 @@ it from receiving any pointer events or affecting the cursor. */
 /* Help */
 
 .tlui-button__help {
-	height: 32px;
-	width: 32px;
+	height: 36px;
+	width: 36px;
 	padding: 0px;
 	min-width: 32px;
 	border-radius: 100%;
-	background-color: var(--color-low);
+	background-color: var(--color-panel);
 	border: 1px solid var(--color-low-border);
 }
 
@@ -2252,10 +2252,14 @@ it from receiving any pointer events or affecting the cursor. */
 	position: relative;
 	z-index: var(--layer-panels);
 	width: fit-content;
-	border-right: 4px solid var(--color-background);
-	border-bottom: 4px solid var(--color-background);
-	border-bottom-right-radius: var(--radius-4);
-	background-color: var(--color-low);
+	/* border-right: 4px solid var(--color-background); */
+	/* border-bottom: 4px solid var(--color-background); */
+	/* border-bottom-right-radius: var(--radius-4); */
+	/* background-color: var(--color-low); */
+	border-radius: var(--radius-1);
+	box-shadow: var(--shadow-1);
+	background-color: var(--color-panel);
+	margin: calc(var(--space-3) + var(--sab)) 0 0 calc(var(--space-3) + var(--sab));
 }
 
 .tlui-menu-zone *[data-state='open']::after {
@@ -2265,18 +2269,20 @@ it from receiving any pointer events or affecting the cursor. */
 /* ------------------- Style Panel ------------------ */
 
 .tlui-style-panel__wrapper {
-	box-shadow: var(--shadow-2);
-	border-radius: var(--radius-3);
+	box-shadow: var(--shadow-1);
+	border-radius: var(--radius-1);
 	pointer-events: all;
 	background-color: var(--color-panel);
 	height: fit-content;
 	max-height: 100%;
-	margin: 4px 8px;
+	/* margin: 4px 8px; */
+	margin: calc(var(--space-3) + var(--sab)) calc(var(--space-3) + var(--sab)) 0 0;
 	touch-action: auto;
 	overscroll-behavior: none;
 	overflow-y: auto;
 	overflow-x: hidden;
 	color: var(--color-text);
+	padding: 4px;
 }
 
 .tlui-style-panel {
@@ -2585,13 +2591,13 @@ it from receiving any pointer events or affecting the cursor. */
 	display: flex;
 	flex-direction: row;
 	background-color: var(--color-low);
-	border-radius: 8px;
+	border-radius: var(--radius-1);
 	z-index: var(--layer-panels);
 	pointer-events: all;
 	position: relative;
 	align-items: center;
 	background: var(--color-panel);
-	box-shadow: var(--shadow-1);
+	box-shadow: var(--shadow-2);
 }
 
 .tlui-toolbar__overflow {
@@ -2641,13 +2647,13 @@ it from receiving any pointer events or affecting the cursor. */
 	height: fit-content;
 	width: fit-content;
 	max-height: 80vh;
-	border-radius: var(--radius-3);
+	border-radius: var(--radius-1);
 	pointer-events: all;
 	touch-action: auto;
 	overflow-y: auto;
 	overscroll-behavior: none;
 	background-color: var(--color-panel);
-	box-shadow: var(--shadow-3);
+	box-shadow: var(--shadow-1);
 }
 
 .tlui-menu::-webkit-scrollbar {
@@ -2820,21 +2826,28 @@ it from receiving any pointer events or affecting the cursor. */
 	z-index: var(--layer-panels);
 	pointer-events: all;
 	position: absolute;
-	left: 0px;
-	bottom: 0px;
+	left: 8px;
+	bottom: calc(var(--space-3) + var(--sab));
+	/* border: 2px solid red; */
+	border-radius: var(--radius-1);
+	box-shadow: var(--shadow-1);
+	background-color: var(--color-panel);
 }
 
 .tlui-navigation-zone::before {
-	content: '';
-	display: block;
-	position: absolute;
-	z-index: -1;
-	inset: -4px -4px 0px 0px;
-	border-radius: 0;
-	border-top: 4px solid var(--color-background);
-	border-right: 4px solid var(--color-background);
-	border-top-right-radius: var(--radius-4);
-	background-color: var(--color-low);
+	/* content: ''; */
+	/* border: 3px solid purple; */
+	/* display: block; */
+	/* position: absolute; */
+	/* z-index: -1; */
+	/* inset: -4px -4px 0px 0px; */
+	/* border-radius: 0; */
+	/* border-top: 4px solid var(--color-background); */
+	/* border-right: 4px solid var(--color-background); */
+	/* border-top-right-radius: var(--radius-1); */
+	/* background-color: var(--color-panel); */
+	/* box-shadow: var(--shadow-2); */
+	/* border-radius: var(--radius-1); */
 }
 
 .tlui-navigation-zone__toggle .tlui-icon {
@@ -3262,3 +3275,4 @@ it from receiving any pointer events or affecting the cursor. */
 	flex: 1;
 	font-size: 12px;
 }
+
