@@ -55,6 +55,7 @@ export default function Home() {
 					autoPlay
 					loop
 					muted
+					playsInline
 					style={{
 						position: 'absolute',
 						width: '100%',
@@ -66,7 +67,7 @@ export default function Home() {
 						zIndex: '-1',
 					}}
 				>
-					<source src="/b_roll.mov" type="video/mp4" />
+					<source src="/b_roll.mp4" type="video/mp4" />
 				</video>
 				<div className="container">
 					<Heading as="h1" className="hero__title" style={{ color: 'black' }}>

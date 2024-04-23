@@ -68,7 +68,7 @@ const config: Config = {
 					position: 'left',
 					label: 'How to Start',
 				},
-				{ to: '/blog', label: 'Blog', position: 'right' },
+				// { to: '/blog', label: 'Blog', position: 'right' },
 				{
 					href: 'https://github.com/DallasCarraher/compound',
 					position: 'right',
