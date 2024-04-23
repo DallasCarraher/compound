@@ -66,7 +66,7 @@ const config: Config = {
 					type: 'docSidebar',
 					sidebarId: 'howToStart',
 					position: 'left',
-					label: 'How to Start',
+					label: 'Get Started',
 				},
 				// { to: '/blog', label: 'Blog', position: 'right' },
 				{
