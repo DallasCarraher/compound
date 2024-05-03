@@ -56,30 +56,27 @@ export default function StoreEventsExample() {
 	}, [editor])
 
 	return (
-		<div style={{ display: 'flex' }}>
-			<div style={{ width: '60vw', height: '100vh' }}>
+		<div className="compound__editor flex overflow-hidden">
+			<div className="flex-[2]">
 				<Compound onMount={setAppToState} />
 			</div>
-			<div>
-				<div
-					style={{
-						width: '40vw',
-						height: '100vh',
-						padding: 8,
-						background: '#eee',
-						border: 'none',
-						fontFamily: 'monospace',
-						fontSize: 12,
-						borderLeft: 'solid 2px #333',
-						display: 'flex',
-						flexDirection: 'column-reverse',
-						overflow: 'auto',
-					}}
-				>
-					{storeEvents.map((t, i) => (
-						<div key={i}>{t}</div>
-					))}
-				</div>
+			<div
+				style={{
+					padding: 8,
+					background: '#eee',
+					border: 'none',
+					fontFamily: 'monospace',
+					fontSize: 12,
+					borderLeft: 'solid 2px #333',
+					display: 'flex',
+					flexDirection: 'column',
+					overflow: 'auto',
+				}}
+				className="flex-1"
+			>
+				{storeEvents.map((t, i) => (
+					<div key={i}>{t}</div>
+				))}
 			</div>
 		</div>
 	)

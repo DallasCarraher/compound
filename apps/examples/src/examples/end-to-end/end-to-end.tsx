@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 
 export default function EndToEnd() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound
 				onMount={(editor) => {
 					editor.on('event', (info) => {

@@ -1,3 +1,4 @@
+import { SmartWindow } from '@/SmartWindow'
 import {
 	Compound,
 	TLEditorComponents,
@@ -22,7 +23,7 @@ function MyComponent() {
 					width: 'fit-content',
 					padding: 12,
 					borderRadius: 8,
-					backgroundColor: 'goldenrod',
+					backgroundColor: 'yellowgreen',
 					zIndex: 0,
 					pointerEvents: 'all',
 					userSelect: 'unset',
@@ -30,7 +31,7 @@ function MyComponent() {
 				onPointerDown={stopEventPropagation}
 				onPointerMove={stopEventPropagation}
 			>
-				The count is {state}! <button onClick={() => setState((s) => s - 1)}>+1</button>
+				The count is {state}! <button onClick={() => setState((s) => s - 1)}>-1</button>
 			</div>
 			<div
 				style={{
@@ -86,8 +87,33 @@ const components: TLEditorComponents = {
 
 export default function OnTheCanvasExample() {
 	return (
-		<div className="tldraw__editor">
-			<Compound persistenceKey="things-on-the-canvas-example" components={components} />
+		<div className="compound__editor">
+			<Compound persistenceKey="things-on-the-canvas-example" components={components}>
+				<SmartWindow
+					id="info__on-the-canvas-example"
+					title="Things on the canvas!"
+					iHeight={280}
+					iWidth={300}
+					lowerBound={200}
+					upperBound={400}
+					location={{
+						x: '10px',
+						y: '100px',
+					}}
+				>
+					<p>This example demonstrates how to render custom components on the canvas.</p>
+					<br />
+					<p>
+						The two "count" components are rendered <b>on the canvas</b>, but behind the UI. They
+						are reactive; try clicking the +1 or -1 buttons within them.
+					</p>
+					<br />
+					<p>
+						The "This does not scale with the zoom" component can be seen by creating a new shape or
+						selecting one. It is <b>rendered on top of the canvas</b>, but behind the UI.
+					</p>
+				</SmartWindow>
+			</Compound>
 		</div>
 	)
 }

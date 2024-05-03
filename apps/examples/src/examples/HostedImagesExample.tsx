@@ -66,7 +66,7 @@ export default function AssetPropsExample() {
 	}, [])
 
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound onMount={handleMount} />
 		</div>
 	)

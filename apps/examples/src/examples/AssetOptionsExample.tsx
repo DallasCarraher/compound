@@ -3,7 +3,7 @@ import '@cmpd/compound/compound.css'
 
 export default function AssetPropsExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound
 				// only allow jpegs
 				acceptedImageMimeTypes={['image/jpeg']}

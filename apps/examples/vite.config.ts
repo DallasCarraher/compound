@@ -4,6 +4,11 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
 	plugins: [react()],
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, './src'),
+		},
+	},
 	root: path.join(__dirname, 'src'),
 	publicDir: path.join(__dirname, 'public'),
 	build: {
@@ -11,7 +16,7 @@ export default defineConfig({
 		assetsInlineLimit: 0,
 	},
 	server: {
-		port: 5000,
+		port: 3000,
 	},
 	clearScreen: false,
 	optimizeDeps: {

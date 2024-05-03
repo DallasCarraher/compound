@@ -101,7 +101,7 @@ const customComponents: TLEditorComponents = {
 // [5]
 export default function ScreenshotToolExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound
 				persistenceKey="tldraw_screenshot_example"
 				tools={customTools}

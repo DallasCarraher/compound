@@ -5,7 +5,7 @@ import './custom-ui.css'
 
 export default function CustomUiExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound hideUi>
 				<CustomUi />
 			</Compound>

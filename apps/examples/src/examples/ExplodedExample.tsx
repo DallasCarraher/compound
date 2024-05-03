@@ -1,5 +1,6 @@
 import {
 	Canvas,
+	CompoundUi,
 	ContextMenu,
 	TldrawEditor,
 	TldrawHandles,
@@ -7,7 +8,6 @@ import {
 	TldrawScribble,
 	TldrawSelectionBackground,
 	TldrawSelectionForeground,
-	TldrawUi,
 	defaultShapeTools,
 	defaultShapeUtils,
 	defaultTools,
@@ -25,7 +25,7 @@ const defaultComponents = {
 
 export default function ExplodedExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<TldrawEditor
 				initialState="select"
 				shapeUtils={defaultShapeUtils}
@@ -33,11 +33,11 @@ export default function ExplodedExample() {
 				components={defaultComponents}
 				persistenceKey="exploded-example"
 			>
-				<TldrawUi>
+				<CompoundUi>
 					<ContextMenu>
 						<Canvas />
 					</ContextMenu>
-				</TldrawUi>
+				</CompoundUi>
 			</TldrawEditor>
 		</div>
 	)

@@ -10,7 +10,7 @@ const myShapeUtils = [MiniBoxShapeUtil]
 
 export default function OnlyEditorExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<TldrawEditor
 				tools={myTools}
 				shapeUtils={myShapeUtils}

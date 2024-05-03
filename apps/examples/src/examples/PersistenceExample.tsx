@@ -45,7 +45,7 @@ export default function PersistenceExample() {
 
 	if (loadingState.status === 'loading') {
 		return (
-			<div className="tldraw__editor">
+			<div className="compound__editor">
 				<h2>Loading...</h2>
 			</div>
 		)
@@ -53,7 +53,7 @@ export default function PersistenceExample() {
 
 	if (loadingState.status === 'error') {
 		return (
-			<div className="tldraw__editor">
+			<div className="compound__editor">
 				<h2>Error!</h2>
 				<p>{loadingState.error}</p>
 			</div>
@@ -61,7 +61,7 @@ export default function PersistenceExample() {
 	}
 
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound store={store} />
 		</div>
 	)

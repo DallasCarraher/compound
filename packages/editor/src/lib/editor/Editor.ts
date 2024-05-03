@@ -197,6 +197,8 @@ export class Editor extends EventEmitter<TLEventMap> {
 	}: TLEditorOptions) {
 		super()
 
+		this.id = uniqueId()
+
 		this.store = store
 
 		this.snaps = new SnapManager(this)
@@ -640,6 +642,13 @@ export class Editor extends EventEmitter<TLEventMap> {
 			this._tickManager.start()
 		})
 	}
+
+	/**
+	 * The editor's unique id.
+	 *
+	 * @public
+	 */
+	readonly id: string
 
 	/**
 	 * The editor's store

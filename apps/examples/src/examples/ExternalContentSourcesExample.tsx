@@ -60,7 +60,7 @@ export default function ExternalContentSourcesExample() {
 	}, [])
 
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound autoFocus onMount={handleMount} shapeUtils={[DangerousHtmlExample]} />
 		</div>
 	)

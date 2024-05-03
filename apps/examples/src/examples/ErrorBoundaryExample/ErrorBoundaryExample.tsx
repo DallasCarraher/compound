@@ -6,7 +6,7 @@ const shapes = [ErrorShapeUtil]
 
 export default function ErrorBoundaryExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound
 				shapeUtils={shapes}
 				tools={[]}

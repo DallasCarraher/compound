@@ -33,7 +33,7 @@ const components: TLEditorComponents = {
 
 export default function CustomComponentsExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound persistenceKey="custom-components-example" components={components} />
 		</div>
 	)

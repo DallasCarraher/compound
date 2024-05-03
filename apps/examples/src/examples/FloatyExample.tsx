@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 export default function FloatyExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound persistenceKey="tldraw_floaty_example">
 				<SneakyFloatyHook />
 			</Compound>

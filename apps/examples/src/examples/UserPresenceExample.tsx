@@ -3,10 +3,10 @@ import { Compound, InstancePresenceRecordType } from '@cmpd/compound'
 import '@cmpd/compound/compound.css'
 import { useRef } from 'react'
 
-const USER_NAME = 'huppy da arrow'
-const MOVING_CURSOR_SPEED = 0.25 // 0 is stopped, 1 is full send
-const MOVING_CURSOR_RADIUS = 100
-const CURSOR_CHAT_MESSAGE = 'Hey, I think this is just great.'
+const USER_NAME = 'Daxter'
+const MOVING_CURSOR_SPEED = 0.2 // 0 is stopped, 1 is full send
+const MOVING_CURSOR_RADIUS = 50
+const CURSOR_CHAT_MESSAGE = 'HOW AM I GONNA GET CHANGED BACK NOW?!'
 
 // Note:
 // Almost all of the information below is calculated automatically by helpers in the editor.
@@ -17,7 +17,7 @@ const CURSOR_CHAT_MESSAGE = 'Hey, I think this is just great.'
 export default function UserPresenceExample() {
 	const rRaf = useRef<any>(-1)
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound
 				persistenceKey="user-presence-example"
 				onMount={(editor) => {
@@ -29,6 +29,8 @@ export default function UserPresenceExample() {
 						currentPageId: editor.getCurrentPageId(),
 						userId: 'peer-1',
 						userName: USER_NAME,
+						// orange hex
+						color: '#FF7600',
 						cursor: { x: 0, y: 0, type: 'default', rotation: 0 },
 						chatMessage: CURSOR_CHAT_MESSAGE,
 					})

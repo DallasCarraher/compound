@@ -33,15 +33,26 @@
 		"@cmpd/assets": "workspace:*",
 		"@cmpd/compound": "workspace:*",
 		"@playwright/test": "^1.38.1",
+		"@radix-ui/react-avatar": "^1.0.4",
+		"@radix-ui/react-slot": "^1.0.2",
 		"@vercel/analytics": "^1.0.1",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
 		"lazyrepo": "0.0.0-alpha.27",
+		"lucide-react": "^0.376.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.9.0",
+		"tailwind-merge": "^2.3.0",
+		"tailwindcss-animate": "^1.0.7",
 		"vite": "^5.2.8"
 	},
 	"devDependencies": {
+		"@types/node": "^20.12.8",
 		"@vitejs/plugin-react": "^4.2.0",
-		"dotenv": "^16.0.3"
+		"autoprefixer": "^10.4.19",
+		"dotenv": "^16.0.3",
+		"postcss": "^8.4.38",
+		"tailwindcss": "^3.4.3"
 	}
 }

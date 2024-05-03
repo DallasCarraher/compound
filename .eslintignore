@@ -19,6 +19,8 @@
 **/setupJest.js
 apps/vscode/extension/editor
 apps/examples/www
+apps/examples/postcss.config.js
+apps/examples/tailwind.config.js
 apps/docs/api-content.json
 apps/docs/content.json
 apps/vscode/extension/editor/index.js

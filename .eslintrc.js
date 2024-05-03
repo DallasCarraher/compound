@@ -14,6 +14,7 @@ module.exports = {
 		'@next/next',
 		'react-hooks',
 		'deprecation',
+		'react-refresh',
 	],
 	settings: {
 		next: {
@@ -58,6 +59,7 @@ module.exports = {
 			{ selector: "MethodDefinition[kind='set']", message: 'Property setters are not allowed' },
 			{ selector: "MethodDefinition[kind='get']", message: 'Property getters are not allowed' },
 		],
+		'react-refresh/only-export-components': 'warn',
 	},
 	parser: '@typescript-eslint/parser',
 	parserOptions: {

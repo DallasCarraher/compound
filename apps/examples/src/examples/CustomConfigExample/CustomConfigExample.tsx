@@ -9,7 +9,7 @@ const customTools = [CardShapeTool]
 
 export default function CustomConfigExample() {
 	return (
-		<div className="tldraw__editor">
+		<div className="compound__editor">
 			<Compound
 				// Pass in the array of custom shape classes
 				shapeUtils={customShapeUtils}
