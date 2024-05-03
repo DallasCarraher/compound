@@ -284,7 +284,35 @@ export type CompoundProps = TldrawEditorBaseProps & ({
     sessionId?: string;
     defaultName?: string;
     snapshot?: StoreSnapshot<TLRecord>;
-}) & TldrawUiProps & Partial<TLExternalContentProps>;
+}) & CompoundUiProps & Partial<TLExternalContentProps>;
+
+// @public (undocumented)
+export const CompoundUi: React_2.NamedExoticComponent<CompoundUiProps>;
+
+// @public
+export interface CompoundUiBaseProps {
+    assetUrls?: TLUiAssetUrlOverrides;
+    children?: ReactNode;
+    hideUi?: boolean;
+    renderDebugMenuItems?: () => React_2.ReactNode;
+    shareZone?: ReactNode;
+    topZone?: ReactNode;
+}
+
+// @public (undocumented)
+export function CompoundUiContextProvider({ overrides, assetUrls, onUiEvent, forceMobile, children, }: CompoundUiContextProviderProps): JSX.Element;
+
+// @public
+export interface CompoundUiContextProviderProps {
+    assetUrls?: RecursivePartial<TLUiAssetUrls>;
+    children?: any;
+    forceMobile?: boolean;
+    onUiEvent?: TLUiEventHandler;
+    overrides?: TLUiOverrides | TLUiOverrides[];
+}
+
+// @public
+export type CompoundUiProps = CompoundUiBaseProps & CompoundUiContextProviderProps;
 
 // @public
 export function containBoxSize(originalSize: BoxWidthHeight, containBoxSize: BoxWidthHeight): BoxWidthHeight;
@@ -1294,35 +1322,6 @@ export const TldrawSelectionBackground: TLSelectionBackgroundComponent;
 
 // @public (undocumented)
 export const TldrawSelectionForeground: TLSelectionForegroundComponent;
-
-// @public (undocumented)
-export const TldrawUi: React_2.NamedExoticComponent<TldrawUiProps>;
-
-// @public
-export interface TldrawUiBaseProps {
-    assetUrls?: TLUiAssetUrlOverrides;
-    children?: ReactNode;
-    hideUi?: boolean;
-    renderDebugMenuItems?: () => React_2.ReactNode;
-    shareZone?: ReactNode;
-    // @internal
-    topZone?: ReactNode;
-}
-
-// @public (undocumented)
-export function TldrawUiContextProvider({ overrides, assetUrls, onUiEvent, forceMobile, children, }: TldrawUiContextProviderProps): JSX.Element;
-
-// @public
-export interface TldrawUiContextProviderProps {
-    assetUrls?: RecursivePartial<TLUiAssetUrls>;
-    children?: any;
-    forceMobile?: boolean;
-    onUiEvent?: TLUiEventHandler;
-    overrides?: TLUiOverrides | TLUiOverrides[];
-}
-
-// @public
-export type TldrawUiProps = TldrawUiBaseProps & TldrawUiContextProviderProps;
 
 // @public (undocumented)
 export interface TLUiActionItem<TransationKey extends string = string, IconType extends string = string> {

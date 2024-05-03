@@ -14506,6 +14506,36 @@
             },
             {
               "kind": "Property",
+              "canonicalReference": "@cmpd/editor!Editor#id:member",
+              "docComment": "/**\n * The editor's unique id.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": true,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
               "canonicalReference": "@cmpd/editor!Editor#inputs:member",
               "docComment": "/**\n * The app's current input state.\n *\n * @public\n */\n",
               "excerptTokens": [

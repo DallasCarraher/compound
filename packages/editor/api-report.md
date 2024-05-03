@@ -814,6 +814,7 @@ export class Editor extends EventEmitter<TLEventMap> {
     get hoveredShape(): TLShape | undefined;
     // @deprecated (undocumented)
     get hoveredShapeId(): null | TLShapeId;
+    readonly id: string;
     inputs: {
         originPagePoint: Vec2d;
         originScreenPoint: Vec2d;
