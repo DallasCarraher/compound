@@ -119,6 +119,20 @@ export function TLUiMenuSchemaProvider({ overrides, children }: TLUiMenuSchemaPr
 				menuSubmenu(
 					'file',
 					'menu.file',
+					menuSubmenu(
+						'export-as',
+						'menu.export-as',
+						menuGroup(
+							'export-as-group',
+							menuItem(actions['export-as-svg'], { disabled: emptyPage }),
+							menuItem(actions['export-as-png'], { disabled: emptyPage }),
+							menuItem(actions['export-as-json'], { disabled: emptyPage })
+						),
+						menuGroup(
+							'export-bg',
+							menuItem(actions['toggle-transparent'], { checked: !exportBackground })
+						)
+					),
 					menuGroup('print', menuItem(actions['print'], { disabled: emptyPage }))
 				),
 				menuSubmenu(
@@ -145,20 +159,6 @@ export function TLUiMenuSchemaProvider({ overrides, children }: TLUiMenuSchemaPr
 								menuItem(actions['copy-as-svg'], { disabled: emptyPage }),
 								menuItem(actions['copy-as-png'], { disabled: emptyPage || !hasClipboardWrite }),
 								menuItem(actions['copy-as-json'], { disabled: emptyPage })
-							),
-							menuGroup(
-								'export-bg',
-								menuItem(actions['toggle-transparent'], { checked: !exportBackground })
-							)
-						),
-						menuSubmenu(
-							'export-as',
-							'menu.export-as',
-							menuGroup(
-								'export-as-group',
-								menuItem(actions['export-as-svg'], { disabled: emptyPage }),
-								menuItem(actions['export-as-png'], { disabled: emptyPage }),
-								menuItem(actions['export-as-json'], { disabled: emptyPage })
 							),
 							menuGroup(
 								'export-bg',
@@ -201,7 +201,7 @@ export function TLUiMenuSchemaProvider({ overrides, children }: TLUiMenuSchemaPr
 					)
 				)
 			),
-			menuGroup('extras', menuItem(actions['insert-embed']), menuItem(actions['insert-media'])),
+			menuGroup('extras', menuItem(actions['insert-media']), menuItem(actions['insert-embed'])),
 			menuGroup(
 				'preferences',
 				menuSubmenu(

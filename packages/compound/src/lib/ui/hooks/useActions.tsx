@@ -122,7 +122,7 @@ export function ActionsProvider({ overrides, children }: ActionsProviderProps) {
 				id: 'insert-embed',
 				label: 'action.insert-embed',
 				readonlyOk: false,
-				kbd: '$i',
+				kbd: '$e',
 				onSelect(source) {
 					trackEvent('insert-embed', { source })
 					addDialog({ component: EmbedDialog })
@@ -131,7 +131,7 @@ export function ActionsProvider({ overrides, children }: ActionsProviderProps) {
 			{
 				id: 'insert-media',
 				label: 'action.insert-media',
-				kbd: '$u',
+				kbd: '$i',
 				readonlyOk: false,
 				onSelect(source) {
 					trackEvent('insert-media', { source })
@@ -188,6 +188,7 @@ export function ActionsProvider({ overrides, children }: ActionsProviderProps) {
 				menuLabel: 'action.export-as-json.short',
 				contextMenuLabel: 'action.export-as-json.short',
 				readonlyOk: true,
+				kbd: '$s',
 				onSelect(source) {
 					trackEvent('export-as', { format: 'json', source })
 					exportAs(editor.getSelectedShapeIds(), 'json')
