@@ -2,7 +2,10 @@ import { useEditor, useValue } from '@cmpd/editor'
 import { ToastProvider } from '@radix-ui/react-toast'
 import classNames from 'classnames'
 import React, { ReactNode } from 'react'
-import { TldrawUiContextProvider, TldrawUiContextProviderProps } from './TldrawUiContextProvider'
+import {
+	CompoundUiContextProvider,
+	CompoundUiContextProviderProps,
+} from './CompoundUiContextProvider'
 import { TLUiAssetUrlOverrides } from './assetUrls'
 import { BackToContent } from './components/BackToContent'
 import { DebugPanel } from './components/DebugPanel'
@@ -25,18 +28,11 @@ import { useKeyboardShortcuts } from './hooks/useKeyboardShortcuts'
 import { useTranslation } from './hooks/useTranslation/useTranslation'
 
 /**
- * Props for the {@link @tldraw/tldraw#Tldraw} and {@link TldrawUi} components.
+ * Base props for the {@link @cmpd/compound#Compound} and {@link CompoundUi} components.
  *
  * @public
  */
-export type TldrawUiProps = TldrawUiBaseProps & TldrawUiContextProviderProps
-
-/**
- * Base props for the {@link @tldraw/tldraw#Tldraw} and {@link TldrawUi} components.
- *
- * @public
- */
-export interface TldrawUiBaseProps {
+export interface CompoundUiBaseProps {
 	/**
 	 * The component's children.
 	 */
@@ -54,7 +50,6 @@ export interface TldrawUiBaseProps {
 
 	/**
 	 * A component to use for the top zone (will be deprecated)
-	 * @internal
 	 */
 	topZone?: ReactNode
 
@@ -68,59 +63,57 @@ export interface TldrawUiBaseProps {
 }
 
 /**
+ * Props for the {@link @cmpd/compound#Compound} and {@link CompoundUi} components.
+ *
  * @public
  */
-export const TldrawUi = React.memo(function TldrawUi({
+export type CompoundUiProps = CompoundUiBaseProps & CompoundUiContextProviderProps
+
+/**
+ * @public
+ */
+export const CompoundUi = React.memo(function CompoundUi({
 	shareZone,
 	topZone,
 	renderDebugMenuItems,
 	children,
 	hideUi,
 	...rest
-}: TldrawUiProps) {
+}: CompoundUiProps) {
 	return (
-		<TldrawUiContextProvider {...rest}>
-			<TldrawUiInner
-				hideUi={hideUi}
-				shareZone={shareZone}
-				topZone={topZone}
-				renderDebugMenuItems={renderDebugMenuItems}
-			>
+		<CompoundUiContextProvider {...rest}>
+			<>
 				{children}
-			</TldrawUiInner>
-		</TldrawUiContextProvider>
+				{/* 
+					The 'hideUi' prop should prevent the UI from mounting.
+					If we ever need want the UI to mount and preserve state, then
+					we should change this behavior and hide the UI via CSS instead.
+				*/}
+				{hideUi ? null : (
+					<CompoundUiContent
+						hideUi={hideUi}
+						shareZone={shareZone}
+						topZone={topZone}
+						renderDebugMenuItems={renderDebugMenuItems}
+					/>
+				)}
+			</>
+		</CompoundUiContextProvider>
 	)
 })
 
-type TldrawUiContentProps = {
+interface CompoundUiContentProps {
 	hideUi?: boolean
 	shareZone?: ReactNode
 	topZone?: ReactNode
 	renderDebugMenuItems?: () => React.ReactNode
 }
 
-const TldrawUiInner = React.memo(function TldrawUiInner({
-	children,
-	hideUi,
-	...rest
-}: TldrawUiContentProps & { children: ReactNode }) {
-	// The hideUi prop should prevent the UI from mounting.
-	// If we ever need want the UI to mount and preserve state, then
-	// we should change this behavior and hide the UI via CSS instead.
-
-	return (
-		<>
-			{children}
-			{hideUi ? null : <TldrawUiContent {...rest} />}
-		</>
-	)
-})
-
-const TldrawUiContent = React.memo(function TldrawUI({
+const CompoundUiContent = React.memo(function CompoundUI({
 	shareZone,
 	topZone,
 	renderDebugMenuItems,
-}: TldrawUiContentProps) {
+}: CompoundUiContentProps) {
 	const editor = useEditor()
 	const msg = useTranslation()
 	const breakpoint = useBreakpoint()

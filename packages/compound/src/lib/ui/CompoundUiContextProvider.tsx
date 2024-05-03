@@ -17,11 +17,11 @@ import { TranslationProvider } from './hooks/useTranslation/useTranslation'
 import { TLUiOverrides, useMergedOverrides, useMergedTranslationOverrides } from './overrides'
 
 /**
- * Props for the {@link @tldraw/tldraw#Tldraw} and {@link TldrawUi} components.
+ * Props for the {@link @cmpd/compound#Compound} and {@link CompoundUi} components.
  *
  * @public
  **/
-export interface TldrawUiContextProviderProps {
+export interface CompoundUiContextProviderProps {
 	/**
 	 * Urls for where to find fonts and other assets for the UI.
 	 */
@@ -49,13 +49,13 @@ export interface TldrawUiContextProviderProps {
 }
 
 /** @public */
-export function TldrawUiContextProvider({
+export function CompoundUiContextProvider({
 	overrides,
 	assetUrls,
 	onUiEvent,
 	forceMobile,
 	children,
-}: TldrawUiContextProviderProps) {
+}: CompoundUiContextProviderProps) {
 	return (
 		<AssetUrlsProvider assetUrls={useDefaultUiAssetUrlsWithOverrides(assetUrls)}>
 			<TranslationProvider overrides={useMergedTranslationOverrides(overrides)}>
@@ -72,10 +72,11 @@ export function TldrawUiContextProvider({
 		</AssetUrlsProvider>
 	)
 }
+
 function InternalProviders({
 	overrides,
 	children,
-}: Omit<TldrawUiContextProviderProps, 'assetBaseUrl'>) {
+}: Omit<CompoundUiContextProviderProps, 'assetBaseUrl'>) {
 	const mergedOverrides = useMergedOverrides(overrides)
 	return (
 		<ActionsProvider overrides={mergedOverrides.actions}>

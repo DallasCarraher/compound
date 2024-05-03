@@ -30,7 +30,7 @@ import { defaultShapeTools } from './defaultShapeTools'
 import { defaultShapeUtils } from './defaultShapeUtils'
 import { registerDefaultSideEffects } from './defaultSideEffects'
 import { defaultTools } from './defaultTools'
-import { TldrawUi, TldrawUiProps } from './ui/TldrawUi'
+import { CompoundUi, CompoundUiProps } from './ui/CompoundUi'
 import { ContextMenu } from './ui/components/ContextMenu'
 import { usePreloadAssets } from './ui/hooks/usePreloadAssets'
 import { useDefaultEditorAssetsWithOverrides } from './utils/static-assets/assetUrls'
@@ -52,7 +52,7 @@ export type CompoundProps = TldrawEditorBaseProps &
 				snapshot?: StoreSnapshot<TLRecord>
 		  }
 	) &
-	TldrawUiProps &
+	CompoundUiProps &
 	Partial<TLExternalContentProps>
 
 /** @public */
@@ -104,7 +104,7 @@ export function Compound(props: CompoundProps) {
 
 	return (
 		<TldrawEditor {...withDefaults}>
-			<TldrawUi {...withDefaults}>
+			<CompoundUi {...withDefaults}>
 				<ContextMenu>
 					<Canvas />
 				</ContextMenu>
@@ -116,7 +116,7 @@ export function Compound(props: CompoundProps) {
 					onMount={onMount}
 				/>
 				{children}
-			</TldrawUi>
+			</CompoundUi>
 		</TldrawEditor>
 	)
 }

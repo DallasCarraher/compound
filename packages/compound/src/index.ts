@@ -38,11 +38,11 @@ export { LaserTool } from './lib/tools/LaserTool/LaserTool'
 export { SelectTool } from './lib/tools/SelectTool/SelectTool'
 export { ZoomTool } from './lib/tools/ZoomTool/ZoomTool'
 // UI
-export { TldrawUi, type TldrawUiBaseProps, type TldrawUiProps } from './lib/ui/TldrawUi'
+export { CompoundUi, type CompoundUiBaseProps, type CompoundUiProps } from './lib/ui/CompoundUi'
 export {
-	TldrawUiContextProvider,
-	type TldrawUiContextProviderProps,
-} from './lib/ui/TldrawUiContextProvider'
+	CompoundUiContextProvider,
+	type CompoundUiContextProviderProps,
+} from './lib/ui/CompoundUiContextProvider'
 export { setDefaultUiAssetUrls, type TLUiAssetUrlOverrides } from './lib/ui/assetUrls'
 export { ContextMenu, type TLUiContextMenuProps } from './lib/ui/components/ContextMenu'
 export { OfflineIndicator } from './lib/ui/components/OfflineIndicator/OfflineIndicator'
