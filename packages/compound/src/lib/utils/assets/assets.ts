@@ -82,7 +82,10 @@ export async function getResizedImageDataUrl(
 		desiredHeight *= ratio
 	}
 
-	return await downscale(dataURLForImage, desiredWidth, desiredHeight, { imageType: type, quality })
+	return await downscale(dataURLForImage, desiredWidth, desiredHeight, {
+		imageType: type.replace('image/', ''),
+		quality,
+	})
 }
 
 /** @public */
