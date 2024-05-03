@@ -1,7 +1,7 @@
 {
 	"name": "@cmpd/compound",
 	"description": "a react primitive for building whiteboarding tools and workflows",
-	"version": "2.0.0-alpha.20",
+	"version": "2.0.0-alpha.21",
 	"packageManager": "yarn@3.5.0",
 	"homepage": "https://cmpd.space",
 	"license": "Apache-2.0",
