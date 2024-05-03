@@ -44,7 +44,8 @@
 		"check-scripts": "tsx scripts/check-scripts.ts",
 		"api-check": "lazy api-check",
 		"test": "lazy test",
-		"e2e": "lazy e2e --filter='{,bublic/}apps/examples'"
+		"e2e": "lazy e2e --filter='{,bublic/}apps/examples'",
+		"release": "npx lerna version --force-publish='*' && tsx scripts/publish-new.ts"
 	},
 	"engines": {
 		"npm": ">=7.0.0"

@@ -52,6 +52,7 @@ async function main() {
 				Number(prereleaseNumber) + 1
 		  }`
 		: latestVersion.inc(bump).format()
+	log('nextVersion', nextVersion)
 
 	setAllVersions(nextVersion)
 
@@ -65,7 +66,6 @@ async function main() {
 
 	log('packageJsonFilesToAdd', packageJsonFilesToAdd)
 
-	return
 	await exec('git', [
 		'add',
 		'lerna.json',
