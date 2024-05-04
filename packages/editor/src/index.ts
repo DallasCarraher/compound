@@ -37,7 +37,7 @@ export { Canvas } from './lib/components/Canvas'
 export {
 	ErrorBoundary,
 	OptionalErrorBoundary,
-	type TLErrorBoundaryProps,
+	type ErrorBoundaryProps,
 } from './lib/components/ErrorBoundary'
 export { HTMLContainer, type HTMLContainerProps } from './lib/components/HTMLContainer'
 export { PositionedOnCanvas } from './lib/components/PositionedOnCanvas'

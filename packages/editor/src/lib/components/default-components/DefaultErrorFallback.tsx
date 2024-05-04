@@ -1,6 +1,6 @@
 import { useValue } from '@cmpd/state'
 import classNames from 'classnames'
-import { ComponentType, useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { FC, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Editor } from '../../editor/Editor'
 import { EditorContext } from '../../hooks/useEditor'
 import { hardResetEditor } from '../../utils/hardResetEditor'
@@ -10,14 +10,16 @@ import { ErrorBoundary } from '../ErrorBoundary'
 
 const BASE_ERROR_URL = 'https://github.com/tldraw/tldraw/issues/new'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-function
-function noop() {}
+/** @public */
+export type ErrorFallbackComponent = FC<ErrorFallbackProps>
+
+interface ErrorFallbackProps {
+	error: unknown
+	editor?: Editor
+}
 
 /** @public */
-export type TLErrorFallbackComponent = ComponentType<{ error: unknown; editor?: Editor }>
-
-/** @public */
-export const DefaultErrorFallback: TLErrorFallbackComponent = ({ error, editor }) => {
+export const DefaultErrorFallback: FC<ErrorFallbackProps> = ({ error, editor }) => {
 	const containerRef = useRef<HTMLDivElement>(null)
 	const [shouldShowError, setShouldShowError] = useState(process.env.NODE_ENV === 'development')
 	const [didCopy, setDidCopy] = useState(false)
@@ -133,7 +135,7 @@ My browser: ${navigator.userAgent}`
 				// notifying the user about originates in the canvas) so it's
 				// not a big deal if it doesn't work - in that case we just have
 				// a plain grey background.
-				<ErrorBoundary onError={noop} fallback={() => null}>
+				<ErrorBoundary onError={null} fallback={() => <div />}>
 					<EditorContext.Provider value={editor}>
 						<div className="tl-overlay tl-error-boundary__canvas">
 							<Canvas />

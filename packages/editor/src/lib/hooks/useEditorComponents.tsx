@@ -12,7 +12,7 @@ import {
 import { DefaultCursor, TLCursorComponent } from '../components/default-components/DefaultCursor'
 import {
 	DefaultErrorFallback,
-	TLErrorFallbackComponent,
+	ErrorFallbackComponent,
 } from '../components/default-components/DefaultErrorFallback'
 import { DefaultGrid, TLGridComponent } from '../components/default-components/DefaultGrid'
 import { DefaultHandle, TLHandleComponent } from '../components/default-components/DefaultHandle'
@@ -78,7 +78,7 @@ export interface BaseEditorComponents {
 
 // These will always have defaults
 type ErrorComponents = {
-	ErrorFallback: TLErrorFallbackComponent
+	ErrorFallback: ErrorFallbackComponent
 	ShapeErrorFallback: TLShapeErrorFallbackComponent
 	ShapeIndicatorErrorFallback: TLShapeIndicatorErrorFallbackComponent
 }

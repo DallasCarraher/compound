@@ -1,41 +1,36 @@
-import * as React from 'react'
-import { TLErrorFallbackComponent } from './default-components/DefaultErrorFallback'
+import { Component, ErrorInfo, Fragment, ReactNode } from 'react'
+import { ErrorFallbackComponent } from './default-components/DefaultErrorFallback'
 
 /** @public */
-export interface TLErrorBoundaryProps {
-	children: React.ReactNode
+export interface ErrorBoundaryProps {
+	children: ReactNode
 	onError?: ((error: unknown) => void) | null
-	fallback: TLErrorFallbackComponent
+	fallback: (props: { error: Error | null }) => React.ReactNode
 }
 
-type TLErrorBoundaryState = { error: Error | null }
-
-const initialState: TLErrorBoundaryState = { error: null }
+interface State {
+	error: Error | null
+}
 
 /** @public */
-export class ErrorBoundary extends React.Component<
-	React.PropsWithRef<React.PropsWithChildren<TLErrorBoundaryProps>>,
-	TLErrorBoundaryState
-> {
-	static getDerivedStateFromError(error: Error) {
+export class ErrorBoundary extends Component<ErrorBoundaryProps, State> {
+	public state: State = {
+		error: null,
+	}
+
+	public static getDerivedStateFromError(error: Error): State {
 		return { error }
 	}
 
-	override state = initialState
-
-	override componentDidCatch(error: unknown) {
+	public componentDidCatch(error: unknown, _errorInfo: ErrorInfo) {
 		this.props.onError?.(error)
 	}
 
-	override render() {
-		const { error } = this.state
+	public render() {
+		if (this.state.error && this.props.fallback)
+			return this.props.fallback({ error: this.state.error })
 
-		if (error !== null) {
-			const { fallback: Fallback } = this.props
-			return <Fallback error={error} />
-		}
-
-		return this.props.children
+		return <Fragment>{this.props.children}</Fragment>
 	}
 }
 
@@ -44,15 +39,15 @@ export function OptionalErrorBoundary({
 	children,
 	fallback,
 	...props
-}: Omit<TLErrorBoundaryProps, 'fallback'> & {
-	fallback: TLErrorFallbackComponent
+}: Omit<ErrorBoundaryProps, 'fallback'> & {
+	fallback: ErrorFallbackComponent
 }) {
 	if (fallback === null) {
 		return <>{children}</>
 	}
 
 	return (
-		<ErrorBoundary fallback={fallback as any} {...props}>
+		<ErrorBoundary fallback={fallback} {...props}>
 			{children}
 		</ErrorBoundary>
 	)

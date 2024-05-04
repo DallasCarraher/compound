@@ -10,7 +10,6 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { App } from './App'
 import { Header } from './Header'
-import { allExamples } from './examples'
 
 // we use secret internal `setDefaultAssetUrls` functions to set these at the
 // top-level so assets don't need to be passed down in every single example.
@@ -22,7 +21,7 @@ const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Header />,
-		children: [{ path: '/', element: <App /> }, ...allExamples],
+		children: [{ path: '/', element: <App /> }],
 	},
 ])
 
@@ -32,11 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	root.render(
 		<StrictMode>
 			<ErrorBoundary
-				fallback={(error) => (
-					<>
-						<DefaultErrorFallback error={error} />
-					</>
-				)}
+				fallback={(error) => <DefaultErrorFallback error={error} />}
 				onError={(error) => console.error(error)}
 			>
 				<RouterProvider router={router} />

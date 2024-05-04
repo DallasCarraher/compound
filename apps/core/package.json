@@ -1,11 +1,10 @@
 {
-	"name": "examples.cmpd.space",
-	"description": "examples of how to use compound",
+	"name": "cmpd.space",
+	"description": "the core compound app",
 	"version": "2.0.0-alpha.21",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
-	"homepage": "https://examples.cmpd.space",
-	"license": "Apache-2.0",
+	"homepage": "https://cmpd.space",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/DallasCarraher/compound"
@@ -21,25 +20,20 @@
 		"whiteboard",
 		"canvas"
 	],
+	"type": "module",
 	"scripts": {
 		"dev": "vite --host",
 		"build": "vite build",
-		"lint": "yarn run -T tsx ../../scripts/lint.ts",
-		"e2e": "playwright test -c ./e2e/playwright.config.ts",
-		"e2e-ui": "playwright test --ui -c ./e2e/playwright.config.ts"
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@babel/plugin-proposal-decorators": "^7.21.0",
 		"@cmpd/assets": "workspace:*",
 		"@cmpd/compound": "workspace:*",
-		"@playwright/test": "^1.38.1",
-		"@radix-ui/react-avatar": "^1.0.4",
 		"@radix-ui/react-slot": "^1.0.2",
-		"@vercel/analytics": "^1.0.1",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
-		"lazyrepo": "0.0.0-alpha.27",
-		"lucide-react": "^0.376.0",
+		"lucide-react": "^0.378.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.23.0",
@@ -48,11 +42,16 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.12.8",
-		"@vitejs/plugin-react": "^4.2.0",
+		"@typescript-eslint/eslint-plugin": "^7.8.0",
+		"@typescript-eslint/parser": "^7.8.0",
+		"@vitejs/plugin-react": "^4.2.1",
 		"autoprefixer": "^10.4.19",
-		"dotenv": "^16.0.3",
+		"eslint": "^9.2.0",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react-refresh": "^0.4.6",
 		"postcss": "^8.4.38",
 		"tailwindcss": "^3.4.3",
+		"typescript": "^5.4.5",
 		"vite": "^5.2.11"
 	}
 }
