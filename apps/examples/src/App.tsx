@@ -6,7 +6,7 @@ import compound from './icons/compound.svg'
 
 export const App: FC = () => {
 	return (
-		<main id="app" className="flex flex-col flex-1 gap-20">
+		<main id="app" className="flex flex-col flex-1 gap-20 overflow-auto">
 			<section id="logo" className="flex flex-col items-center select-none">
 				<img src={compound} alt="logo" draggable="false" style={{ height: 150, width: 150 }} />
 				<h1 className="font-bold">Examples</h1>
